@@ -1,0 +1,158 @@
+[
+  {
+    "id": "surveyor-3",
+    "slug": "surveyor-3",
+    "name": "Surveyor 3",
+    "destination": "Moon",
+    "year": 1967,
+    "missionName": "Surveyor 3",
+    "objectType": "Lunar Lander",
+    "shortDescription": "A robotic lunar lander featured in our collection that conducted the first lunar surface soil mechanics tests.",
+    "overview": "Surveyor 3 was the third lander of the American uncrewed Surveyor program sent to explore the surface of the Moon. Landing in Oceanus Procellarum on April 20, 1967, it returned thousands of photographs and performed the first robotic soil-sampling test on the lunar surface. In November 1969, Apollo 12 pinpoint-landed nearby, and astronauts Pete Conrad and Alan Bean retrieved its camera and sampling scoop for examination back on Earth.",
+    "historicalStory": "Surveyor 3 bounced three times before settling in a crater in Oceanus Procellarum. Its sampling scoop dug four trenches, demonstrating lunar soil strength and proving the surface could support the weight of future Apollo lunar modules.",
+    "purpose": "Study lunar soil mechanics, measure bearing strength, and capture high-resolution television imagery to prepare for human Apollo landings.",
+    "achievements": [
+      "Conducted the first surface-sampler mechanics tests on the Moon",
+      "Transmitted 6,315 television pictures of the lunar terrain",
+      "Became the only probe visited and sampled by humans on another world when Apollo 12 arrived in 1969"
+    ],
+    "location": {
+      "locationName": "Oceanus Procellarum (Ocean of Storms)",
+      "latitude": -3.016,
+      "longitude": -23.418,
+      "coordinateAccuracy": "sample-coordinates",
+      "description": "Sample location inside Surveyor Crater in Oceanus Procellarum. Position coordinates are for development simulation."
+    },
+    "mapPosition": {
+      "x": 34,
+      "y": 52
+    },
+    "developmentNote": "Sample interactive map coordinates for development visualization.",
+    "missionStatus": "Completed",
+    "equipmentStatus": "Inactive / Preserved artifact on lunar surface",
+    "whyLeftBehind": "Designed solely as a one-way exploratory lander with no return ascent stage; its structural frame and remaining instruments remain permanently in place on the Moon.",
+    "interestingFacts": [
+      "Apollo 12 astronauts retrieved Surveyor 3's television camera, which is now exhibited at the Smithsonian National Air and Space Museum.",
+      "Analysis of retrieved parts helped engineers understand how space radiation, temperature extremes, and micrometeoroids degrade human technology over time."
+    ],
+    "images": [
+      {
+        "imageUrl": null,
+        "caption": "Surveyor 3 inspected by Apollo 12 Commander Pete Conrad",
+        "credit": "NASA",
+        "sourceUrl": null
+      }
+    ],
+    "sources": [
+      {
+        "title": "Surveyor 3 - NASA Space Science Data Coordinated Archive",
+        "organization": "NASA",
+        "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1967-035A"
+      }
+    ]
+  },
+  {
+    "id": "apollo-lrv",
+    "slug": "apollo-lunar-roving-vehicle",
+    "name": "Apollo Lunar Roving Vehicle (LRV)",
+    "destination": "Moon",
+    "year": 1971,
+    "missionName": "Apollo 15, 16, and 17",
+    "objectType": "Manned Rover / Surface Vehicle",
+    "shortDescription": "A human-operated vehicle designed to support exploration across the lunar surface during Apollo J-class missions.",
+    "overview": "The Lunar Roving Vehicle (LRV) was an electric four-wheeled rover used on the Moon during the last three Apollo missions: Apollo 15 (1971), Apollo 16 (1972), and Apollo 17 (1972). Built by Boeing with Delco electronics, it allowed astronauts to travel dozens of kilometers across mountains and valleys, transporting hundreds of kilograms of lunar samples back to the Lunar Module.",
+    "historicalStory": "Folded into a compact origami-like package inside the Apollo Lunar Module descent stage quadrant, the rover was deployed by astronauts pulling lanyards. It drove with a T-handle joystick and was outfitted with a color television camera that broadcast live pictures of Apollo 17's liftoff back to Earth.",
+    "purpose": "Expand the scientific exploration radius of Apollo astronauts beyond walking distance and transport heavy geologic samples.",
+    "achievements": [
+      "Enabled crews to travel up to 35.8 km across the Moon during Apollo 17",
+      "Carried scientific equipment, communications antennas, and over 100 kg of lunar geological specimens",
+      "Live broadcast the Apollo 15, 16, and 17 liftoffs from the lunar surface using its ground-controlled television camera"
+    ],
+    "location": {
+      "locationName": "Hadley-Apennine (Apollo 15 site)",
+      "latitude": 26.132,
+      "longitude": 3.633,
+      "coordinateAccuracy": "sample-coordinates",
+      "description": "Sample location representing Apollo 15 LRV parked at Hadley-Apennine. Coordinates are for development simulation."
+    },
+    "mapPosition": {
+      "x": 54,
+      "y": 32
+    },
+    "developmentNote": "Sample interactive map coordinates for development visualization.",
+    "missionStatus": "Completed",
+    "equipmentStatus": "Parked on the lunar surface; batteries depleted",
+    "whyLeftBehind": "Leaving the rovers on the Moon was part of the original mission plan to maximize sample return payload on the Lunar Module ascent stages.",
+    "interestingFacts": [
+      "The tires were made of zinc-coated woven steel strands and titanium chevrons rather than inflatable rubber, which would fail in vacuum.",
+      "Apollo 17's rover fender was repaired on the Moon using duct tape, clamps, and laminated lunar maps after being accidentally knocked off."
+    ],
+    "images": [
+      {
+        "imageUrl": null,
+        "caption": "Apollo Lunar Roving Vehicle on the lunar terrain",
+        "credit": "NASA",
+        "sourceUrl": null
+      }
+    ],
+    "sources": [
+      {
+        "title": "The Apollo Lunar Roving Vehicle - NASA History",
+        "organization": "NASA",
+        "url": "https://www.nasa.gov/history/alsj/lrv.html"
+      }
+    ]
+  },
+  {
+    "id": "apollo-11-laser-retroreflector",
+    "slug": "apollo-11-laser-retroreflector",
+    "name": "Apollo 11 Laser Retroreflector",
+    "destination": "Moon",
+    "year": 1969,
+    "missionName": "Apollo 11",
+    "objectType": "Passive Scientific Instrument Array",
+    "shortDescription": "A scientific instrument deployed during the Apollo 11 mission enabling millimeter-precise Earth-Moon laser ranging.",
+    "overview": "The Apollo 11 Laser Ranging Retroreflector (LRRR) was deployed by Neil Armstrong and Buzz Aldrin on July 21, 1969, in Mare Tranquillitatis. Crucially, it was deployed as part of the Early Apollo Surface Experiments Package (EASEP)—precursor to the full ALSEP packages deployed on subsequent missions. Consisting of 100 high-precision fused silica corner cubes, it requires no electrical power and continues to bounce Earth-based laser pulses to this day.",
+    "historicalStory": "During their brief two-and-a-half-hour moonwalk, Armstrong and Aldrin placed the small corner-cube array on the lunar dust facing Earth. Within days, observatories on Earth successfully bounced laser beams off its quartz reflectors, inaugurating an ongoing multi-decade science experiment.",
+    "purpose": "Provide a permanent passive optical reflector for lunar laser ranging experiments to measure Earth-Moon distance, track lunar orbit evolution, and test Einstein's theory of general relativity.",
+    "achievements": [
+      "Allowed scientists to determine the Moon is spiraling away from Earth at roughly 3.8 cm per year",
+      "Provided crucial experimental validations of Einstein's General Relativity and the Equivalence Principle",
+      "Only Apollo experiment still operating and collecting scientific data today"
+    ],
+    "location": {
+      "locationName": "Mare Tranquillitatis (Sea of Tranquility)",
+      "latitude": 0.6734,
+      "longitude": 23.4731,
+      "coordinateAccuracy": "sample-coordinates",
+      "description": "Sample location in Mare Tranquillitatis. Position coordinates are for development simulation."
+    },
+    "mapPosition": {
+      "x": 68,
+      "y": 48
+    },
+    "developmentNote": "Sample interactive map coordinates for development visualization.",
+    "missionStatus": "Still Active / Operational (Passive)",
+    "equipmentStatus": "Operational passive reflector on lunar surface",
+    "whyLeftBehind": "Designed from the beginning as a permanent fixture intended to stay on the Moon indefinitely for ongoing laser measurements from terrestrial observatories.",
+    "interestingFacts": [
+      "Deployed as part of EASEP (Early Apollo Surface Experiments Package), distinct from the later ALSEP packages.",
+      "Because it requires no power or moving parts, it has continued operating flawlessly for over 55 years without any maintenance."
+    ],
+    "images": [
+      {
+        "imageUrl": null,
+        "caption": "Buzz Aldrin carrying EASEP components including the Laser Ranging Retroreflector",
+        "credit": "NASA",
+        "sourceUrl": null
+      }
+    ],
+    "sources": [
+      {
+        "title": "Apollo 11 Laser Ranging Retroreflector (LRRR) Experiment",
+        "organization": "NASA",
+        "url": "https://nssdc.gsfc.nasa.gov/nmc/experiment/display.action?id=1969-059C-01"
+      }
+    ]
+  }
+]
