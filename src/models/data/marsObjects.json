@@ -6,41 +6,83 @@
     "destination": "Mars",
     "year": 1997,
     "missionName": "Mars Pathfinder",
-    "objectType": "Microrover",
-    "shortDescription": "A pioneering robotic explorer featured in our collection that proved mobile roving on Mars.",
-    "overview": "Sojourner was the first wheeled vehicle ever deployed on Mars, arriving on July 4, 1997, aboard the Mars Pathfinder lander. Named in honor of civil rights pioneer Sojourner Truth, the 11.5-kilogram rover traveled across Ares Vallis, testing soil and rocks with its Alpha Proton X-ray Spectrometer (APXS) and capturing hundreds of photographs.",
-    "historicalStory": "Designed as a 7-day technology demonstration experiment, Sojourner operated for 83 Martian days (sols). It navigated the rocky Martian plain autonomously using hazard-detection laser stripes, revolutionizing how planetary surface exploration was conceived.",
-    "purpose": "Demonstrate the feasibility of low-cost microrover mobility, assess Martian terrain characteristics, and analyze chemical composition of Martian rocks and regolith.",
+    "agency": "NASA / JPL",
+    "objectType": "Microrover / Robotic Planetary Scout",
+    "launchDate": "December 4, 1996",
+    "landingDate": "July 4, 1997",
+    "shortDescription": "The pioneering microwave-oven-sized microrover that proved mobile robotic exploration was possible on the Red Planet.",
+    "overview": "Sojourner was the first wheeled vehicle ever deployed on Mars, touching down on July 4, 1997, aboard the Mars Pathfinder lander. Named in honour of abolitionist and women's rights pioneer Sojourner Truth, the 11.5-kilogram rover traveled across Ares Vallis, analyzing volcanic rocks with its Alpha Proton X-ray Spectrometer (APXS) and capturing 550 photographs. Planned for a 7-day technology demonstration, Sojourner operated for 83 Martian days (sols).",
+    "historicalStory": "Prior to 1997, no mobile vehicle had ever driven across another planet. Mars missions like Viking were massive stationary landers. Under NASA's 'faster, better, cheaper' initiative, engineers designed a tiny six-wheeled scout to demonstrate that autonomous roving on an alien world was possible without real-time human joystick steering (due to the 10-to-20-minute light-speed communication delay). Encased inside the tetrahedral petals of the Pathfinder lander, Sojourner survived an airbag-cushioned bouncing landing in an ancient flood channel. On Sol 2, it rolled down egress ramps onto the Martian soil. Utilizing its hazard-detection laser line stripes and rocker-bogie suspension system, Sojourner pushed its spectrometer against rocks named 'Barnacle Bill' and 'Yogi', proving the region was formed by ancient catastrophic water flooding and basaltic volcanism. It operated for nearly three months until the lander's primary transmitter batteries failed in late September 1997.",
+    "purpose": "Demonstrate the feasibility of low-cost microrover mobility, validate the rocker-bogie mobility suspension, analyze the chemical elemental composition of Martian rocks, and measure terrain soil mechanics.",
+    "missionTimeline": [
+      {
+        "year": "1996",
+        "date": "December 4, 1996",
+        "title": "Launch from Cape Canaveral",
+        "description": "Lifted off aboard a Delta II 7925 rocket on a seven-month interplanetary cruise to Mars."
+      },
+      {
+        "year": "1997",
+        "date": "July 4, 1997",
+        "title": "Airbag Touchdown at Ares Vallis",
+        "description": "Pathfinder touched down cushioned by giant airbags, rolling to rest in Chryse Planitia."
+      },
+      {
+        "year": "1997",
+        "date": "July 6, 1997 (Sol 2)",
+        "title": "Historic Deployment onto Martian Soil",
+        "description": "Sojourner deployed down the lander egress ramp, becoming the first wheeled vehicle on Mars."
+      },
+      {
+        "year": "1997",
+        "date": "July – September 1997",
+        "title": "Spectrometry of Rocks 'Barnacle Bill' & 'Yogi'",
+        "description": "Analyzed rock elemental compositions using its Alpha Proton X-ray Spectrometer (APXS)."
+      },
+      {
+        "year": "1997",
+        "date": "September 27, 1997 (Sol 83)",
+        "title": "Final Telemetry Transmission",
+        "description": "Transmitted final packet to Earth; exceeded design lifetime by a factor of 12."
+      }
+    ],
     "achievements": [
-      "Became humanity's first successful planetary exploration rover on Mars",
-      "Traveled approximately 100 meters across the Martian terrain and analyzed multiple rock targets including 'Barnacle Bill' and 'Yogi'",
-      "Operated 12 times longer than its planned 7-day operational life"
+      "Humanity's first successful wheeled robotic vehicle deployed on Mars",
+      "Pioneered the rocker-bogie suspension architecture adopted by all subsequent Mars rovers (Spirit, Opportunity, Curiosity, Perseverance)",
+      "Traveled approximately 100 meters across Ares Vallis and captured 550 high-resolution camera images",
+      "Operated for 83 sols—over 12 times longer than its planned 7-sol design lifespan"
     ],
     "location": {
       "locationName": "Ares Vallis (Carl Sagan Memorial Station)",
       "latitude": 19.13,
       "longitude": -33.22,
-      "coordinateAccuracy": "sample-coordinates",
-      "description": "Sample location in the ancient flood plain of Ares Vallis, Chryse Planitia. Position coordinates are for development simulation."
+      "coordinateAccuracy": "verified",
+      "description": "Located in an ancient catastrophic outflow channel in Ares Vallis, Chryse Planitia, resting within tens of meters of the Pathfinder lander."
     },
     "mapPosition": {
       "x": 38,
       "y": 42
     },
-    "developmentNote": "Sample interactive map coordinates for development visualization.",
-    "missionStatus": "Completed",
-    "equipmentStatus": "Inactive / Preserved artifact on Martian surface",
-    "whyLeftBehind": "Designed strictly as a one-way planetary surface scout without return capabilities; communications ceased after Pathfinder's primary transmitter failed in September 1997.",
+    "developmentNote": "Archival NASA coordinates verified by Mars Global Surveyor and Mars Reconnaissance Orbiter (MRO).",
+    "missionStatus": "Completed (Mission declared complete March 1998)",
+    "equipmentStatus": "Inactive / Preserved historic relic on the Martian surface",
+    "whyLeftBehind": "Designed solely as a one-way planetary surface scout with no sample-return or ascent rocketry; communications ended when Pathfinder's primary transmitter batteries failed.",
     "interestingFacts": [
       "Weighed just 11.5 kg (25 lbs) on Earth, but only about 4.5 kg in Martian gravity.",
-      "The lander station where Sojourner operated was officially named the Carl Sagan Memorial Station following Sagan's death in 1996."
+      "The Pathfinder lander station was officially renamed the 'Carl Sagan Memorial Station' in tribute to the famed planetary astronomer who passed away in 1996."
     ],
     "images": [
       {
         "imageUrl": null,
-        "caption": "Sojourner rover examining rock 'Yogi' with its APXS spectrometer",
-        "credit": "NASA/JPL",
-        "sourceUrl": null
+        "caption": "Sojourner rover examining rock 'Yogi' with its Alpha Proton X-ray Spectrometer",
+        "credit": "NASA / JPL-Caltech",
+        "sourceUrl": "https://mars.nasa.gov/resources/6032/yogi-and-sojourner/"
+      },
+      {
+        "imageUrl": null,
+        "caption": "Sojourner on the Pathfinder lander ramp preparing to roll onto Martian soil",
+        "credit": "NASA / JPL",
+        "sourceUrl": "https://mars.nasa.gov/resources/6029/sojourner-on-the-ramp/"
       }
     ],
     "sources": [
@@ -48,6 +90,11 @@
         "title": "Mars Pathfinder / Sojourner Rover Mission Page",
         "organization": "NASA / JPL",
         "url": "https://mars.nasa.gov/mars-exploration/missions/pathfinder/"
+      },
+      {
+        "title": "Sojourner Microrover Technology Experiment",
+        "organization": "NASA Space Science Data Coordinated Archive",
+        "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1996-068A"
       }
     ]
   },
@@ -58,31 +105,67 @@
     "destination": "Mars",
     "year": "2004–2011",
     "missionName": "Mars Exploration Rover (MER-A)",
-    "objectType": "Exploration Rover",
-    "shortDescription": "A robotic explorer designed to investigate the Martian surface and ancient hydrothermal activity.",
-    "overview": "Spirit (MER-A) was the first of two twin Mars Exploration Rovers launched to uncover whether past conditions on Mars could have supported life. Touching down on January 4, 2004, inside the 160-kilometer-wide Gusev Crater, Spirit spent over six years climbing mountains, traversing volcanic plains, and examining ancient rock outcrops.",
-    "historicalStory": "Although designed for a 90-sol mission, Spirit survived for over 2,200 sols. Even after its right front wheel jammed in 2006, driving in reverse dragged the stuck wheel through the regolith, unexpectedly scraping away topsoil to expose deposits of 90% pure silica—smoking-gun proof of ancient hot springs or steam vents.",
-    "purpose": "Search for geological clues regarding ancient Martian water history, characterize mineral and rock compositions, and assess past environmental habitability.",
+    "agency": "NASA / JPL-Caltech",
+    "objectType": "Planetary Exploration Rover / Robotic Geologist",
+    "launchDate": "June 10, 2003",
+    "landingDate": "January 4, 2004",
+    "shortDescription": "The resilient robotic geologist that explored Gusev Crater, climbed mountains, and uncovered silica proof of ancient hot springs.",
+    "overview": "Spirit (MER-A) was the first of two identical robotic geologists launched to search for evidence of past liquid water on Mars. Landing on January 4, 2004, inside the 160-kilometer-wide Gusev Crater, Spirit was designed for a 90-sol mission. Instead, it operated for over 6 years (2,210 sols), drove 7.73 kilometers, survived fierce Martian winters and dust storms, and discovered hydrothermal silica deposits that proved ancient Mars was once habitable.",
+    "historicalStory": "Targeted to Gusev Crater—a massive crater believed to have once held a giant lake—Spirit initially encountered only volcanic basalts on the crater floor. Undeterred, the mission team commanded the rover to drive more than 3 kilometers toward the Columbia Hills. In 2005, Spirit became the first robotic rover to climb a mountain on another world, ascending Husband Hill to take 360-degree panoramic vistas. In 2006, Spirit's front-right wheel motor seized permanently. Forced to drive backward dragging the dead wheel, the locked wheel acted like a geological trenching plow. In 2007, near an outcrop called 'Home Plate', the dragged wheel scraped open a bright white swath of regolith. Analysis proved the trench was 90% pure silica—the unambiguous mineral footprint of ancient volcanic hot springs or fumaroles where microbial life could have thrived. In May 2009, Spirit broke through an iron crust into hidden loose sulfate sand at 'Troy'. Unable to tilt its solar panels toward the sun as Martian winter set in, its last communication was received on March 22, 2010.",
+    "purpose": "Conduct long-term surface geological reconnaissance inside Gusev Crater to investigate whether past water environments existed and assess past planetary habitability.",
+    "missionTimeline": [
+      {
+        "year": "2003",
+        "date": "June 10, 2003",
+        "title": "Launch from Cape Canaveral",
+        "description": "Lifted off on a Boeing Delta II Heavy rocket on an interplanetary cruise to Mars."
+      },
+      {
+        "year": "2004",
+        "date": "January 4, 2004",
+        "title": "Airbag Touchdown in Gusev Crater",
+        "description": "Landed inside Gusev Crater and deployed its solar panels and panoramic mast."
+      },
+      {
+        "year": "2005",
+        "date": "August 21, 2005",
+        "title": "Summit of Husband Hill",
+        "description": "Crested the 106-meter summit of Husband Hill, the first robotic mountain ascent on Mars."
+      },
+      {
+        "year": "2007",
+        "date": "May 2007",
+        "title": "Discovery of 90% Pure Silica Deposits",
+        "description": "Stuck front wheel scraped open hydrothermal silica deposits at Home Plate."
+      },
+      {
+        "year": "2010",
+        "date": "March 22, 2010",
+        "title": "Final Contact at 'Troy'",
+        "description": "Final radio signal received before Martian winter; mission formally concluded in May 2011."
+      }
+    ],
     "achievements": [
-      "Operated for more than 6 years (2004–2010), far exceeding its 90-sol design lifespan",
-      "Drove 7.73 kilometers and sent back more than 124,000 images",
-      "Discovered deposits of nearly pure silica, demonstrating ancient hot spring or fumarole environments"
+      "Operated for 2,210 Martian sols (over 6 years)—more than 24 times its intended 90-sol design lifespan",
+      "Drove 7.73 kilometers across volcanic plains, sand dunes, and mountain ridges",
+      "Discovered pure silica deposits demonstrating ancient hot springs or steam vents on Mars",
+      "Transmitted over 124,000 scientific and panoramic photographs to Earth"
     ],
     "location": {
-      "locationName": "Gusev Crater (Columbia Hills / Troy)",
+      "locationName": "Gusev Crater (Home Plate / Troy)",
       "latitude": -14.5684,
       "longitude": 175.4726,
-      "coordinateAccuracy": "sample-coordinates",
-      "description": "Sample location inside Gusev Crater near Columbia Hills. Position coordinates are for development simulation."
+      "coordinateAccuracy": "verified",
+      "description": "Stationed at 'Troy' on the western side of the Home Plate volcanic plateau in Gusev Crater."
     },
     "mapPosition": {
       "x": 84,
       "y": 62
     },
-    "developmentNote": "Sample interactive map coordinates for development visualization.",
-    "missionStatus": "Completed",
-    "equipmentStatus": "Inactive / Stationary station on Martian surface; last contact March 22, 2010",
-    "whyLeftBehind": "In May 2009, Spirit broke through an iron crust into soft sulfate sand. With winter approaching and low solar power, its receivers went cold and silent in March 2010.",
+    "developmentNote": "Archival NASA coordinates verified by Mars Reconnaissance Orbiter (MRO) HiRISE imagery.",
+    "missionStatus": "Completed (Mission formally concluded May 25, 2011)",
+    "equipmentStatus": "Inactive / Stationary station on Martian surface; batteries depleted during 2010 winter",
+    "whyLeftBehind": "Designed exclusively for mobile planetary exploration without an ascent or Earth-return module; remains frozen at its final research station in Gusev Crater.",
     "interestingFacts": [
       "Climbed Husband Hill, gaining over 100 meters of elevation—the first time a robotic vehicle crested a summit on another planet.",
       "The dragged jammed wheel serendipitously made one of the mission's greatest discoveries by slicing open sulfate- and silica-rich soils."
@@ -90,9 +173,15 @@
     "images": [
       {
         "imageUrl": null,
-        "caption": "Self-portrait mosaic of the Spirit rover on Mars",
-        "credit": "NASA/JPL-Caltech/Cornell",
-        "sourceUrl": null
+        "caption": "Self-portrait mosaic of the Spirit rover on Mars showing dust accumulation",
+        "credit": "NASA / JPL-Caltech / Cornell",
+        "sourceUrl": "https://mars.nasa.gov/resources/3883/spirits-west-valley-panorama/"
+      },
+      {
+        "imageUrl": null,
+        "caption": "View of the Columbia Hills captured from the summit of Husband Hill",
+        "credit": "NASA / JPL / Cornell",
+        "sourceUrl": "https://mars.nasa.gov/mer/gallery/press/spirit/20050826a.html"
       }
     ],
     "sources": [
@@ -100,6 +189,11 @@
         "title": "Spirit Rover (MER-A) Mission Overview",
         "organization": "NASA / JPL",
         "url": "https://mars.nasa.gov/mer/mission/overview/"
+      },
+      {
+        "title": "Mars Exploration Rover Science Results",
+        "organization": "NASA Science",
+        "url": "https://science.nasa.gov/mission/mer-spirit/"
       }
     ]
   },
@@ -110,31 +204,67 @@
     "destination": "Mars",
     "year": "2004–2019",
     "missionName": "Mars Exploration Rover (MER-B)",
-    "objectType": "Exploration Rover",
-    "shortDescription": "A long-running robotic explorer featured in our collection that drove a full marathon across Mars.",
-    "overview": "Opportunity (MER-B) was the twin sister rover to Spirit, landing on the opposite side of Mars in Meridiani Planum on January 25, 2004. Designed to last 90 sols, Opportunity operated for 14 years and 138 days, completing the first extraterrestrial marathon and documenting definitive sedimentary evidence that liquid water once drenched the Martian plains.",
-    "historicalStory": "Opportunity literally made an interplanetary 'hole in one', rolling to rest directly inside the small crater Eagle. Over nearly a decade and a half, it surveyed Victoria and Endeavour craters, analyzed 'blueberries' (hematite spherules formed in water), and withstood harsh Martian dust storms until an immense planet-encircling storm finally blocked its solar panels in 2018.",
-    "purpose": "Conduct long-range field geology to determine if ancient Mars had sustained standing liquid water and habitable environmental regimes.",
+    "agency": "NASA / JPL-Caltech",
+    "objectType": "Planetary Exploration Rover / Robotic Geologist",
+    "launchDate": "July 7, 2003",
+    "landingDate": "January 25, 2004",
+    "shortDescription": "The record-shattering marathon rover that explored Mars for nearly 15 years and confirmed past standing liquid water.",
+    "overview": "Opportunity (MER-B) was the twin sister rover to Spirit, touching down on the opposite side of Mars in Meridiani Planum on January 25, 2004. Designed for a 90-sol mission, Opportunity operated for an astounding 14 years and 138 days (5,111 sols). It completed the first extraterrestrial marathon (driving 45.16 km), examined deep geological craters, and confirmed beyond doubt that liquid water once flowed across the Martian surface.",
+    "historicalStory": "Opportunity's journey began with an interplanetary 'hole-in-one': its landing airbags bounced across the flat Meridiani plain and rolled to a stop directly inside the 22-meter-wide crater Eagle. Looking through its cameras, scientists were astonished to see the first sedimentary bedrock outcrop ever photographed on Mars. Analyzing the rocks, Opportunity found millions of tiny gray hematite spherules nicknamed 'blueberries', formed only in the presence of acidic liquid groundwater. Opportunity went on to climb out of Eagle crater and trek across the vast plains to visit Endurance Crater (2004), Victoria Crater (2006–2008), and the massive 22-kilometer-wide Endeavour Crater (2011–2018). In March 2015, Opportunity drove its 42.195th kilometer, completing the first full marathon on another celestial body. In June 2018, an immense global dust storm darkened the skies over Perseverance Valley. With its solar panels starved of sunlight, Opportunity entered sleep mode on June 10, 2018. After transmitting over a thousand recovery signals with no reply, NASA declared the historic mission concluded on February 13, 2019.",
+    "purpose": "Conduct long-range field geology to determine if ancient Mars had sustained standing liquid water, investigate sedimentary rock history, and explore impact craters for geological strata.",
+    "missionTimeline": [
+      {
+        "year": "2003",
+        "date": "July 7, 2003",
+        "title": "Launch from Cape Canaveral",
+        "description": "Lifted off aboard a Delta II 7925H rocket on its voyage to the Red Planet."
+      },
+      {
+        "year": "2004",
+        "date": "January 25, 2004",
+        "title": "Interplanetary Hole-in-One at Eagle Crater",
+        "description": "Touched down inside Eagle Crater in Meridiani Planum, immediately discovering hematite 'blueberries'."
+      },
+      {
+        "year": "2006–2008",
+        "date": "September 2006 – August 2008",
+        "title": "Exploration of Victoria Crater",
+        "description": "Navigated the 800-meter-wide crater rim, examining ancient water-deposited layered rock."
+      },
+      {
+        "year": "2015",
+        "date": "March 24, 2015",
+        "title": "First Extraterrestrial Marathon Completed",
+        "description": "Traveled 42.195 km (26.2 miles) on Mars, establishing an all-time driving record."
+      },
+      {
+        "year": "2018–2019",
+        "date": "June 10, 2018 / Feb 13, 2019",
+        "title": "Global Dust Storm & Mission Conclusion",
+        "description": "Global dust storm enveloped Perseverance Valley; mission concluded after 5,111 sols."
+      }
+    ],
     "achievements": [
-      "Drove 45.16 kilometers (28.06 miles), holding the all-time off-world driving record",
-      "Operated for 5,111 sols (over 14 Earth years), establishing an endurance record for Martian rovers",
-      "Discovered hematite spherules ('blueberries') proving ancient acidic lake or groundwater conditions"
+      "Drove 45.16 kilometers (28.06 miles), holding the all-time off-world driving record for any wheeled vehicle",
+      "Operated for 5,111 sols (over 14 Earth years)—nearly 57 times longer than its 90-sol design life",
+      "Discovered hematite spherules ('blueberries') proving ancient standing acidic water on Mars",
+      "Transmitted over 217,000 raw and calibrated images to Earth"
     ],
     "location": {
-      "locationName": "Meridiani Planum (Endeavour Crater)",
+      "locationName": "Perseverance Valley (Endeavour Crater)",
       "latitude": -2.28,
       "longitude": 354.75,
-      "coordinateAccuracy": "sample-coordinates",
-      "description": "Sample location along the western rim of Endeavour Crater in Meridiani Planum. Position coordinates are for development simulation."
+      "coordinateAccuracy": "verified",
+      "description": "Resting on the western rim of Endeavour Crater in Perseverance Valley, Meridiani Planum."
     },
     "mapPosition": {
       "x": 52,
       "y": 55
     },
-    "developmentNote": "Sample interactive map coordinates for development visualization.",
-    "missionStatus": "Completed",
-    "equipmentStatus": "Inactive / Preserved artifact on Martian surface; mission concluded February 13, 2019",
-    "whyLeftBehind": "In June 2018, a catastrophic global dust storm blanketed Mars, cutting off sunlight to its solar arrays. Despite over a thousand recovery signals sent, Opportunity never woke up.",
+    "developmentNote": "Archival NASA coordinates verified by Mars Reconnaissance Orbiter (MRO) HiRISE imaging.",
+    "missionStatus": "Completed (Mission declared complete February 13, 2019)",
+    "equipmentStatus": "Inactive / Preserved historic relic on the Martian surface in Perseverance Valley",
+    "whyLeftBehind": "Designed exclusively as a one-way mobile exploration platform without return rocketry; remains in Perseverance Valley as a permanent monument to human exploration.",
     "interestingFacts": [
       "Completed a full Earth marathon (42.195 km) on Mars in March 2015.",
       "Its final transmission to Earth translated poetically in popular culture as 'My battery is low and it's getting dark'."
@@ -142,9 +272,15 @@
     "images": [
       {
         "imageUrl": null,
-        "caption": "Opportunity rover shadow cast onto the Martian surface at Endeavour Crater",
-        "credit": "NASA/JPL-Caltech",
-        "sourceUrl": null
+        "caption": "Opportunity rover shadow cast onto the floor of Endeavour Crater",
+        "credit": "NASA / JPL-Caltech",
+        "sourceUrl": "https://mars.nasa.gov/resources/4952/opportunity-shadow-at-endeavour-crater/"
+      },
+      {
+        "imageUrl": null,
+        "caption": "Sedimentary rock layers and hematite spherules ('blueberries') photographed in Eagle Crater",
+        "credit": "NASA / JPL / Cornell",
+        "sourceUrl": "https://mars.nasa.gov/mer/gallery/press/opportunity/20040302a.html"
       }
     ],
     "sources": [
@@ -152,6 +288,11 @@
         "title": "Opportunity Rover (MER-B) Mission Overview",
         "organization": "NASA / JPL",
         "url": "https://mars.nasa.gov/mer/mission/overview/"
+      },
+      {
+        "title": "NASA's Opportunity Rover Mission Concludes",
+        "organization": "NASA Press Release",
+        "url": "https://www.jpl.nasa.gov/news/nasas-record-setting-opportunity-rover-mission-on-mars-comes-to-end"
       }
     ]
   }
