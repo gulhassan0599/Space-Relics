@@ -1,19 +1,22 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { Container } from '../components/common/Container';
 import { Card } from '../components/common/Card';
 import { Button } from '../components/common/Button';
 import ObjectHero from '../components/object/ObjectHero';
 import ObjectOverview from '../components/object/ObjectOverview';
 import ObjectStory from '../components/object/ObjectStory';
+import ObjectFacts from '../components/object/ObjectFacts';
 import ObjectTimeline from '../components/object/ObjectTimeline';
 import ObjectAchievements from '../components/object/ObjectAchievements';
 import ObjectLocationStatus from '../components/object/ObjectLocationStatus';
 import ObjectGallery from '../components/object/ObjectGallery';
 import ObjectSources from '../components/object/ObjectSources';
 import ObjectCard from '../components/object/ObjectCard';
+import ObjectComparison from '../components/common/ObjectComparison';
 import { useObjectDetail, getRelatedObjects } from '../../controllers/objectController';
-import { ChevronRight, ArrowLeft, AlertCircle, Compass } from 'lucide-react';
+import { ChevronRight, AlertCircle, Compass } from 'lucide-react';
 
 export const ObjectDetailsPage = () => {
   const { slug } = useParams();
@@ -107,48 +110,129 @@ export const ObjectDetailsPage = () => {
           </ol>
         </nav>
 
-        {/* Section A: Hero */}
-        <ObjectHero object={object} />
+        {/* Section A: Hero with subtle motion entrance */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+        >
+          <ObjectHero object={object} />
+        </motion.div>
 
         {/* Section B: Overview Matrix */}
-        <ObjectOverview object={object} />
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.4 }}
+        >
+          <ObjectOverview object={object} />
+        </motion.div>
 
         {/* Section C: The Story Behind the Object */}
-        <ObjectStory object={object} />
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.4 }}
+        >
+          <ObjectStory object={object} />
+        </motion.div>
 
-        {/* Section D: Mission Timeline */}
-        <ObjectTimeline
-          timeline={object.missionTimeline}
-          destination={object.destination}
-        />
+        {/* Section D: Educational Did You Know Highlights */}
+        {object.interestingFacts && object.interestingFacts.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.4 }}
+          >
+            <ObjectFacts facts={object.interestingFacts} destination={object.destination} />
+          </motion.div>
+        )}
 
-        {/* Section E: Achievements & Significance */}
-        <ObjectAchievements
-          achievements={object.achievements}
-          destination={object.destination}
-        />
+        {/* Section E: Interactive Mission Timeline */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.4 }}
+        >
+          <ObjectTimeline
+            timeline={object.missionTimeline}
+            destination={object.destination}
+          />
+        </motion.div>
 
-        {/* Section F: Location & Current Physical Status */}
-        <ObjectLocationStatus object={object} />
+        {/* Section F: Achievements & Significance */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.4 }}
+        >
+          <ObjectAchievements
+            achievements={object.achievements}
+            destination={object.destination}
+          />
+        </motion.div>
 
-        {/* Section G: Photographic Gallery & Official Imagery */}
-        <ObjectGallery
-          images={object.images}
-          destination={object.destination}
-        />
+        {/* Section G: Location & Current Physical Status */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.4 }}
+        >
+          <ObjectLocationStatus object={object} />
+        </motion.div>
 
-        {/* Section H: Official Sources & References */}
-        <ObjectSources
-          sources={object.sources}
-          destination={object.destination}
-        />
+        {/* Section H: Photographic Gallery & Official Imagery */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.4 }}
+        >
+          <ObjectGallery
+            images={object.images}
+            destination={object.destination}
+          />
+        </motion.div>
 
-        {/* Related Artifacts Navigation Footer */}
+        {/* Section I: Official Sources & References */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.4 }}
+        >
+          <ObjectSources
+            sources={object.sources}
+            destination={object.destination}
+          />
+        </motion.div>
+
+        {/* Section J: Interactive Comparison Module */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.4 }}
+          className="mb-14"
+        >
+          <ObjectComparison
+            initialSlugA={object.slug}
+            initialSlugB={isMars ? 'apollo-11-laser-retroreflector' : 'opportunity-rover'}
+          />
+        </motion.div>
+
+        {/* Section K: Related Artifacts Navigation Footer */}
         {related.length > 0 && (
           <section className="pt-6 border-t border-space-border/80">
             <div className="flex items-center justify-between mb-6">
               <h3 className="font-heading font-bold text-xl text-space-text">
-                Related {object.destination} Artifacts
+                Related {object.destination} Exhibits
               </h3>
               <Link
                 to={explorerPath}
