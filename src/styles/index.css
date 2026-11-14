@@ -27,6 +27,12 @@
     font-family: 'Space Grotesk', sans-serif;
     letter-spacing: -0.02em;
   }
+
+  /* Universal Keyboard Focus Indicator (WCAG 2.2 AA) */
+  :focus-visible {
+    outline: 2px solid #38BDF8;
+    outline-offset: 3px;
+  }
 }
 
 /* Background Subtle Starfield Effect */
@@ -60,4 +66,14 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #3B82F6;
+}
+
+/* Respect Reduced Motion Preferences (Accessibility) */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from '../components/common/Container';
 import { Heading } from '../components/common/Heading';
@@ -9,6 +9,10 @@ import { Calendar, ArrowRight } from 'lucide-react';
 
 export const TimelinePage = () => {
   const eras = getTimelineByEras();
+
+  useEffect(() => {
+    document.title = 'Mission Timeline | Space Relics';
+  }, []);
 
   return (
     <div className="py-12 sm:py-16">
@@ -37,10 +41,10 @@ export const TimelinePage = () => {
               {/* Items in Era */}
               <div className="space-y-4 border-l-2 border-space-border/80 pl-6 ml-2">
                 {eraGroup.items.map((item) => (
-                  <Card key={item.id} elevated interactive className="p-5">
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <Card key={item.id} elevated interactive className="p-5 group">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                       <div>
-                        <div className="flex items-center gap-2 mb-1">
+                        <div className="flex items-center gap-2 mb-1.5">
                           <span className="text-xs font-mono font-bold text-space-accentLight">
                             {item.year}
                           </span>
@@ -48,18 +52,22 @@ export const TimelinePage = () => {
                             {item.destination}
                           </Badge>
                         </div>
-                        <h3 className="font-heading font-semibold text-base text-space-text">
+                        <h3 className="font-heading font-semibold text-base text-space-text group-hover:text-white transition-colors">
                           {item.name}
                         </h3>
-                        <p className="text-xs text-space-textSecondary mt-1 line-clamp-2">
+                        <p className="text-xs text-space-textSecondary mt-1 line-clamp-2 leading-relaxed">
                           {item.shortDescription}
                         </p>
                       </div>
 
-                      <Link to={`/objects/${item.slug}`} className="sm:self-center flex-shrink-0">
-                        <span className="text-xs text-space-accent hover:text-space-accentLight font-medium inline-flex items-center gap-1">
-                          View
-                          <ArrowRight className="w-3.5 h-3.5" />
+                      <Link
+                        to={`/objects/${item.slug}`}
+                        aria-label={`View full story of ${item.name}`}
+                        className="sm:self-center flex-shrink-0"
+                      >
+                        <span className="text-xs text-space-accent group-hover:text-space-accentLight font-medium inline-flex items-center gap-1.5 transition-colors">
+                          <span>View Story</span>
+                          <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                         </span>
                       </Link>
                     </div>
