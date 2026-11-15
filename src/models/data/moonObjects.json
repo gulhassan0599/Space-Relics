@@ -105,204 +105,229 @@
       {
         "title": "Surveyor 3",
         "organization": "NASA",
-        "url": "https://science.nasa.gov/solar-system/moon/surveyor-3/"
-      },
-      {
-        "title": "Beyond Earth: A Chronicle of Deep Space Exploration, 1958–2016",
-        "organization": "NASA History Program Office",
-        "url": "https://solarsystem.nasa.gov/resources/1060/beyond-earth-a-chronicle-of-deep-space-exploration/"
+        "url": "https://science.nasa.gov/mission/surveyor-3/"
       }
     ]
   },
   {
-    "id": "apollo-lrv",
-    "slug": "apollo-lunar-roving-vehicle",
-    "name": "Apollo Lunar Roving Vehicle (LRV)",
+    "id": "apollo-15-lunar-module",
+    "slug": "apollo-15-lunar-module",
+    "name": "Apollo 15 Lunar Module (Falcon)",
     "destination": "Moon",
-    "year": "1971–1972",
-    "missionName": "Apollo 15, 16, and 17",
-    "agency": "NASA / Boeing / Delco",
-    "objectType": "Manned Rover / Electric Surface Vehicle",
-    "launchDate": "July 26, 1971 (First mission: Apollo 15)",
-    "landingDate": "July 30, 1971 (Apollo 15 at Hadley Rille)",
-    "shortDescription": "A human-operated electric exploration vehicle that transformed astronaut mobility across lunar valleys and mountains.",
-    "overview": "The Lunar Roving Vehicle (LRV)—fondly dubbed the 'Moon Buggy'—was an electric four-wheeled rover used during the final three Apollo J-class missions: Apollo 15, Apollo 16, and Apollo 17. Developed by Boeing with Delco electronics under an aggressive 17-month deadline, the LRV allowed astronauts to travel dozens of kilometers away from the Lunar Module, transporting heavy drilling equipment, scientific arrays, and more than 100 kilograms of geologic samples.",
-    "historicalStory": "During the early Apollo missions (11, 12, and 14), astronauts explored exclusively on foot, tethered by life-support limitations to a walking radius of roughly one kilometer from the Lunar Module. To conduct ambitious field geology, NASA needed surface mobility. The LRV had to satisfy immense constraints: weigh less than 210 kilograms on Earth, operate reliably in extreme vacuum conditions ranging from -150°C to +120°C, and fold into an impossibly compact space in Quadrant 1 of the Lunar Module descent stage. Driven by a central T-handle joystick rather than a steering wheel, each wheel was powered by its own independent 0.25-horsepower electric motor. The tires were made of zinc-coated woven piano-wire mesh with chevron titanium treads rather than air-filled rubber. On Apollo 17, when Eugene Cernan accidentally sheared off a rear fender with a hammer handle, lunar dust showered over the crew until they improvised a replacement fender using tape, clamps, and laminated lunar maps. When each mission ended, the rover was driven away and parked with its ground-controlled color television camera pointed back at the Lunar Module to broadcast the ascent stage liftoff back to millions watching on Earth.",
-    "purpose": "Expand the scientific exploration radius of Apollo crews across complex geologic formations, carry specialized core-drilling tools, transport geologic samples, and provide automated color television broadcast capabilities.",
+    "year": 1971,
+    "missionName": "Apollo 15",
+    "agency": "NASA",
+    "objectType": "Lunar Module Descent Stage",
+    "launchDate": "July 26, 1971",
+    "landingDate": "July 30, 1971",
+    "shortDescription": "The descent stage of Apollo 15's Lunar Module Falcon remains on the Moon at the foot of the Apennine Mountains. It served as the landing platform and launch base for the ascent stage that returned the astronauts to lunar orbit.",
+    "overview": "Apollo 15's Lunar Module, named Falcon, was the fourth crewed vehicle to land on the Moon. It carried Commander David R. Scott and Lunar Module Pilot James B. Irwin to the lunar surface on July 30, 1971. The spacecraft consisted of two stages. After the astronauts completed their lunar surface activities, the ascent stage lifted off to rendezvous with the Command and Service Module. The descent stage remained behind at the landing site in the Mare Imbrium region.",
+    "historicalStory": "Apollo 15 marked an important step in human lunar exploration. During three moonwalks totaling 18 hours and 35 minutes, David Scott and James Irwin explored the lunar landscape, collected geological samples, and conducted scientific investigations. The mission introduced the Lunar Roving Vehicle on a crewed lunar mission, allowing the astronauts to explore areas farther from their landing site. After their surface activities, the astronauts departed in the Lunar Module's ascent stage. The descent stage remained on the Moon as a physical reminder of the mission and its achievements.",
+    "purpose": "The Lunar Module was designed to transport astronauts from lunar orbit to the Moon's surface and return them to the Command and Service Module. Its descent stage provided the landing system, propulsion, storage space, and a platform for the ascent stage. After the astronauts completed their surface operations, the descent stage was left on the lunar surface.",
     "missionTimeline": [
       {
         "year": "1971",
+        "date": "July 26, 1971",
+        "title": "Launch from Earth",
+        "description": "Apollo 15 launched from Cape Canaveral aboard a Saturn V rocket."
+      },
+      {
+        "year": "1971",
+        "date": "July 30, 1971",
+        "title": "Lunar Landing",
+        "description": "The Lunar Module Falcon landed in the Mare Imbrium region at the foot of the Apennine Mountains."
+      },
+      {
+        "year": "1971",
+        "date": "July 30, 1971",
+        "title": "First Stand-up EVA",
+        "description": "Approximately two hours after landing, David Scott performed a 33-minute stand-up EVA to describe and photograph the surrounding terrain."
+      },
+      {
+        "year": "1971",
         "date": "July 31, 1971",
-        "title": "First Rover Drive on the Moon (Apollo 15)",
-        "description": "David Scott and James Irwin unfold and drive LRV-1 along the edge of Hadley Rille."
+        "title": "First Moonwalk",
+        "description": "Scott and Irwin deployed and drove the Lunar Roving Vehicle, collected geological samples, and explored the area around Hadley Rille."
       },
       {
-        "year": "1972",
-        "date": "April 21, 1972",
-        "title": "Descartes Highlands Traverse (Apollo 16)",
-        "description": "John Young and Charles Duke navigate the lunar highlands, reaching top speeds of 18 km/h."
+        "year": "1971",
+        "date": "August 1, 1971",
+        "title": "Second Moonwalk",
+        "description": "The astronauts drove the Lunar Roving Vehicle southeast along the Apennine Mountains, exploring several craters and collecting samples."
       },
       {
-        "year": "1972",
-        "date": "December 11–14, 1972",
-        "title": "Apollo 17 Record-Breaking Traverses",
-        "description": "Gene Cernan and Harrison Schmitt travel 35.8 km across the Taurus-Littrow valley."
+        "year": "1971",
+        "date": "August 2, 1971",
+        "title": "Final Moonwalk",
+        "description": "The astronauts completed their third EVA, exploring Scarp Crater and the edge of Hadley Rille. Scott also performed the televised hammer-and-feather demonstration."
       },
       {
-        "year": "1972",
-        "date": "December 14, 1972",
-        "title": "Final Parking & Lunar Liftoff Broadcast",
-        "description": "Parked at 'VIP Site' 100 meters east of the Challenger descent stage to film lunar liftoff."
+        "year": "1971",
+        "date": "August 2, 1971",
+        "title": "Ascent Stage Departure",
+        "description": "The Lunar Module ascent stage lifted off at 17:11:22 UT after 66 hours and 55 minutes on the lunar surface. The descent stage remained behind."
+      },
+      {
+        "year": "1971",
+        "date": "August 3, 1971",
+        "title": "Lunar Module Jettison",
+        "description": "After docking with the Command and Service Module, the ascent stage was jettisoned and later impacted the Moon."
       }
     ],
     "achievements": [
-      "Expanded astronaut scientific exploration radius from walking distance to over 7.6 km from the lander",
-      "Covered a cumulative total distance of over 90 km across Apollo 15, 16, and 17",
-      "Carried scientific equipment, communications antennas, and over 100 kg of lunar geological specimens",
-      "Broadcast the iconic live liftoff of the Apollo 15, 16, and 17 ascent stages via remote TV command"
+      "Fourth crewed vehicle to land on the Moon.",
+      "First Apollo mission to use a Lunar Roving Vehicle.",
+      "Enabled astronauts to explore regions within approximately 5 km of the landing site.",
+      "Supported three moonwalks totaling 18 hours and 35 minutes.",
+      "Enabled the collection of 77.31 kg of lunar rock and soil samples.",
+      "Provided a landing and launch platform for the astronauts' lunar surface operations."
     ],
     "location": {
-      "locationName": "Hadley-Apennine, Descartes Highlands, and Taurus-Littrow",
-      "latitude": 26.132,
-      "longitude": 3.633,
-      "coordinateAccuracy": "verified",
-      "description": "Three separate LRVs remain parked on the Moon: LRV-1 at Hadley-Apennine (26.13° N, 3.63° E), LRV-2 at Descartes (8.97° S, 15.50° E), and LRV-3 at Taurus-Littrow (20.19° N, 30.77° E)."
+      "locationName": "Apollo 15 Landing Site, Mare Imbrium",
+      "latitude": 26.13239,
+      "longitude": 3.6333,
+      "coordinateAccuracy": "NASA coordinates determined from Lunar Reconnaissance Orbiter images using the DE 421 reference frame",
+      "description": "The landing site is in the Mare Imbrium region at the foot of the Apennine mountain range on the Moon."
     },
     "mapPosition": {
       "x": 54,
       "y": 32
     },
-    "developmentNote": "Coordinates correspond to Apollo 15 LRV-1 parked at Hadley-Apennine.",
-    "missionStatus": "Completed (All Apollo J-class missions successfully executed)",
-    "equipmentStatus": "Parked on the lunar surface; batteries depleted; structural chassis intact",
-    "whyLeftBehind": "The Lunar Module ascent stage had strictly limited rocket fuel and payload capacity designed solely to carry the crew and valuable lunar rock samples back to orbit.",
+    "developmentNote": "The record covers the Apollo 15 Lunar Module and its associated ALSEP experiments. This entry intentionally focuses only on the Lunar Module descent stage. Map layout coordinates have not been provided and must be assigned during UI development.",
+    "missionStatus": "Mission Completed",
+    "equipmentStatus": "Descent stage remains on the lunar surface. Its original operational purpose ended when the ascent stage departed on August 2, 1971.",
+    "whyLeftBehind": "The Lunar Module consisted of a descent stage and an ascent stage. The descent stage provided the landing platform and supported the ascent stage during lunar surface operations. Once the astronauts completed their activities, the ascent stage launched to return them to lunar orbit, leaving the descent stage behind on the Moon.",
     "interestingFacts": [
-      "The tires were made of zinc-coated woven steel strands and titanium chevrons rather than inflatable rubber, which would fail in vacuum.",
-      "Apollo 17's rover fender was repaired on the Moon using duct tape, clamps, and laminated lunar maps after being accidentally knocked off."
+      "The Lunar Module was named Falcon.",
+      "It carried astronauts David R. Scott and James B. Irwin.",
+      "The complete Lunar Module had an initial mass of 16,430 kg, including propellants.",
+      "The descent stage was approximately 4.2 meters across and 1.7 meters thick.",
+      "The descent stage had four landing legs with round footpads.",
+      "The astronauts spent 66 hours and 55 minutes on the lunar surface.",
+      "The Lunar Roving Vehicle was used for the first time on a crewed lunar mission."
     ],
     "images": [
       {
-        "imageUrl": null,
-        "caption": "Apollo 15 Lunar Roving Vehicle parked at Hadley Rille with Mount Hadley in the background",
-        "credit": "NASA (Apollo 15 / AS15-88-11901)",
-        "sourceUrl": "https://www.nasa.gov/history/alsj/a15/images15.html"
-      },
-      {
-        "imageUrl": null,
-        "caption": "Gene Cernan driving the Apollo 17 Lunar Roving Vehicle across Taurus-Littrow",
-        "credit": "NASA (Apollo 17 / AS17-147-22527)",
-        "sourceUrl": "https://www.nasa.gov/history/alsj/a17/images17.html"
+        "imageUrl": "/images/relics/apollo-15-lm-falcon.jpg",
+        "caption": "Apollo 15 Lunar Module Falcon resting on the lunar surface at Hadley-Apennine prior to ascent stage liftoff.",
+        "credit": "NASA (S71-41511)",
+        "sourceUrl": "https://images.nasa.gov/details/S71-41511"
       }
     ],
     "sources": [
       {
-        "title": "The Apollo Lunar Roving Vehicle - NASA History",
-        "organization": "NASA",
-        "url": "https://www.nasa.gov/history/alsj/lrv.html"
-      },
-      {
-        "title": "Lunar Roving Vehicle (LRV) Operational Handbook",
-        "organization": "Boeing / NASA",
-        "url": "https://www.nasa.gov/history/alsj/LRV_Ops_Manual.pdf"
+        "title": "Apollo 15 Lunar Module /ALSEP — NSSDCA Master Catalog",
+        "organization": "NASA Space Science Data Coordinated Archive",
+        "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063C"
       }
     ]
   },
   {
-    "id": "apollo-11-laser-retroreflector",
-    "slug": "apollo-11-laser-retroreflector",
-    "name": "Apollo 11 Laser Retroreflector",
+    "id": "apollo-11-lunar-module",
+    "slug": "apollo-11-lunar-module",
+    "name": "Apollo 11 Lunar Module (Eagle)",
     "destination": "Moon",
     "year": 1969,
     "missionName": "Apollo 11",
-    "agency": "NASA / University of Maryland / Bendix",
-    "objectType": "Passive Scientific Instrument Array",
+    "agency": "NASA",
+    "objectType": "Lunar Module Descent Stage",
     "launchDate": "July 16, 1969",
     "landingDate": "July 20, 1969",
-    "shortDescription": "A passive optical reflector array deployed during the first human Moon landing that still returns laser pulses today.",
-    "overview": "The Apollo 11 Laser Ranging Retroreflector (LRRR) was placed on the lunar regolith by Neil Armstrong and Buzz Aldrin on July 21, 1969, in Mare Tranquillitatis. Deployed as part of the Early Apollo Surface Experiments Package (EASEP)—precursor to the subsequent ALSEP packages—this 100-corner-cube optical array requires zero electrical power. By reflecting Earth-based laser pulses directly back to terrestrial observatories, it enables millimeter-scale Earth-Moon distance measurements that continue to this day.",
-    "historicalStory": "During their brief two-and-a-half-hour excursion outside the Lunar Module Eagle, Armstrong and Aldrin carried out two urgent scientific deployments: a solar wind collector sheet and the Early Apollo Surface Experiments Package (EASEP). Unlike the subsequent ALSEP stations that included radioisotope thermoelectric generators, EASEP was simplified for the historic first landing. The primary instrument was the Laser Ranging Retroreflector, consisting of 100 high-purity fused silica corner cubes mounted in an aluminum pallet. Each cube functions as an optical retroreflector: any incoming photon bounces three times off its mutually perpendicular mirrored facets and reflects directly back along its path of origin. Just days after Apollo 11's return, the Lick Observatory in California and McDonald Observatory in Texas directed high-energy ruby laser pulses toward Tranquility Base and recorded return photons. Because it has no electrical circuits, batteries, or moving parts to degrade, the Apollo 11 retroreflector has survived over 55 years of thermal cycling between -170°C and +120°C and remains fully functional today.",
-    "purpose": "Provide a permanent passive optical reflector for ground-based laser ranging experiments to measure Earth-Moon distance with millimeter accuracy, study lunar orbit evolution, and test Einstein's theory of general relativity.",
+    "shortDescription": "The descent stage of Apollo 11's Lunar Module Eagle carried the first humans to the lunar surface. After Neil Armstrong and Buzz Aldrin returned to lunar orbit, the descent stage was left behind and its eventual fate remains unknown.",
+    "overview": "Apollo 11's Lunar Module, named Eagle, was the first crewed vehicle to land on the Moon. It carried Commander Neil A. Armstrong and Lunar Module Pilot Edwin E. Aldrin Jr. to the lunar surface on July 20, 1969. The Lunar Module consisted of two stages: the descent stage, which provided the landing platform, and the ascent stage, which returned the astronauts to the Command and Service Module. After the astronauts completed their lunar surface activities, the ascent stage lifted off and the descent stage was left behind.",
+    "historicalStory": "On July 20, 1969, Apollo 11 made history when the Lunar Module Eagle landed in the Sea of Tranquility. Neil Armstrong stepped onto the lunar surface at 02:56:15 UT on July 21, followed by Buzz Aldrin 19 minutes later. During their approximately two-and-a-half-hour surface activity, they collected lunar samples, photographed the landscape, deployed scientific equipment, raised an American flag, and unveiled a commemorative plaque. After completing their work, the astronauts returned to Eagle and prepared for departure. The ascent stage lifted off on July 21, leaving the descent stage behind. The eventual fate of the descent stage is unknown, although NASA's archive assumes it crashed onto the Moon within the following one to four months.",
+    "purpose": "The Lunar Module was designed to transport astronauts from lunar orbit to the Moon's surface and return them to the Command and Service Module. Its descent stage provided the landing propulsion, landing legs, and equipment storage. It also served as the launch platform for the ascent stage, which carried the astronauts back into lunar orbit.",
     "missionTimeline": [
       {
         "year": "1969",
         "date": "July 16, 1969",
-        "title": "Launch of Apollo 11",
-        "description": "Lifted off on Saturn V SA-506 from Launch Complex 39A at Kennedy Space Center."
+        "title": "Launch from Earth",
+        "description": "Apollo 11 launched from Cape Canaveral aboard a Saturn V rocket."
       },
       {
         "year": "1969",
         "date": "July 20, 1969",
-        "title": "Touchdown at Tranquility Base",
-        "description": "Lunar Module Eagle touched down in Mare Tranquillitatis."
+        "title": "Lunar Module Separation",
+        "description": "The Lunar Module undocked from the Command and Service Module before beginning its descent toward the lunar surface."
+      },
+      {
+        "year": "1969",
+        "date": "July 20, 1969",
+        "title": "The Eagle Has Landed",
+        "description": "The Lunar Module landed in Mare Tranquillitatis, the Sea of Tranquility, at 20:17:40 UT."
       },
       {
         "year": "1969",
         "date": "July 21, 1969",
-        "title": "Deployment as Part of EASEP",
-        "description": "Buzz Aldrin positioned and aligned the retroreflector facing Earth approximately 16.8 meters from the Eagle."
+        "title": "First Human Moonwalk",
+        "description": "Neil Armstrong stepped onto the lunar surface at 02:56:15 UT, followed by Buzz Aldrin 19 minutes later."
       },
       {
         "year": "1969",
-        "date": "August 1, 1969",
-        "title": "First Successful Terrestrial Laser Return",
-        "description": "Lick Observatory in California successfully detected return photons from the lunar reflector."
+        "date": "July 21, 1969",
+        "title": "Lunar Surface Exploration",
+        "description": "The astronauts collected 21.55 kg of lunar rock and soil, photographed the surroundings, deployed scientific experiments, and traversed approximately 250 meters."
       },
       {
-        "year": "Present",
-        "date": "Ongoing",
-        "title": "Over 55 Years of Continuous Science",
-        "description": "Continues to be targeted by observatories worldwide to measure lunar orbital drift and test gravity physics."
+        "year": "1969",
+        "date": "July 21, 1969",
+        "title": "Return to Lunar Orbit",
+        "description": "The Lunar Module ascent stage lifted off at 17:54:01 UT after 21 hours and 36 minutes on the lunar surface."
+      },
+      {
+        "year": "1969",
+        "date": "July 22, 1969",
+        "title": "Lunar Module Jettison",
+        "description": "After docking with the Command and Service Module, the Lunar Module was jettisoned into lunar orbit. Its eventual fate is unknown."
       }
     ],
     "achievements": [
-      "Discovered that the Moon is spiraling away from Earth at a rate of 3.8 centimeters per year",
-      "Confirmed that the Moon has a fluid core through rotational libration analysis",
-      "Provided rigorous experimental tests confirming Einstein's Equivalence Principle in General Relativity",
-      "The only Apollo experiment that continues to operate and generate active scientific discoveries today"
+      "First crewed vehicle to land on the Moon.",
+      "Carried the first two humans to walk on the lunar surface.",
+      "Enabled the first human lunar exploration and geological sample collection.",
+      "Supported the collection of 21.55 kg of lunar rock and soil.",
+      "Provided the landing platform and launch system that enabled the astronauts to return to lunar orbit.",
+      "Marked the beginning of human exploration of the lunar surface."
     ],
     "location": {
-      "locationName": "Mare Tranquillitatis (Sea of Tranquility)",
-      "latitude": 0.6734,
-      "longitude": 23.4731,
-      "coordinateAccuracy": "verified",
-      "description": "Positioned approximately 16.8 meters south-southwest of the Apollo 11 Lunar Module descent stage in Mare Tranquillitatis."
+      "locationName": "Apollo 11 Landing Site, Mare Tranquillitatis",
+      "latitude": 0.67416,
+      "longitude": 23.47314,
+      "coordinateAccuracy": "NASA coordinates determined from Lunar Reconnaissance Orbiter images using the DE 421 reference frame",
+      "description": "The Apollo 11 landing site is located in Mare Tranquillitatis, also known as the Sea of Tranquility, on the Moon."
     },
     "mapPosition": {
       "x": 68,
       "y": 48
     },
-    "developmentNote": "Archival laser ranging coordinates verified to sub-meter precision.",
-    "missionStatus": "Still Active / Operational (Passive optical reflector)",
-    "equipmentStatus": "Operational passive reflector on lunar surface; zero degradation to fused silica prisms",
-    "whyLeftBehind": "Designed from its inception as a permanent passive installation intended to remain on the Moon indefinitely for multi-generational laser tracking.",
+    "developmentNote": "This entry represents only the Apollo 11 Lunar Module descent stage, not the ascent stage or the Early Apollo Scientific Experiment Package (EASEP). NASA's archive does not establish the exact final resting place of the descent stage. Map layout coordinates have not been provided and must be assigned during UI development.",
+    "missionStatus": "Mission Completed",
+    "equipmentStatus": "Descent stage jettisoned into lunar orbit on July 22, 1969. Its eventual fate is unknown; NASA's archive assumes it crashed onto the lunar surface within one to four months.",
+    "whyLeftBehind": "The Lunar Module consisted of two stages. The descent stage provided the landing platform and supported lunar surface operations. After the astronauts completed their activities, the ascent stage lifted off to return them to the Command and Service Module. The descent stage was no longer needed and remained behind. Its later fate is uncertain.",
     "interestingFacts": [
-      "Crucially deployed as part of EASEP (Early Apollo Surface Experiments Package), distinct from the later ALSEP packages deployed on Apollo 12–17.",
-      "Because it requires no power or moving parts, it has continued operating flawlessly for over 55 years without any maintenance."
+      "The Lunar Module was named Eagle.",
+      "It carried Neil Armstrong and Buzz Aldrin, the first two humans to walk on the Moon.",
+      "Armstrong announced the successful landing with the famous words, 'Houston, Tranquility Base here - the Eagle has landed.'",
+      "The complete Lunar Module had a mass of 15,103 kg, including propellants.",
+      "The descent stage was approximately 4.2 meters across and 1.7 meters thick.",
+      "The descent stage had four landing legs with round footpads.",
+      "The astronauts spent 21 hours and 36 minutes on the lunar surface.",
+      "The astronauts traveled approximately 250 meters during their lunar surface exploration.",
+      "The descent stage's exact final resting place is unknown."
     ],
     "images": [
       {
-        "imageUrl": null,
-        "caption": "Buzz Aldrin deploying the EASEP Laser Ranging Retroreflector on the surface of Mare Tranquillitatis",
-        "credit": "NASA (Apollo 11 / AS11-40-5952)",
-        "sourceUrl": "https://www.nasa.gov/history/alsj/a11/images11.html"
-      },
-      {
-        "imageUrl": null,
-        "caption": "Close-up of the 100 fused-silica corner cubes inside the Apollo 11 retroreflector array",
-        "credit": "NASA / Lunar and Planetary Institute",
-        "sourceUrl": "https://www.lpi.usra.edu/lunar/missions/apollo/apollo_11/experiments/lrr/"
+        "imageUrl": "/images/relics/apollo-11-lm-eagle.jpg",
+        "caption": "Astronaut Edwin 'Buzz' Aldrin walks on the lunar surface near the leg and descent stage footpad of the Apollo 11 Lunar Module Eagle at Tranquility Base.",
+        "credit": "NASA (AS11-40-5902)",
+        "sourceUrl": "https://images.nasa.gov/details/as11-40-5902"
       }
     ],
     "sources": [
       {
-        "title": "Apollo 11 Laser Ranging Retroreflector (LRRR) Experiment",
+        "title": "Apollo 11 Lunar Module / EASEP — NSSDCA Master Catalog",
         "organization": "NASA Space Science Data Coordinated Archive",
-        "url": "https://nssdc.gsfc.nasa.gov/nmc/experiment/display.action?id=1969-059C-01"
-      },
-      {
-        "title": "Lunar Laser Ranging: 50 Years of Precision Physics",
-        "organization": "NASA / JPL",
-        "url": "https://www.jpl.nasa.gov/news/measuring-the-moon-with-lasers"
+        "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
       }
     ]
   }

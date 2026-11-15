@@ -14,25 +14,50 @@ const RELIC_IMAGES = {
     alt: 'NASA AS15-88-11901: Apollo 15 Lunar Roving Vehicle at its final resting place near Hadley Rille',
     caption: 'NASA / AS15-88-11901'
   },
+  'apollo-15-lunar-module': {
+    src: '/images/relics/apollo-15-lm-falcon.jpg',
+    alt: 'NASA S71-41511: Apollo 15 Lunar Module Falcon resting on the lunar surface at Hadley-Apennine',
+    caption: 'NASA / S71-41511'
+  },
   'apollo-11-laser-retroreflector': {
     src: '/images/relics/apollo-11-lrrr.jpg',
     alt: 'NASA AS11-40-5952: Apollo 11 Laser Ranging Retroreflector deployed on lunar surface at Tranquility Base',
     caption: 'NASA / AS11-40-5952'
+  },
+  'apollo-11-lunar-module': {
+    src: '/images/relics/apollo-11-lm-eagle.jpg',
+    alt: 'NASA AS11-40-5902: Apollo 11 Lunar Module Eagle descent stage at Tranquility Base with Buzz Aldrin',
+    caption: 'NASA / AS11-40-5902'
   },
   'sojourner-rover': {
     src: '/images/relics/sojourner.jpg',
     alt: 'NASA/JPL PIA01122: Sojourner Rover near The Dice rocks and Yogi at Ares Vallis on Mars',
     caption: 'NASA/JPL / PIA01122'
   },
+  'mars-pathfinder': {
+    src: '/images/relics/pathfinder-presidential-panorama.jpg',
+    alt: 'NASA/JPL-Caltech: Mars Pathfinder and Sojourner Rover on the surface of Mars in Ares Vallis',
+    caption: 'NASA/JPL-Caltech'
+  },
   'spirit-rover': {
     src: '/images/relics/spirit.jpg',
     alt: 'NASA/JPL PIA07371: Spirit Mars Exploration Rover solar deck self-portrait mosaic',
     caption: 'NASA/JPL / PIA07371'
   },
+  'mars-spirit': {
+    src: '/images/relics/spirit-columbia-memorial-station.jpg',
+    alt: 'NASA/JPL-Caltech/Cornell: Spirit landing site at Gusev Crater, showing Columbia Memorial Station',
+    caption: 'NASA/JPL-Caltech/Cornell'
+  },
   'opportunity-rover': {
     src: '/images/relics/opportunity.jpg',
     alt: 'NASA/JPL PIA18079: Opportunity Rover true-color solar deck self-portrait after wind cleaning',
     caption: 'NASA/JPL / PIA18079'
+  },
+  'mars-opportunity': {
+    src: '/images/relics/opportunity-clean-solar-panels.jpg',
+    alt: 'NASA/JPL-Caltech/Cornell/ASU: Opportunity self-portrait showing solar panels after Martian winds',
+    caption: 'NASA/JPL-Caltech/Cornell/ASU'
   }
 };
 

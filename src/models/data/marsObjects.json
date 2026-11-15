@@ -1,298 +1,359 @@
 [
   {
-    "id": "sojourner-rover",
-    "slug": "sojourner-rover",
-    "name": "Sojourner Rover",
+    "id": "mars-pathfinder",
+    "slug": "mars-pathfinder",
+    "name": "Mars Pathfinder",
     "destination": "Mars",
-    "year": 1997,
+    "year": 1996,
     "missionName": "Mars Pathfinder",
     "agency": "NASA / JPL",
-    "objectType": "Microrover / Robotic Planetary Scout",
+    "objectType": "Lander, Rover",
     "launchDate": "December 4, 1996",
     "landingDate": "July 4, 1997",
-    "shortDescription": "The pioneering microwave-oven-sized microrover that proved mobile robotic exploration was possible on the Red Planet.",
-    "overview": "Sojourner was the first wheeled vehicle ever deployed on Mars, touching down on July 4, 1997, aboard the Mars Pathfinder lander. Named in honour of abolitionist and women's rights pioneer Sojourner Truth, the 11.5-kilogram rover traveled across Ares Vallis, analyzing volcanic rocks with its Alpha Proton X-ray Spectrometer (APXS) and capturing 550 photographs. Planned for a 7-day technology demonstration, Sojourner operated for 83 Martian days (sols).",
-    "historicalStory": "Prior to 1997, no mobile vehicle had ever driven across another planet. Mars missions like Viking were massive stationary landers. Under NASA's 'faster, better, cheaper' initiative, engineers designed a tiny six-wheeled scout to demonstrate that autonomous roving on an alien world was possible without real-time human joystick steering (due to the 10-to-20-minute light-speed communication delay). Encased inside the tetrahedral petals of the Pathfinder lander, Sojourner survived an airbag-cushioned bouncing landing in an ancient flood channel. On Sol 2, it rolled down egress ramps onto the Martian soil. Utilizing its hazard-detection laser line stripes and rocker-bogie suspension system, Sojourner pushed its spectrometer against rocks named 'Barnacle Bill' and 'Yogi', proving the region was formed by ancient catastrophic water flooding and basaltic volcanism. It operated for nearly three months until the lander's primary transmitter batteries failed in late September 1997.",
-    "purpose": "Demonstrate the feasibility of low-cost microrover mobility, validate the rocker-bogie mobility suspension, analyze the chemical elemental composition of Martian rocks, and measure terrain soil mechanics.",
+    "shortDescription": "NASA's Mars Pathfinder demonstrated an innovative airbag-assisted landing system on Mars and delivered Sojourner, the first successful robotic rover to operate on the Martian surface.",
+    "overview": "Mars Pathfinder was a pioneering NASA mission designed to demonstrate a low-cost method of landing on Mars and deploying a mobile robotic rover. Launched on December 4, 1996, the spacecraft successfully landed in Ares Vallis on July 4, 1997, using a parachute and an innovative airbag system to cushion its impact. The lander, later named the Carl Sagan Memorial Station, deployed the 23-pound (10.6-kilogram) Sojourner rover, which investigated nearby rocks and soil. Together, the lander and rover returned more than 16,500 lander images, 550 rover images, over 15 chemical analyses, and extensive atmospheric and meteorological data. The mission operated until September 27, 1997, providing important evidence that ancient Mars may once have been warmer and wetter, with liquid water flowing across its surface.",
+    "historicalStory": "During the 1990s, NASA sought more affordable and innovative approaches to exploring Mars. Mars Pathfinder was developed as a technology demonstration mission to deliver a stationary scientific lander and a small mobile rover to the Martian surface. Launched on December 4, 1996, aboard a Delta II 7925 rocket from Cape Canaveral Air Force Station, Florida, the spacecraft traveled to Mars and entered its atmosphere on July 4, 1997. Instead of relying entirely on traditional rocket-powered landing systems, Pathfinder used a combination of a parachute and a large, multi-lobed airbag system to protect itself during impact. The airbags inflated approximately 100 meters above the surface, surrounding the lander before touchdown. Traveling at approximately 14 meters per second, the protected spacecraft bounced more than 15 times, reaching heights of up to 15 meters, before finally coming to rest. Pathfinder landed in Ares Vallis, an ancient floodplain selected for its relatively safe terrain and scientifically interesting collection of rocks. After landing, the spacecraft was named the Carl Sagan Memorial Station in honor of the astronomer. Its companion rover, Sojourner, was named after American civil-rights activist Sojourner Truth. On July 5, 1997, during the second Martian day, Sojourner deployed from the lander and rolled down its rear ramp onto the Martian surface. The rover carried scientific instruments that allowed it to examine rocks and soil, while the lander conducted atmospheric, meteorological, and geological observations. The mission returned more than 16,500 images from the lander and 550 images from the rover, along with chemical analyses of Martian rocks and soil. Its observations revealed rounded pebbles and cobbles that suggested the ancient presence of flowing liquid water. Scientists also studied Martian dust, magnetic particles, dust devils, atmospheric temperatures, and early-morning water-ice clouds. Mars Pathfinder continued transmitting scientific information until September 27, 1997, when its final communication marked the end of the mission. Its successful landing and rover deployment established important technologies and operational experience for later Mars exploration missions.",
+    "purpose": "To demonstrate an affordable and reliable method of landing a spacecraft on Mars using parachutes and airbags, deploy a mobile robotic rover, investigate Martian rocks and soil, and study the planet's atmosphere, climate, and geological history.",
     "missionTimeline": [
       {
         "year": "1996",
         "date": "December 4, 1996",
         "title": "Launch from Cape Canaveral",
-        "description": "Lifted off aboard a Delta II 7925 rocket on a seven-month interplanetary cruise to Mars."
+        "description": "Mars Pathfinder launched aboard a Delta II 7925 rocket from Cape Canaveral Air Force Station, Florida."
       },
       {
         "year": "1997",
         "date": "July 4, 1997",
-        "title": "Airbag Touchdown at Ares Vallis",
-        "description": "Pathfinder touched down cushioned by giant airbags, rolling to rest in Chryse Planitia."
+        "title": "Successful Mars Landing",
+        "description": "Entered the Martian atmosphere and used a parachute and inflatable airbags to land safely in Ares Vallis."
       },
       {
         "year": "1997",
-        "date": "July 6, 1997 (Sol 2)",
-        "title": "Historic Deployment onto Martian Soil",
-        "description": "Sojourner deployed down the lander egress ramp, becoming the first wheeled vehicle on Mars."
+        "date": "July 4, 1997",
+        "title": "Carl Sagan Memorial Station",
+        "description": "The stationary lander was named in honor of astronomer Carl Sagan, who had died the previous year."
       },
       {
         "year": "1997",
-        "date": "July – September 1997",
-        "title": "Spectrometry of Rocks 'Barnacle Bill' & 'Yogi'",
-        "description": "Analyzed rock elemental compositions using its Alpha Proton X-ray Spectrometer (APXS)."
+        "date": "July 5, 1997",
+        "title": "Sojourner Rover Deployment",
+        "description": "The 23-pound (10.6-kilogram) Sojourner rover deployed from the lander's rear ramp and began exploring the Martian surface."
       },
       {
         "year": "1997",
-        "date": "September 27, 1997 (Sol 83)",
-        "title": "Final Telemetry Transmission",
-        "description": "Transmitted final packet to Earth; exceeded design lifetime by a factor of 12."
+        "date": "July–September 1997",
+        "title": "Scientific Exploration",
+        "description": "The lander and rover collected thousands of images, conducted chemical analyses of rocks and soil, and measured atmospheric and weather conditions."
+      },
+      {
+        "year": "1997",
+        "date": "September 27, 1997",
+        "title": "Final Communication",
+        "description": "The mission returned its final data transmission, ending its successful exploration of the Martian surface."
       }
     ],
     "achievements": [
-      "Humanity's first successful wheeled robotic vehicle deployed on Mars",
-      "Pioneered the rocker-bogie suspension architecture adopted by all subsequent Mars rovers (Spirit, Opportunity, Curiosity, Perseverance)",
-      "Traveled approximately 100 meters across Ares Vallis and captured 550 high-resolution camera images",
-      "Operated for 83 sols—over 12 times longer than its planned 7-sol design lifespan"
+      "Demonstrated the first successful use of an airbag-assisted landing system on Mars.",
+      "Successfully delivered Sojourner, the first robotic rover to operate on the Martian surface.",
+      "Returned more than 16,500 images from the lander and 550 images from the rover.",
+      "Conducted more than 15 chemical analyses of Martian rocks and soil.",
+      "Provided extensive atmospheric, meteorological, and geological observations of Mars.",
+      "Discovered geological evidence suggesting that ancient Mars once experienced flowing liquid water.",
+      "Demonstrated a relatively low-cost approach to robotic planetary exploration."
     ],
     "location": {
-      "locationName": "Ares Vallis (Carl Sagan Memorial Station)",
-      "latitude": 19.13,
-      "longitude": -33.22,
-      "coordinateAccuracy": "verified",
-      "description": "Located in an ancient catastrophic outflow channel in Ares Vallis, Chryse Planitia, resting within tens of meters of the Pathfinder lander."
+      "locationName": "Ares Vallis, Mars",
+      "latitude": null,
+      "longitude": null,
+      "coordinateAccuracy": "unknown",
+      "description": "Located in Ares Vallis, an ancient floodplain in the northern hemisphere of Mars. The landing region was selected for its relatively safe terrain and diverse collection of rocks believed to have been deposited by ancient catastrophic floods."
     },
     "mapPosition": {
-      "x": 38,
-      "y": 42
+      "x": 50,
+      "y": 50
     },
-    "developmentNote": "Archival NASA coordinates verified by Mars Global Surveyor and Mars Reconnaissance Orbiter (MRO).",
-    "missionStatus": "Completed (Mission declared complete March 1998)",
-    "equipmentStatus": "Inactive / Preserved historic relic on the Martian surface",
-    "whyLeftBehind": "Designed solely as a one-way planetary surface scout with no sample-return or ascent rocketry; communications ended when Pathfinder's primary transmitter batteries failed.",
+    "developmentNote": "Landing site identified as Ares Vallis. Exact landing coordinates and map positioning have not been supplied in the provided source and should be verified before publication.",
+    "missionStatus": "Mission Completed (Final data transmission received September 27, 1997)",
+    "equipmentStatus": "Inactive / Historic lander and rover remaining on the Martian surface",
+    "whyLeftBehind": "Mars Pathfinder was designed as a one-way robotic exploration mission. Neither the stationary lander nor the Sojourner rover had the propulsion or return systems required to travel back to Earth. After completing their scientific operations, both remained at the Ares Vallis landing site.",
     "interestingFacts": [
-      "Weighed just 11.5 kg (25 lbs) on Earth, but only about 4.5 kg in Martian gravity.",
-      "The Pathfinder lander station was officially renamed the 'Carl Sagan Memorial Station' in tribute to the famed planetary astronomer who passed away in 1996."
+      "Mars Pathfinder's airbag-protected landing system bounced more than 15 times before the spacecraft finally came to rest.",
+      "The airbag system consisted of four large interconnected bags, each containing six smaller spherical sections.",
+      "Sojourner weighed only 23 pounds (10.6 kilograms) and stood approximately one foot (30 centimeters) tall.",
+      "The lander was named the Carl Sagan Memorial Station, while its rover was named after civil-rights activist Sojourner Truth.",
+      "The landing site, Ares Vallis, was selected because it contained a diverse collection of rocks deposited by ancient catastrophic floods.",
+      "The mission returned more than 16,500 lander images and 550 rover images.",
+      "A 360-degree panorama was assembled from approximately 100 images captured by the Pathfinder lander."
     ],
     "images": [
       {
-        "imageUrl": null,
-        "caption": "Sojourner rover examining rock 'Yogi' with its Alpha Proton X-ray Spectrometer",
-        "credit": "NASA / JPL-Caltech",
-        "sourceUrl": "https://mars.nasa.gov/resources/6032/yogi-and-sojourner/"
+        "imageUrl": "/images/relics/pathfinder-presidential-panorama.jpg",
+        "caption": "The Mars Pathfinder presidential panorama, assembled from approximately 100 images, showing the Martian landscape surrounding the lander.",
+        "credit": "NASA/JPL-Caltech",
+        "sourceUrl": "https://science.nasa.gov/wp-content/uploads/2024/03/mars-pathfinder-presidential-panorama-lg.jpg"
       },
       {
-        "imageUrl": null,
-        "caption": "Sojourner on the Pathfinder lander ramp preparing to roll onto Martian soil",
-        "credit": "NASA / JPL",
-        "sourceUrl": "https://mars.nasa.gov/resources/6029/sojourner-on-the-ramp/"
+        "imageUrl": "/images/relics/pathfinder-airbags-test.jpg",
+        "caption": "Engineers test the large inflatable airbags designed to protect Mars Pathfinder during its landing on Mars.",
+        "credit": "NASA",
+        "sourceUrl": "https://science.nasa.gov/wp-content/uploads/2024/08/5277460495-c6d046d5a9-o.jpg"
+      },
+      {
+        "imageUrl": "/images/relics/pathfinder-deflated-airbags.jpg",
+        "caption": "Mars Pathfinder lander and Sojourner rover with their landing airbags deflated.",
+        "credit": "NASA/JPL-Caltech",
+        "sourceUrl": "https://science.nasa.gov/wp-content/uploads/2017/12/pia00621-pathfinder-and-sojourner-with-airbags-deflated.jpg"
+      },
+      {
+        "imageUrl": "/images/relics/sojourner-deployed-sol2.jpg",
+        "caption": "Sojourner rover deployed on the Martian surface during its second Martian day, shown in an eight-image mosaic.",
+        "credit": "NASA/JPL-Caltech",
+        "sourceUrl": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/p/i/a/0/PIA01551-1.jpg"
+      },
+      {
+        "imageUrl": "/images/relics/pathfinder-boulders-soil.jpg",
+        "caption": "Large boulders and windblown soil at the Ares Vallis landing site, photographed by the Pathfinder lander camera.",
+        "credit": "NASA/JPL-Caltech",
+        "sourceUrl": "https://science.nasa.gov/wp-content/uploads/2024/03/pia00609-1e7c7c.jpg"
+      },
+      {
+        "imageUrl": "/images/relics/pathfinder-apxs-deploy.gif",
+        "caption": "Animated sequence showing the Mars Pathfinder rover deploying its Alpha Proton X-ray Spectrometer.",
+        "credit": "NASA/JPL-Caltech",
+        "sourceUrl": "https://assets.science.nasa.gov/content/dam/science/psd/mars/resources/detail_files/8/8782_mars-rover-pathfinder-sol14_S0050J-full2.gif"
       }
     ],
     "sources": [
       {
-        "title": "Mars Pathfinder / Sojourner Rover Mission Page",
-        "organization": "NASA / JPL",
-        "url": "https://mars.nasa.gov/mars-exploration/missions/pathfinder/"
-      },
-      {
-        "title": "Sojourner Microrover Technology Experiment",
-        "organization": "NASA Space Science Data Coordinated Archive",
-        "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1996-068A"
+        "title": "Mars Pathfinder",
+        "organization": "NASA",
+        "url": "https://science.nasa.gov/mission/mars-pathfinder/"
       }
     ]
   },
   {
-    "id": "spirit-rover",
-    "slug": "spirit-rover",
-    "name": "Spirit Rover (MER-A)",
+    "id": "mars-spirit",
+    "slug": "mars-spirit",
+    "name": "Spirit",
     "destination": "Mars",
-    "year": "2004–2011",
-    "missionName": "Mars Exploration Rover (MER-A)",
-    "agency": "NASA / JPL-Caltech",
-    "objectType": "Planetary Exploration Rover / Robotic Geologist",
-    "launchDate": "June 10, 2003",
-    "landingDate": "January 4, 2004",
-    "shortDescription": "The resilient robotic geologist that explored Gusev Crater, climbed mountains, and uncovered silica proof of ancient hot springs.",
-    "overview": "Spirit (MER-A) was the first of two identical robotic geologists launched to search for evidence of past liquid water on Mars. Landing on January 4, 2004, inside the 160-kilometer-wide Gusev Crater, Spirit was designed for a 90-sol mission. Instead, it operated for over 6 years (2,210 sols), drove 7.73 kilometers, survived fierce Martian winters and dust storms, and discovered hydrothermal silica deposits that proved ancient Mars was once habitable.",
-    "historicalStory": "Targeted to Gusev Crater—a massive crater believed to have once held a giant lake—Spirit initially encountered only volcanic basalts on the crater floor. Undeterred, the mission team commanded the rover to drive more than 3 kilometers toward the Columbia Hills. In 2005, Spirit became the first robotic rover to climb a mountain on another world, ascending Husband Hill to take 360-degree panoramic vistas. In 2006, Spirit's front-right wheel motor seized permanently. Forced to drive backward dragging the dead wheel, the locked wheel acted like a geological trenching plow. In 2007, near an outcrop called 'Home Plate', the dragged wheel scraped open a bright white swath of regolith. Analysis proved the trench was 90% pure silica—the unambiguous mineral footprint of ancient volcanic hot springs or fumaroles where microbial life could have thrived. In May 2009, Spirit broke through an iron crust into hidden loose sulfate sand at 'Troy'. Unable to tilt its solar panels toward the sun as Martian winter set in, its last communication was received on March 22, 2010.",
-    "purpose": "Conduct long-term surface geological reconnaissance inside Gusev Crater to investigate whether past water environments existed and assess past planetary habitability.",
+    "year": 2004,
+    "missionName": "Mars Exploration Rover - Spirit",
+    "agency": "NASA / JPL",
+    "objectType": "Mars Rover",
+    "launchDate": null,
+    "landingDate": "January 3, 2004",
+    "shortDescription": "NASA's Spirit rover explored Gusev Crater on Mars, investigating rocks, soil, and geological formations to uncover evidence of the planet's ancient water history. It operated for more than six years and traveled approximately 4.8 miles (7.7 kilometers).",
+    "overview": "Spirit was one of two identical robotic explorers launched by NASA as part of the Mars Exploration Rover mission. It successfully landed in Gusev Crater on January 3, 2004, a location scientists believed might once have contained a lake. Designed to investigate the geological history of Mars, Spirit studied rocks, soil, and surface formations for evidence of ancient water. Its observations helped scientists understand that liquid water had played an important role in Mars' early history. Spirit traveled approximately 4.8 miles (7.7 kilometers) across the Martian surface before its mission concluded in 2010.",
+    "historicalStory": "In the early 2000s, NASA launched two identical robotic rovers, Spirit and Opportunity, to investigate the geological history of Mars and search for evidence of ancient water. Spirit was targeted toward Gusev Crater, a large impact crater that scientists suspected might once have contained a lake. After reaching Mars, Spirit successfully landed on January 3, 2004, using a landing system that involved parachutes and airbags to protect the spacecraft during impact. Its landing platform, named the Columbia Memorial Station, was surrounded by deflated airbags after touchdown. Once deployed, Spirit began examining the Martian landscape using scientific instruments and cameras. The rover investigated rocks, soil, and geological formations, providing evidence that water had influenced the planet's environment in the distant past. Its exploration also revealed important information about the composition and geological evolution of the Martian surface. During its operational life, Spirit traveled approximately 4.8 miles (7.7 kilometers), far exceeding its original planned mission duration. Its journey across Gusev Crater provided valuable observations of the Martian environment and contributed significantly to NASA's understanding of the planet. Spirit's mission concluded in 2010, while its twin Opportunity continued operating until 2018.",
+    "purpose": "To investigate the geology of Gusev Crater, search for geological evidence of past water activity on Mars, analyze rocks and soil, and improve scientific understanding of the planet's environmental history.",
     "missionTimeline": [
       {
-        "year": "2003",
-        "date": "June 10, 2003",
-        "title": "Launch from Cape Canaveral",
-        "description": "Lifted off on a Boeing Delta II Heavy rocket on an interplanetary cruise to Mars."
+        "year": "2004",
+        "date": "January 3, 2004",
+        "title": "Landing in Gusev Crater",
+        "description": "Spirit successfully landed on Mars at Gusev Crater. Its landing site was named the Columbia Memorial Station."
       },
       {
         "year": "2004",
-        "date": "January 4, 2004",
-        "title": "Airbag Touchdown in Gusev Crater",
-        "description": "Landed inside Gusev Crater and deployed its solar panels and panoramic mast."
+        "date": "January 18–19, 2004",
+        "title": "Early Surface Exploration",
+        "description": "Spirit's panoramic camera captured images of its landing site, including the surrounding terrain, deflated airbags, and distant hills."
       },
       {
-        "year": "2005",
-        "date": "August 21, 2005",
-        "title": "Summit of Husband Hill",
-        "description": "Crested the 106-meter summit of Husband Hill, the first robotic mountain ascent on Mars."
-      },
-      {
-        "year": "2007",
-        "date": "May 2007",
-        "title": "Discovery of 90% Pure Silica Deposits",
-        "description": "Stuck front wheel scraped open hydrothermal silica deposits at Home Plate."
+        "year": "2004–2010",
+        "date": "Extended Mission Operations",
+        "title": "Martian Geological Exploration",
+        "description": "Spirit investigated Martian rocks, soil, and geological formations, collecting scientific observations that helped reveal evidence of ancient water activity."
       },
       {
         "year": "2010",
-        "date": "March 22, 2010",
-        "title": "Final Contact at 'Troy'",
-        "description": "Final radio signal received before Martian winter; mission formally concluded in May 2011."
+        "date": "2010",
+        "title": "Mission Conclusion",
+        "description": "Spirit's mission concluded after more than six years of exploration on the Martian surface."
       }
     ],
     "achievements": [
-      "Operated for 2,210 Martian sols (over 6 years)—more than 24 times its intended 90-sol design lifespan",
-      "Drove 7.73 kilometers across volcanic plains, sand dunes, and mountain ridges",
-      "Discovered pure silica deposits demonstrating ancient hot springs or steam vents on Mars",
-      "Transmitted over 124,000 scientific and panoramic photographs to Earth"
+      "Helped establish that liquid water played an important role in Mars' ancient geological history.",
+      "Explored Gusev Crater, a region believed to have potentially contained an ancient lake.",
+      "Traveled approximately 4.8 miles (7.7 kilometers) across the Martian surface.",
+      "Returned scientific images and observations that improved understanding of Martian rocks, soil, and geological processes.",
+      "Operated for more than six years, significantly exceeding its original planned mission duration."
     ],
     "location": {
-      "locationName": "Gusev Crater (Home Plate / Troy)",
-      "latitude": -14.5684,
-      "longitude": 175.4726,
-      "coordinateAccuracy": "verified",
-      "description": "Stationed at 'Troy' on the western side of the Home Plate volcanic plateau in Gusev Crater."
+      "locationName": "Gusev Crater, Mars",
+      "latitude": null,
+      "longitude": null,
+      "coordinateAccuracy": "unknown",
+      "description": "Spirit landed at Gusev Crater, a large impact crater in the southern hemisphere of Mars. Scientists selected the region because geological evidence suggested it might once have contained a lake."
     },
     "mapPosition": {
-      "x": 84,
-      "y": 62
+      "x": 35,
+      "y": 55
     },
-    "developmentNote": "Archival NASA coordinates verified by Mars Reconnaissance Orbiter (MRO) HiRISE imagery.",
-    "missionStatus": "Completed (Mission formally concluded May 25, 2011)",
-    "equipmentStatus": "Inactive / Stationary station on Martian surface; batteries depleted during 2010 winter",
-    "whyLeftBehind": "Designed exclusively for mobile planetary exploration without an ascent or Earth-return module; remains frozen at its final research station in Gusev Crater.",
+    "developmentNote": "Landing site identified as Gusev Crater. Exact landing coordinates and map positioning require verification before publication.",
+    "missionStatus": "Mission Completed (Mission concluded in 2010)",
+    "equipmentStatus": "Inactive / Historic robotic rover remaining on the Martian surface",
+    "whyLeftBehind": "Spirit was designed as a one-way robotic exploration vehicle without the propulsion or return systems needed to travel back to Earth. After its extended scientific mission concluded in 2010, the rover remained on the Martian surface.",
     "interestingFacts": [
-      "Climbed Husband Hill, gaining over 100 meters of elevation—the first time a robotic vehicle crested a summit on another planet.",
-      "The dragged jammed wheel serendipitously made one of the mission's greatest discoveries by slicing open sulfate- and silica-rich soils."
+      "Spirit and Opportunity were identical twin robotic explorers sent to opposite sides of Mars.",
+      "Spirit landed at Gusev Crater, a location selected because scientists suspected it might once have contained a lake.",
+      "Its landing platform was named the Columbia Memorial Station.",
+      "Spirit traveled approximately 4.8 miles (7.7 kilometers) during its mission.",
+      "Its mission lasted more than six years, far exceeding the original planned operational period.",
+      "The rover's observations contributed to scientific evidence that Mars experienced liquid water in its ancient past."
     ],
     "images": [
       {
-        "imageUrl": null,
-        "caption": "Self-portrait mosaic of the Spirit rover on Mars showing dust accumulation",
-        "credit": "NASA / JPL-Caltech / Cornell",
-        "sourceUrl": "https://mars.nasa.gov/resources/3883/spirits-west-valley-panorama/"
+        "imageUrl": "/images/relics/mer-bythenumbers-infographic.jpg",
+        "caption": "NASA infographic highlighting the Mars Exploration Rovers Spirit and Opportunity and their exploration achievements.",
+        "credit": "NASA/JPL-Caltech",
+        "sourceUrl": "https://science.nasa.gov/wp-content/uploads/2024/03/mer-bythenumbers-infographic-feb2019.jpg"
       },
       {
-        "imageUrl": null,
-        "caption": "View of the Columbia Hills captured from the summit of Husband Hill",
-        "credit": "NASA / JPL / Cornell",
-        "sourceUrl": "https://mars.nasa.gov/mer/gallery/press/spirit/20050826a.html"
+        "imageUrl": "/images/relics/spirit-columbia-memorial-station.jpg",
+        "caption": "Spirit's landing site at Gusev Crater, showing the Columbia Memorial Station surrounded by deflated airbags.",
+        "credit": "NASA/JPL-Caltech/Cornell",
+        "sourceUrl": "https://science.nasa.gov/wp-content/uploads/2024/03/sol016-lander-pan-pia05117.jpg"
       }
     ],
     "sources": [
       {
-        "title": "Spirit Rover (MER-A) Mission Overview",
-        "organization": "NASA / JPL",
-        "url": "https://mars.nasa.gov/mer/mission/overview/"
+        "title": "Mars Exploration Rovers: Spirit and Opportunity",
+        "organization": "NASA",
+        "url": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/"
       },
       {
-        "title": "Mars Exploration Rover Science Results",
-        "organization": "NASA Science",
-        "url": "https://science.nasa.gov/mission/mer-spirit/"
+        "title": "Mars Exploration Rovers Science Highlights",
+        "organization": "NASA",
+        "url": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/science-highlights/"
+      },
+      {
+        "title": "Mars Exploration Rovers Science Objectives",
+        "organization": "NASA",
+        "url": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/science-objectives/"
       }
     ]
   },
   {
-    "id": "opportunity-rover",
-    "slug": "opportunity-rover",
-    "name": "Opportunity Rover (MER-B)",
+    "id": "mars-opportunity",
+    "slug": "mars-opportunity",
+    "name": "Opportunity",
     "destination": "Mars",
-    "year": "2004–2019",
-    "missionName": "Mars Exploration Rover (MER-B)",
-    "agency": "NASA / JPL-Caltech",
-    "objectType": "Planetary Exploration Rover / Robotic Geologist",
-    "launchDate": "July 7, 2003",
-    "landingDate": "January 25, 2004",
-    "shortDescription": "The record-shattering marathon rover that explored Mars for nearly 15 years and confirmed past standing liquid water.",
-    "overview": "Opportunity (MER-B) was the twin sister rover to Spirit, touching down on the opposite side of Mars in Meridiani Planum on January 25, 2004. Designed for a 90-sol mission, Opportunity operated for an astounding 14 years and 138 days (5,111 sols). It completed the first extraterrestrial marathon (driving 45.16 km), examined deep geological craters, and confirmed beyond doubt that liquid water once flowed across the Martian surface.",
-    "historicalStory": "Opportunity's journey began with an interplanetary 'hole-in-one': its landing airbags bounced across the flat Meridiani plain and rolled to a stop directly inside the 22-meter-wide crater Eagle. Looking through its cameras, scientists were astonished to see the first sedimentary bedrock outcrop ever photographed on Mars. Analyzing the rocks, Opportunity found millions of tiny gray hematite spherules nicknamed 'blueberries', formed only in the presence of acidic liquid groundwater. Opportunity went on to climb out of Eagle crater and trek across the vast plains to visit Endurance Crater (2004), Victoria Crater (2006–2008), and the massive 22-kilometer-wide Endeavour Crater (2011–2018). In March 2015, Opportunity drove its 42.195th kilometer, completing the first full marathon on another celestial body. In June 2018, an immense global dust storm darkened the skies over Perseverance Valley. With its solar panels starved of sunlight, Opportunity entered sleep mode on June 10, 2018. After transmitting over a thousand recovery signals with no reply, NASA declared the historic mission concluded on February 13, 2019.",
-    "purpose": "Conduct long-range field geology to determine if ancient Mars had sustained standing liquid water, investigate sedimentary rock history, and explore impact craters for geological strata.",
+    "year": 2004,
+    "missionName": "Mars Exploration Rover - Opportunity",
+    "agency": "NASA / JPL",
+    "objectType": "Mars Rover",
+    "launchDate": null,
+    "landingDate": "January 24, 2004",
+    "shortDescription": "NASA's Opportunity rover explored Meridiani Planum on Mars, discovering geological evidence of ancient water and operating for nearly 15 years. It traveled approximately 28.06 miles (45.16 kilometers), setting a record for the longest driving distance achieved by a rover on another world at the time.",
+    "overview": "Opportunity was one of two identical robotic explorers launched by NASA as part of the Mars Exploration Rover mission. It landed on January 24, 2004, at Meridiani Planum, a region selected because mineral deposits suggested that liquid water had once existed there. During its nearly 15-year mission, Opportunity examined rocks, soil, and geological formations, discovering important evidence of ancient water activity on Mars. The rover traveled approximately 28.06 miles (45.16 kilometers), becoming the longest-traveled robotic vehicle on another world at the time. Its final communication was received on June 10, 2018, after a massive planet-wide dust storm covered its location and prevented its solar panels from generating sufficient power.",
+    "historicalStory": "In the early 2000s, NASA developed two identical robotic explorers, Spirit and Opportunity, to investigate the geological history of Mars and search for evidence of ancient water. Opportunity was assigned to Meridiani Planum, a region where orbital observations had identified mineral deposits associated with water-related geological processes. The rover successfully landed on January 24, 2004, using a parachute and airbag-assisted landing system. Its landing region included Eagle Crater, where Opportunity began examining the surrounding rocks and soil. The rover used its scientific instruments and panoramic camera to investigate the composition and geological history of the Martian surface. Its discoveries provided evidence that liquid water had once influenced the environment at Meridiani Planum. One of its notable photographic achievements was the Lion King panorama, a large composite image consisting of 558 individual frames captured around Eagle Crater. Opportunity continued exploring Mars for nearly 15 years, far exceeding its original planned mission duration. During this time, it traveled approximately 28.06 miles (45.16 kilometers), setting an off-Earth driving distance record. In June 2018, a massive dust storm spread across Mars and covered the rover's location. The storm blocked sunlight from reaching its solar panels, preventing Opportunity from maintaining sufficient electrical power. Its last communication with Earth was received on June 10, 2018. After repeated attempts to reestablish contact, NASA concluded the mission in February 2019.",
+    "purpose": "To investigate the geological history of Meridiani Planum, search for evidence of ancient water on Mars, analyze rocks and soil, and improve scientific understanding of the planet's past environmental conditions.",
     "missionTimeline": [
       {
-        "year": "2003",
-        "date": "July 7, 2003",
-        "title": "Launch from Cape Canaveral",
-        "description": "Lifted off aboard a Delta II 7925H rocket on its voyage to the Red Planet."
+        "year": "2004",
+        "date": "January 24, 2004",
+        "title": "Landing at Meridiani Planum",
+        "description": "Opportunity successfully landed on Mars at Meridiani Planum, a region selected because mineral deposits suggested a history of liquid water."
       },
       {
         "year": "2004",
-        "date": "January 25, 2004",
-        "title": "Interplanetary Hole-in-One at Eagle Crater",
-        "description": "Touched down inside Eagle Crater in Meridiani Planum, immediately discovering hematite 'blueberries'."
+        "date": "Early 2004",
+        "title": "Eagle Crater Exploration",
+        "description": "Opportunity investigated Eagle Crater and examined nearby rocks, soil, and geological formations for evidence of past water activity."
       },
       {
-        "year": "2006–2008",
-        "date": "September 2006 – August 2008",
-        "title": "Exploration of Victoria Crater",
-        "description": "Navigated the 800-meter-wide crater rim, examining ancient water-deposited layered rock."
+        "year": "2004",
+        "date": "February–March 2004",
+        "title": "Lion King Panorama",
+        "description": "The rover captured a 558-image panorama of Eagle Crater and the surrounding Meridiani Planum landscape."
       },
       {
-        "year": "2015",
-        "date": "March 24, 2015",
-        "title": "First Extraterrestrial Marathon Completed",
-        "description": "Traveled 42.195 km (26.2 miles) on Mars, establishing an all-time driving record."
+        "year": "2004–2018",
+        "date": "Extended Mission Operations",
+        "title": "Long-Term Martian Exploration",
+        "description": "Opportunity continued investigating rocks, soil, and geological formations across Mars, collecting scientific data and traveling approximately 28.06 miles (45.16 kilometers)."
       },
       {
-        "year": "2018–2019",
-        "date": "June 10, 2018 / Feb 13, 2019",
-        "title": "Global Dust Storm & Mission Conclusion",
-        "description": "Global dust storm enveloped Perseverance Valley; mission concluded after 5,111 sols."
+        "year": "2018",
+        "date": "June 10, 2018",
+        "title": "Last Communication",
+        "description": "Opportunity transmitted its final communication to Earth as a massive dust storm covered its location and reduced sunlight reaching its solar panels."
+      },
+      {
+        "year": "2019",
+        "date": "February 2019",
+        "title": "Mission Conclusion",
+        "description": "NASA officially concluded the Opportunity mission after unsuccessful attempts to restore communication with the rover."
       }
     ],
     "achievements": [
-      "Drove 45.16 kilometers (28.06 miles), holding the all-time off-world driving record for any wheeled vehicle",
-      "Operated for 5,111 sols (over 14 Earth years)—nearly 57 times longer than its 90-sol design life",
-      "Discovered hematite spherules ('blueberries') proving ancient standing acidic water on Mars",
-      "Transmitted over 217,000 raw and calibrated images to Earth"
+      "Discovered geological evidence that liquid water once existed at Meridiani Planum on Mars.",
+      "Traveled approximately 28.06 miles (45.16 kilometers) across the Martian surface.",
+      "Established the off-Earth driving distance record for a rover at the time, which was later surpassed by Perseverance in October 2026.",
+      "Captured the Lion King panorama, a large composite image assembled from 558 individual frames.",
+      "Operated for nearly 15 years, dramatically exceeding its original planned mission duration.",
+      "Returned extensive scientific images and geological observations that improved understanding of Mars' ancient environment."
     ],
     "location": {
-      "locationName": "Perseverance Valley (Endeavour Crater)",
-      "latitude": -2.28,
-      "longitude": 354.75,
-      "coordinateAccuracy": "verified",
-      "description": "Resting on the western rim of Endeavour Crater in Perseverance Valley, Meridiani Planum."
+      "locationName": "Meridiani Planum, Mars",
+      "latitude": null,
+      "longitude": null,
+      "coordinateAccuracy": "unknown",
+      "description": "Opportunity landed at Meridiani Planum, a relatively flat region of Mars where orbital observations identified mineral deposits suggesting that liquid water had once influenced the environment. Its initial exploration included Eagle Crater."
     },
     "mapPosition": {
-      "x": 52,
+      "x": 65,
       "y": 55
     },
-    "developmentNote": "Archival NASA coordinates verified by Mars Reconnaissance Orbiter (MRO) HiRISE imaging.",
-    "missionStatus": "Completed (Mission declared complete February 13, 2019)",
-    "equipmentStatus": "Inactive / Preserved historic relic on the Martian surface in Perseverance Valley",
-    "whyLeftBehind": "Designed exclusively as a one-way mobile exploration platform without return rocketry; remains in Perseverance Valley as a permanent monument to human exploration.",
+    "developmentNote": "Landing site identified as Meridiani Planum. Exact landing coordinates and map positioning require verification before publication.",
+    "missionStatus": "Mission Completed (Last communication received June 10, 2018; officially concluded February 2019)",
+    "equipmentStatus": "Inactive / Historic robotic rover remaining on the Martian surface",
+    "whyLeftBehind": "Opportunity was designed as a one-way robotic exploration vehicle without the propulsion or return systems required to travel back to Earth. A massive planet-wide dust storm in 2018 blocked sunlight from reaching its solar panels, preventing the rover from generating sufficient electrical power. After communication attempts failed, NASA officially concluded the mission in February 2019, leaving the rover on the Martian surface.",
     "interestingFacts": [
-      "Completed a full Earth marathon (42.195 km) on Mars in March 2015.",
-      "Its final transmission to Earth translated poetically in popular culture as 'My battery is low and it's getting dark'."
+      "Opportunity and Spirit were identical twin rovers sent to opposite sides of Mars.",
+      "Opportunity landed at Meridiani Planum, where mineral deposits suggested that liquid water had once existed.",
+      "Its Lion King panorama consisted of 558 individual images and was the largest panorama captured by either Mars Exploration Rover in 2004.",
+      "Opportunity traveled approximately 28.06 miles (45.16 kilometers) during its mission.",
+      "It operated for nearly 15 years, far exceeding its original planned mission duration.",
+      "Its last communication was received on June 10, 2018, during a massive planet-wide dust storm.",
+      "Opportunity's driving distance record was surpassed by NASA's Perseverance rover on October 11, 2026."
     ],
     "images": [
       {
-        "imageUrl": null,
-        "caption": "Opportunity rover shadow cast onto the floor of Endeavour Crater",
-        "credit": "NASA / JPL-Caltech",
-        "sourceUrl": "https://mars.nasa.gov/resources/4952/opportunity-shadow-at-endeavour-crater/"
+        "imageUrl": "/images/relics/mer-bythenumbers-infographic.jpg",
+        "caption": "NASA infographic highlighting the Mars Exploration Rovers Spirit and Opportunity and their exploration achievements.",
+        "credit": "NASA/JPL-Caltech",
+        "sourceUrl": "https://science.nasa.gov/wp-content/uploads/2024/03/mer-bythenumbers-infographic-feb2019.jpg"
       },
       {
-        "imageUrl": null,
-        "caption": "Sedimentary rock layers and hematite spherules ('blueberries') photographed in Eagle Crater",
-        "credit": "NASA / JPL / Cornell",
-        "sourceUrl": "https://mars.nasa.gov/mer/gallery/press/opportunity/20040302a.html"
+        "imageUrl": "/images/relics/opportunity-clean-solar-panels.jpg",
+        "caption": "Opportunity's self-portrait showing its solar panels after Martian winds removed much of the accumulated dust.",
+        "credit": "NASA/JPL-Caltech/Cornell University/Arizona State University",
+        "sourceUrl": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/internal_resources/3447/solar_panels_on_rover_seen_from_above.jpeg"
+      },
+      {
+        "imageUrl": "/images/relics/opportunity-lion-king-panorama.jpg",
+        "caption": "The Lion King panorama showing Eagle Crater and the surrounding plains of Meridiani Planum, captured by Opportunity's panoramic camera.",
+        "credit": "NASA/JPL/Cornell",
+        "sourceUrl": "https://photojournal.jpl.nasa.gov/catalog/PIA05755"
       }
     ],
     "sources": [
       {
-        "title": "Opportunity Rover (MER-B) Mission Overview",
-        "organization": "NASA / JPL",
-        "url": "https://mars.nasa.gov/mer/mission/overview/"
+        "title": "Mars Exploration Rovers: Spirit and Opportunity",
+        "organization": "NASA",
+        "url": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/"
       },
       {
-        "title": "NASA's Opportunity Rover Mission Concludes",
-        "organization": "NASA Press Release",
-        "url": "https://www.jpl.nasa.gov/news/nasas-record-setting-opportunity-rover-mission-on-mars-comes-to-end"
+        "title": "Mars Exploration Rovers Science Highlights",
+        "organization": "NASA",
+        "url": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/science-highlights/"
+      },
+      {
+        "title": "Mars Exploration Rovers Science Objectives",
+        "organization": "NASA",
+        "url": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/science-objectives/"
       }
     ]
   }
