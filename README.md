@@ -1,197 +1,199 @@
 # Space Relics — The Stories We Left Behind
 
-**Competition**: NASA Space Apps Challenge 2026  
-**Project Category**: Interactive Educational Museum  
-**Platform**: Frontend Single-Page Application (React + Vite + Tailwind CSS)
+<div align="center">
+
+![Space Relics Banner](/public/images/hero/surveyor-3-hero.jpg)
+
+### **An Interactive Educational Digital Museum for the NASA Space Apps Challenge 2026**
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel%20%2F%20GitHub%20Pages-00F0FF?style=for-the-badge&logo=vercel&logoColor=black)](https://space-relics.vercel.app/)
+[![NASA Space Apps](https://img.shields.io/badge/NASA%20Space%20Apps-2026%20Project-E11D48?style=for-the-badge&logo=nasa&logoColor=white)](https://www.spaceappschallenge.org/)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+
+*Every relic has a story. Every mission leaves a legacy.*
+
+[Explore Live Exhibition](https://space-relics.vercel.app/) • [Project Dossier](#-project-motive--vision) • [Exhibits](#-featured-museum-exhibits) • [Architecture](#-project-architecture--folder-structure) • [Installation](#-getting-started)
+
+</div>
 
 ---
 
-## 1. Project Overview
+## 🛰️ Project Motive & Vision
 
-**Space Relics** is an interactive educational virtual museum website showcasing six seminal pieces of human-made equipment left on the Moon and Mars:
+Across decades of interplanetary exploration, humanity has dispatched robotic scouts and crewed missions to the Moon and Mars. When their missions concluded, their landers, rovers, and scientific instruments remained resting on alien sands—silent monuments to human curiosity, engineering bravery, and scientific pursuit.
 
-- **Moon**:
-  1. *Surveyor 3* (1967) — Soft lander sampled by Apollo 12
-  2. *Apollo Lunar Roving Vehicle* (1971–1972) — Manned electric mobility rover
-  3. *Apollo 11 Laser Retroreflector* (1969) — EASEP passive optical ranging instrument
-- **Mars**:
-  4. *Sojourner Rover* (1997) — Mars Pathfinder microrover pioneer
-  5. *Spirit Rover* (2004–2011) — MER-A robotic geologist
-  6. *Opportunity Rover* (2004–2019) — MER-B marathon exploration rover
+**Space Relics** is an interactive, digital educational museum built for the **NASA Space Apps Challenge 2026**. Its purpose is to:
 
-> **Independent Project Disclaimer**: *Space Relics* is an independent educational museum project created for the NASA Space Apps Challenge 2026 and is not affiliated with, endorsed by, or operated by NASA.
+1. **Preserve Extraterrestrial Heritage**: Document the exact locations, scientific purposes, and historical journeys of hardware left beyond Earth.
+2. **Make Space History Accessible**: Present technical aerospace archives through an editorial, human-centered storytelling experience.
+3. **Connect Engineering with Planetary Science**: Detail how each machine overcame extreme environments—from lunar vacuum and thermal swings to Martian dust storms.
+4. **Foster Global Curiosity**: Inspire students, researchers, and space enthusiasts about humanity's past achievements and upcoming return to the Moon and Mars.
 
----
-
-## 2. Technology Stack
-
-- **Framework**: React 19 (Functional components, Hooks)
-- **Build Tool**: Vite 8 (ESM, Hot Module Replacement)
-- **Styling**: Tailwind CSS 3 (configured with dark space theme design tokens) & PostCSS
-- **Routing**: React Router DOM 7 (`BrowserRouter`, nested layout routes, 404 handler)
-- **Icons**: Lucide React (`Compass`, `MapPin`, `Calendar`, `CheckCircle2`, `Menu`, `X`, etc.)
-- **Animations**: Framer Motion
-- **Data Architecture**: Static JSON models + JavaScript Controller access layers
+> [!NOTE]  
+> **Independent Project Disclaimer**: *Space Relics* is an independent educational initiative developed for the NASA Space Apps Challenge 2026. It is not an official NASA website and is not affiliated with, endorsed by, or sponsored by NASA.
 
 ---
 
-## 3. MVC-Inspired Architecture
+## 🏛️ Featured Museum Exhibits
 
-Space Relics implements a strict separation of concerns adapted for a client-side single-page educational application:
+The permanent collection curates **six landmark artifacts** across two planetary sectors:
+
+### Sector 01: The Moon
+- **Surveyor 3 (1967)**: The pioneering robotic lander that conducted lunar soil-bearing tests and was later inspected by Apollo 12 astronauts.
+- **Apollo 11 Lunar Module Descent Stage "Eagle" (1969)**: The historic platform that carried the first humans to walk on the lunar surface at Tranquility Base.
+- **Apollo 15 Lunar Module Descent Stage "Falcon" (1971)**: The Apennine landing base that introduced deep field geology and supported the first Lunar Roving Vehicle.
+
+### Sector 02: Mars
+- **Mars Pathfinder & Sojourner (1997)**: The innovative airbag-assisted landing station and microrover that proved mobile robotic exploration on Mars.
+- **Spirit Rover — MER-A (2004–2010)**: The resilient robotic geologist that scaled Husband Hill and uncovered hydrothermal silica in Gusev Crater.
+- **Opportunity Rover — MER-B (2004–2019)**: The marathon rover that operated for nearly 15 years across Meridiani Planum, proving ancient standing liquid water.
+
+---
+
+## 🚀 Live Deployment & Links
+
+| Service | Link |
+| :--- | :--- |
+| **Live Application** | [space-relics.vercel.app](https://space-relics.vercel.app/) *(or active deployment host)* |
+| **GitHub Repository** | [github.com/gulhassan0599/Space-Relics](https://github.com/gulhassan0599/Space-Relics) |
+| **NASA Space Apps Challenge** | [spaceappschallenge.org](https://www.spaceappschallenge.org/) |
+
+---
+
+## 💻 Tech Stack & Design System
+
+- **Frontend Core**: React 19, JavaScript (ESM)
+- **Tooling & Bundler**: Vite 8 with fast HMR
+- **Routing**: React Router DOM 7 (Dynamic nested layouts, instant route scrolling)
+- **Styling**: Tailwind CSS 3 with custom space palette design tokens
+- **Typography**: Editorial Serif (*Newsreader*), Technical Grotesk (*Space Grotesk*), Clean UI (*Inter*)
+- **Icons**: Phosphor Icons React
+- **Architecture**: MVC-inspired modular client architecture
+
+---
+
+## 📂 Project Architecture & Folder Structure
 
 ```
-src/
-├── assets/                          # Static media, icons, and illustrations
-│   ├── icons/
-│   ├── illustrations/
+Space-Relics/
+├── public/
+│   ├── favicon.svg              # Custom planetary vector favicon
+│   ├── icons.svg                # System icon sprites
 │   └── images/
+│       ├── destinations/        # High-res Moon & Mars photography
+│       ├── hero/                # Panoramic landscape & archival plates
+│       ├── relics/              # Authentic NASA/JPL mission photographs
+│       └── team/                # Epsilons X team member portraits
 │
-├── models/                          # Data Layer
-│   ├── data/
-│   │   ├── moonObjects.json         # Static Moon artifact records
-│   │   └── marsObjects.json         # Static Mars artifact records
-│   └── objectModel.js               # Data-access methods (getAllObjects, getObjectBySlug, etc.)
+├── src/
+│   ├── controllers/             # Business Logic Layer
+│   │   ├── mapController.js     # Coordinate calculations & marker normalization
+│   │   ├── objectController.js  # Relic data retrieval, filtering, and search
+│   │   └── timelineController.js# Chronological era sorting
+│   │
+│   ├── models/                  # Data Layer (Single Source of Truth)
+│   │   ├── data/
+│   │   │   ├── moonObjects.json # Authentic Moon relic records & sources
+│   │   │   ├── marsObjects.json # Authentic Mars relic records & sources
+│   │   │   └── teamData.js      # Team credentials & archive credits
+│   │   └── objectModel.js       # Data access methods
+│   │
+│   ├── views/                   # Presentation Layer
+│   │   ├── components/
+│   │   │   ├── common/          # Reusable Container, Card, Heading, Badge
+│   │   │   ├── explorer/        # Interactive SVG Moon & Mars surface maps
+│   │   │   ├── home/            # Hero, Destinations, Featured relics sections
+│   │   │   ├── navigation/      # Sticky Navbar, ScrollToTop, Museum Footer
+│   │   │   └── object/          # Relic Hero, Timeline, Gallery, Location status
+│   │   │
+│   │   ├── layouts/
+│   │   │   └── MainLayout.jsx   # Top-level shell with automatic scroll restoration
+│   │   │
+│   │   └── pages/               # Route Views
+│   │       ├── HomePage.jsx
+│   │       ├── ExplorePage.jsx
+│   │       ├── MoonExplorerPage.jsx
+│   │       ├── MarsExplorerPage.jsx
+│   │       ├── ObjectDetailsPage.jsx
+│   │       ├── TimelinePage.jsx
+│   │       ├── AboutPage.jsx
+│   │       └── NotFoundPage.jsx
+│   │
+│   ├── routes/
+│   │   └── AppRoutes.jsx        # Application routing configuration
+│   ├── utils/
+│   │   └── constants.js         # Navigation links & brand identity
+│   ├── App.jsx
+│   └── main.jsx
 │
-├── controllers/                     # Business Logic Layer
-│   ├── objectController.js          # Retrieval, filtering, search, and related relics
-│   ├── mapController.js             # Equirectangular coordinate projection & marker state
-│   └── timelineController.js        # Chronological sorting & historical era grouping
-│
-├── views/                           # Presentation Layer
-│   ├── layouts/
-│   │   └── MainLayout.jsx           # Global wrapper (Sticky Navbar, dynamic Outlet, Footer)
-│   ├── pages/                       # Route Page views
-│   │   ├── HomePage.jsx             # Museum introductory portal
-│   │   ├── ExplorePage.jsx          # Destination gateway (Moon / Mars)
-│   │   ├── MoonExplorerPage.jsx     # Moon artifacts & map portal
-│   │   ├── MarsExplorerPage.jsx     # Mars artifacts & map portal
-│   │   ├── ObjectDetailsPage.jsx    # Dynamic relic exhibition (/objects/:slug)
-│   │   ├── TimelinePage.jsx         # Historical chronology (1967–2019)
-│   │   ├── AboutPage.jsx            # Educational mission & project identity
-│   │   └── NotFoundPage.jsx         # 404 Deep space error page
-│   └── components/                  # Reusable UI Components
-│       ├── common/                  # Button, Card, Badge, Container, Heading
-│       ├── navigation/              # Navbar (with mobile menu), Footer
-│       ├── home/                    # Stage 2 components
-│       ├── explorer/                # Stage 3 components
-│       ├── object/                  # Stage 4 components
-│       └── timeline/                # Stage 5 components
-│
-├── routes/
-│   └── AppRoutes.jsx                # Centralized React Router configuration
-├── styles/
-│   └── index.css                    # Tailwind directives, theme variables, starfield backdrop
-├── utils/
-│   └── constants.js                 # Brand identity, navigation items, color palette tokens
-├── App.jsx                          # App root component
-└── main.jsx                         # Application entrypoint
+├── index.html
+├── package.json
+├── tailwind.config.js
+└── vite.config.js
 ```
 
-### Architectural Principles
-
-1. **Model**: Pure data and data-retrieval helpers. JSON files are strictly typed by schema without JSX or UI rendering.
-2. **Controller**: Decouples business logic from views. Prepares sorted chronologies, projects latitude/longitude to SVG percentages, filters by search query or destination, and locates related records.
-3. **View**: Pure presentation. Components receive data via props or controllers and render with semantic, accessible HTML and Tailwind styling.
-
 ---
 
-## 4. JSON Data Schema & Conventions
-
-The data architecture enforces identical, consistent schemas across `moonObjects.json` and `marsObjects.json`:
-
-```json
-{
-  "id": "string (unique identifier)",
-  "slug": "string (URL slug)",
-  "name": "string (display name)",
-  "destination": "Moon | Mars",
-  "year": 1969,
-  "missionName": "string",
-  "objectType": "string",
-  "shortDescription": "string",
-  "overview": "string",
-  "historicalStory": "string",
-  "purpose": "string",
-  "achievements": ["array of strings"],
-  "location": {
-    "locationName": "string",
-    "latitude": -3.016,
-    "longitude": -23.418,
-    "coordinateAccuracy": "verified | approximate | unknown",
-    "description": "string"
-  },
-  "missionStatus": "Completed | Still Active / Operational (Passive)",
-  "equipmentStatus": "string",
-  "whyLeftBehind": "string",
-  "interestingFacts": ["array of strings"],
-  "images": [
-    {
-      "imageUrl": "string | null",
-      "caption": "string",
-      "credit": "NASA | NASA/JPL",
-      "sourceUrl": "string | null"
-    }
-  ],
-  "sources": [
-    {
-      "title": "string",
-      "organization": "string",
-      "url": "string"
-    }
-  ]
-}
-```
-
-> **Data Integrity**: Unverified media or coordinates use `null` values and empty arrays. No historical facts, landing coordinates, or NASA citations are fabricated.
-
----
-
-## 5. Design System: Dark Space Museum
-
-- **Primary Background**: `#070B16`
-- **Secondary Background**: `#0B1220`
-- **Card Background**: `#111B2E`
-- **Elevated Surface**: `#162238`
-- **Primary Accent**: `#3B82F6` (Electric Blue)
-- **Secondary Accent**: `#38BDF8` (Sky)
-- **Primary Text**: `#F8FAFC`
-- **Secondary Text**: `#94A3B8`
-- **Muted Text**: `#64748B`
-- **Border**: `#263449`
-- **Moon Identity**: Cool Silver (`#E2E8F0`), Soft White (`#F8FAFC`), Subtle Blue (`#93C5FD`)
-- **Mars Identity**: Rust Orange (`#C2410C`), Warm Red (`#DC2626`), Sandy Beige (`#FDE047`)
-- **Typography**: Headings: *Space Grotesk*, Body: *Inter*
-
----
-
-## 6. Installation & Development
+## 🛠️ How to Run & Use Locally
 
 ### Prerequisites
-- Node.js (v18+ recommended)
-- npm
+- [Node.js](https://nodejs.org/) (v18.0.0 or higher recommended)
+- `npm` or `pnpm`
 
-### Installation
+### 1. Clone the Repository
 ```bash
-# Clone the repository and install dependencies
+git clone https://github.com/gulhassan0599/Space-Relics.git
+cd Space-Relics
+```
+
+### 2. Install Dependencies
+```bash
 npm install
 ```
 
-### Development Server
+### 3. Run Development Server
 ```bash
-# Start local development server with HMR
 npm run dev
 ```
+Open your browser and navigate to `http://localhost:5173`.
 
-### Production Build & Preview
+### 4. Build for Production
 ```bash
-# Build optimized production bundle to /dist
 npm run build
+```
+Generates an optimized, minified production bundle in the `dist/` directory.
 
-# Preview production build locally
+### 5. Preview Production Build
+```bash
 npm run preview
 ```
 
-### SPA Deployment (Vercel & Netlify)
-SPA fallback routing is configured:
-- `vercel.json` (rewrites all routes to `/index.html`)
-- `public/_redirects` (Netlify rewrite rule `/*  /index.html  200`)
+---
+
+## 👥 Meet the Team: Epsilons X
+
+Developed for the **NASA Space Apps Challenge 2026**:
+
+| Member | Role | Contribution |
+| :--- | :--- | :--- |
+| **Gul Hassan** | Lead Architect & Principal Developer | Application engineering, MVC architecture, system integration & data accuracy. |
+| **Reyyan Aleem** | UI/UX & Digital Experience Designer | Editorial layouts, typography systems, responsive interface design. |
+| **Maham Taqi** | Space History & Archival Researcher | Mission research, lunar coordinates & archival records curation. |
+| **Rimsha Talib** | Space History & Data Researcher | Technical spacecraft specifications & mission milestone verification. |
+| **Bashair Talib**| Presentation & Project Storyteller | Project communications, demo presentation & educational storytelling. |
+
+---
+
+## 📚 Acknowledgements & Archival Sources
+
+All historical imagery, coordinates, and mission data are curated from open public domain archives:
+- **NASA Image and Video Library** (`images.nasa.gov`)
+- **NASA / JPL-Caltech Photojournal** (`photojournal.jpl.nasa.gov`)
+- **NASA Space Science Data Coordinated Archive (NSSDCA)** (`nssdc.gsfc.nasa.gov`)
+- **NASA Lunar and Planetary Institute (LPI)** (`lpi.usra.edu`)
+
+---
+
+<div align="center">
+<sub>Built with 🌌 for planetary science and exploration education.</sub>
+</div>
