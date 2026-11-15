@@ -1,13 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Menu, X, Compass } from 'lucide-react';
 import { APP_IDENTITY, NAVIGATION_LINKS } from '../../../utils/constants';
 
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const menuButtonRef = useRef(null);
 
   const toggleMobileMenu = () => setMobileMenuOpen((prev) => !prev);
-  const closeMobileMenu = () => setMobileMenuOpen(false);
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+    // Return keyboard focus to menu toggle button if it was active
+    if (menuButtonRef.current && mobileMenuOpen) {
+      menuButtonRef.current.focus();
+    }
+  };
+
+  // Close mobile navigation drawer on Escape key press
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        setMobileMenuOpen(false);
+        if (menuButtonRef.current) {
+          menuButtonRef.current.focus();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [mobileMenuOpen]);
 
   return (
     <header className="sticky top-0 z-50 bg-[#070B16]/90 backdrop-blur-md border-b border-space-border transition-colors duration-200">
@@ -34,7 +59,7 @@ export const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1 sm:gap-2">
+          <nav className="hidden md:flex items-center gap-1 sm:gap-2" aria-label="Main Navigation">
             {NAVIGATION_LINKS.map((link) => (
               <NavLink
                 key={link.path}
@@ -62,10 +87,12 @@ export const Navbar = () => {
           {/* Mobile Menu Button */}
           <div className="flex md:hidden">
             <button
+              ref={menuButtonRef}
               type="button"
               onClick={toggleMobileMenu}
               aria-label="Toggle navigation menu"
               aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-navigation-drawer"
               className="p-2 rounded-lg text-space-textSecondary hover:text-white hover:bg-space-card border border-transparent hover:border-space-border focus:outline-none focus:ring-2 focus:ring-space-accent"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -76,7 +103,11 @@ export const Navbar = () => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-b border-space-border bg-[#0B1220]/95 backdrop-blur-lg px-4 pt-3 pb-5 space-y-2">
+        <nav
+          id="mobile-navigation-drawer"
+          aria-label="Mobile Navigation"
+          className="md:hidden border-b border-space-border bg-[#0B1220]/95 backdrop-blur-lg px-4 pt-3 pb-5 space-y-2"
+        >
           {NAVIGATION_LINKS.map((link) => (
             <NavLink
               key={link.path}
@@ -103,7 +134,7 @@ export const Navbar = () => {
               Start Exploring
             </Link>
           </div>
-        </div>
+        </nav>
       )}
     </header>
   );

@@ -18,6 +18,24 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
   const itemA = allObjects.find((o) => o.slug === slugA) || allObjects[0];
   const itemB = allObjects.find((o) => o.slug === slugB) || allObjects[3];
 
+  const handleSlugAChange = (newSlug) => {
+    setSlugA(newSlug);
+    if (newSlug === slugB) {
+      // Find an alternate valid relic for B
+      const alternate = allObjects.find((o) => o.slug !== newSlug);
+      if (alternate) setSlugB(alternate.slug);
+    }
+  };
+
+  const handleSlugBChange = (newSlug) => {
+    setSlugB(newSlug);
+    if (newSlug === slugA) {
+      // Find an alternate valid relic for A
+      const alternate = allObjects.find((o) => o.slug !== newSlug);
+      if (alternate) setSlugA(alternate.slug);
+    }
+  };
+
   const matrix = buildComparisonMatrix(itemA, itemB);
 
   return (
@@ -52,12 +70,16 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
           <select
             id="select-relic-a"
             value={slugA}
-            onChange={(e) => setSlugA(e.target.value)}
+            onChange={(e) => handleSlugAChange(e.target.value)}
             className="w-full bg-space-card text-space-text rounded-xl p-3 border border-space-border focus:outline-none focus:ring-1 focus:ring-space-accent text-sm"
           >
             {allObjects.map((obj) => (
-              <option key={obj.slug} value={obj.slug}>
-                {obj.destination}: {obj.name} ({obj.year})
+              <option
+                key={obj.slug}
+                value={obj.slug}
+                disabled={obj.slug === slugB}
+              >
+                {obj.destination}: {obj.name} ({obj.year}) {obj.slug === slugB ? '(Selected in B)' : ''}
               </option>
             ))}
           </select>
@@ -71,12 +93,16 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
           <select
             id="select-relic-b"
             value={slugB}
-            onChange={(e) => setSlugB(e.target.value)}
+            onChange={(e) => handleSlugBChange(e.target.value)}
             className="w-full bg-space-card text-space-text rounded-xl p-3 border border-space-border focus:outline-none focus:ring-1 focus:ring-space-accent text-sm"
           >
             {allObjects.map((obj) => (
-              <option key={obj.slug} value={obj.slug}>
-                {obj.destination}: {obj.name} ({obj.year})
+              <option
+                key={obj.slug}
+                value={obj.slug}
+                disabled={obj.slug === slugA}
+              >
+                {obj.destination}: {obj.name} ({obj.year}) {obj.slug === slugA ? '(Selected in A)' : ''}
               </option>
             ))}
           </select>
