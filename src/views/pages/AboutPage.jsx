@@ -1,20 +1,15 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Container } from "../components/common/Container";
-import HeroSection from "../components/home/HeroSection";
 import { APP_IDENTITY } from "../../utils/constants";
 import { TEAM_MEMBERS, PROJECT_CREDITS } from "../../models/data/teamData";
+import { getAllObjects } from "../../models/objectModel";
 import {
   ArrowRight,
   EnvelopeSimple,
-  GithubLogo,
   LinkedinLogo,
   User,
   ShieldCheck,
-  Compass,
-  Planet,
-  Certificate,
-  Books,
 } from "@phosphor-icons/react";
 
 export const AboutPage = () => {
@@ -22,45 +17,8 @@ export const AboutPage = () => {
     document.title = "About the Project & Team | Space Relics";
   }, []);
 
-  // Six historical artifacts reference for Section Two visual representation
-  const museumArtifacts = [
-    {
-      name: "Surveyor 3",
-      year: "1967",
-      world: "Moon",
-      image: "/images/relics/surveyor-3.jpg",
-    },
-    {
-      name: "Apollo 11 Retroreflector",
-      year: "1969",
-      world: "Moon",
-      image: "/images/relics/apollo-11-lrrr.jpg",
-    },
-    {
-      name: "Apollo Lunar Roving Vehicle",
-      year: "1971–1972",
-      world: "Moon",
-      image: "/images/relics/apollo-lrv.jpg",
-    },
-    {
-      name: "Sojourner Rover",
-      year: "1997",
-      world: "Mars",
-      image: "/images/relics/sojourner.jpg",
-    },
-    {
-      name: "Spirit Rover",
-      year: "2004–2011",
-      world: "Mars",
-      image: "/images/relics/spirit.jpg",
-    },
-    {
-      name: "Opportunity Rover",
-      year: "2004–2019",
-      world: "Mars",
-      image: "/images/relics/opportunity.jpg",
-    },
-  ];
+  // Fetch all 6 actual documented objects from the model
+  const allRelics = getAllObjects();
 
   return (
     <div className="flex flex-col w-full bg-[#090B0E] text-space-text">
@@ -202,35 +160,48 @@ export const AboutPage = () => {
 
                 {/* 2x3 Grid of the 6 authentic artifacts */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                  {museumArtifacts.map((artifact, idx) => (
-                    <div
-                      key={idx}
-                      className="rounded border border-space-border/70 bg-space-bgSecondary overflow-hidden flex flex-col justify-between"
-                    >
-                      <div className="relative aspect-[4/3] w-full bg-black overflow-hidden">
-                        <img
-                          src={artifact.image}
-                          alt={artifact.name}
-                          className="w-full h-full object-cover filter contrast-[1.05] grayscale-[0.15]"
-                          loading="lazy"
-                        />
-                      </div>
-                      <div className="p-2.5">
-                        <span
-                          className={`text-[9px] font-mono uppercase tracking-wider block ${
-                            artifact.world === "Moon"
-                              ? "text-moon-silver"
-                              : "text-mars-rust"
-                          }`}
-                        >
-                          {artifact.world} • {artifact.year}
-                        </span>
-                        <h4 className="font-sans font-medium text-xs text-space-text truncate mt-0.5">
-                          {artifact.name}
-                        </h4>
-                      </div>
-                    </div>
-                  ))}
+                  {allRelics.map((artifact) => {
+                    const primaryImage =
+                      artifact.images && artifact.images.length > 0
+                        ? artifact.images[0].imageUrl
+                        : null;
+                    return (
+                      <Link
+                        key={artifact.id}
+                        to={`/objects/${artifact.slug}`}
+                        className="rounded border border-space-border/70 bg-space-bgSecondary overflow-hidden flex flex-col justify-between group hover:border-space-border/100 transition-colors"
+                      >
+                        <div className="relative aspect-[4/3] w-full bg-black overflow-hidden">
+                          {primaryImage ? (
+                            <img
+                              src={primaryImage}
+                              alt={artifact.name}
+                              className="w-full h-full object-cover filter contrast-[1.05] grayscale-[0.15] group-hover:scale-105 transition-transform duration-300"
+                              loading="lazy"
+                            />
+                          ) : (
+                            <div className="w-full h-full flex items-center justify-center bg-[#070B16] text-space-textMuted font-mono text-[10px]">
+                              NO IMAGE
+                            </div>
+                          )}
+                        </div>
+                        <div className="p-2.5">
+                          <span
+                            className={`text-[9px] font-mono uppercase tracking-wider block ${
+                              artifact.destination === "Moon"
+                                ? "text-moon-silver"
+                                : "text-mars-rust"
+                            }`}
+                          >
+                            {artifact.destination} • {artifact.year}
+                          </span>
+                          <h4 className="font-sans font-medium text-xs text-space-text truncate mt-0.5 group-hover:text-white transition-colors">
+                            {artifact.name}
+                          </h4>
+                        </div>
+                      </Link>
+                    );
+                  })}
                 </div>
 
                 <p className="text-[11px] font-mono text-space-textMuted mt-5 leading-normal">
@@ -384,17 +355,6 @@ export const AboutPage = () => {
                           <EnvelopeSimple className="w-4 h-4" />
                         </a>
                       )}
-                      {member.github && (
-                        <a
-                          href={member.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="p-2 rounded text-space-textSecondary hover:text-white hover:bg-space-bgSecondary border border-space-border/60 transition-colors focus:outline-none focus:ring-1 focus:ring-space-accent"
-                          aria-label={`${member.name}'s GitHub Profile`}
-                        >
-                          <GithubLogo className="w-4 h-4" />
-                        </a>
-                      )}
                       {member.linkedin && (
                         <a
                           href={member.linkedin}
@@ -464,17 +424,6 @@ export const AboutPage = () => {
                           <EnvelopeSimple className="w-4 h-4" />
                         </a>
                       )}
-                      {member.github && (
-                        <a
-                          href={member.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="p-2 rounded text-space-textSecondary hover:text-white hover:bg-space-bgSecondary border border-space-border/60 transition-colors focus:outline-none focus:ring-1 focus:ring-space-accent"
-                          aria-label={`${member.name}'s GitHub Profile`}
-                        >
-                          <GithubLogo className="w-4 h-4" />
-                        </a>
-                      )}
                       {member.linkedin && (
                         <a
                           href={member.linkedin}
@@ -498,7 +447,7 @@ export const AboutPage = () => {
       {/* =========================================================================
           SECTION FIVE — Credits & Acknowledgements
           ========================================================================= */}
-      <section className="py-16 sm:py-24 border-b border-space-border/80 bg-space-bgSecondary/20">
+      <section className="py-12 border-b border-space-border/80 bg-space-bgSecondary/20">
         <Container>
           <div className="max-w-7xl mx-auto">
             <div className="text-left mb-10">

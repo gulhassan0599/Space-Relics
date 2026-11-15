@@ -8,20 +8,18 @@ export const TEAM_MEMBERS = [
     name: 'Gul Hassan',
     role: 'Lead Project Architect & Frontend Developer',
     bio: 'Oversees application architecture, interactive component development, and user experience engineering for Space Relics.',
-    image: null, // Will display fallback avatar or user-provided photo URL
-    email: 'member1@example.com',
-    github: 'https://github.com/username',
-    linkedin: 'https://linkedin.com/in/username'
+    image: '/images/team/gul_hassan.jpg',
+    email: 'gulhassan0599@gmail.com',
+    linkedin: 'https://linkedin.com/'
   },
   {
     id: 'member-2',
     name: 'Reyyan Aleem',
     role: 'UI/UX Specialist & Creative Director',
     bio: 'Designs digital museum layouts, typography systems, and visual identity tailored to archival space documentary experiences.',
-    image: null,
-    email: 'member2@example.com',
-    github: 'https://github.com/username',
-    linkedin: 'https://linkedin.com/in/username'
+    image: '/images/team/reyyan_aleem.jpg',
+    email: 'reyyanaleem1@gmail.com',
+    linkedin: 'https://linkedin.com/in/reyyan-aleem-320821394/'
   },
   {
     id: 'member-3',
@@ -30,7 +28,6 @@ export const TEAM_MEMBERS = [
     bio: 'Curates archival NASA and JPL mission technical specifications, coordinates, and historical expedition narratives.',
     image: null,
     email: 'member3@example.com',
-    github: 'https://github.com/username',
     linkedin: 'https://linkedin.com/in/username'
   },
   {
@@ -40,7 +37,6 @@ export const TEAM_MEMBERS = [
     bio: 'Curates archival NASA and JPL mission technical specifications, coordinates, and historical expedition narratives.',
     image: null,
     email: 'member4@example.com',
-    github: 'https://github.com/username',
     linkedin: 'https://linkedin.com/in/username'
   },
   {
@@ -50,7 +46,6 @@ export const TEAM_MEMBERS = [
     bio: 'Structures accessible educational narratives connecting extraterrestrial engineering achievements with broader human history.',
     image: null,
     email: 'member5@example.com',
-    github: 'https://github.com/username',
     linkedin: 'https://linkedin.com/in/username'
   }
 ];
