@@ -63,7 +63,7 @@ export const ObjectLocationStatus = ({ object }) => {
           </div>
 
           {/* Coordinates Telemetry Box */}
-          <div className="p-6 rounded-2xl bg-[#070B16] border border-space-border/80 flex flex-col justify-between space-y-6">
+          <div className="p-6 rounded-2xl bg-space-card border border-space-border/80 flex flex-col justify-between space-y-6">
             <div>
               <div className="flex items-center justify-between mb-4">
                 <span className="text-xs font-mono uppercase tracking-wider text-space-accentLight">

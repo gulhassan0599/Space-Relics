@@ -33,11 +33,11 @@ export const LunarMap = ({
   const viewBoxString = `${currentMinX} ${currentMinY} ${currentWidth} ${currentHeight}`;
 
   return (
-    <div className="relative w-full h-[440px] sm:h-[540px] lg:h-[600px] rounded-2xl bg-[#070B16] border border-space-border/90 overflow-hidden shadow-2xl flex flex-col justify-between select-none">
+    <div className="relative w-full h-[440px] sm:h-[540px] lg:h-[600px] rounded-2xl bg-space-bg border border-space-border/90 overflow-hidden shadow-2xl flex flex-col justify-between select-none">
       
       {/* Top Map Bar: Destination Label & Controls */}
       <div className="absolute top-4 left-4 right-4 z-20 flex items-center justify-between pointer-events-none">
-        <div className="pointer-events-auto px-3 py-1.5 rounded-lg bg-[#0B1220]/80 border border-space-border backdrop-blur-md">
+        <div className="pointer-events-auto px-3 py-1.5 rounded-lg bg-space-bgSecondary/90 border border-space-border backdrop-blur-md">
           <span className="text-[11px] font-mono tracking-wider text-moon-blue uppercase font-medium">
             Lunar Surface Chart — Nearside
           </span>
@@ -87,7 +87,7 @@ export const LunarMap = ({
           <MapLegend />
         </div>
 
-        <div className="pointer-events-auto text-[10px] font-mono text-space-textMuted bg-[#070B16]/80 px-2.5 py-1 rounded border border-space-border/60 backdrop-blur-sm">
+        <div className="pointer-events-auto text-[10px] font-mono text-space-textMuted bg-space-bg/80 px-2.5 py-1 rounded border border-space-border/60 backdrop-blur-sm">
           Development Notice: Normalized SVG simulation coordinates
         </div>
       </div>

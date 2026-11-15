@@ -55,7 +55,7 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
           </div>
         </div>
 
-        <span className="text-xs font-mono text-space-textMuted bg-[#070B16] px-3 py-1.5 rounded-lg border border-space-border/60 self-start sm:self-auto">
+        <span className="text-xs font-mono text-space-textMuted bg-space-card px-3 py-1.5 rounded-lg border border-space-border/60 self-start sm:self-auto">
           Side-by-side technical evaluation
         </span>
       </div>
@@ -63,7 +63,7 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
       {/* Selectors for Artifact A and Artifact B */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         {/* Selector A */}
-        <div className="p-4 rounded-2xl bg-[#070B16] border border-space-border/80">
+        <div className="p-4 rounded-2xl bg-space-card border border-space-border/80">
           <label htmlFor="select-relic-a" className="text-xs font-mono uppercase tracking-wider text-space-textMuted block mb-2">
             Select First Relic:
           </label>
@@ -86,7 +86,7 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
         </div>
 
         {/* Selector B */}
-        <div className="p-4 rounded-2xl bg-[#070B16] border border-space-border/80">
+        <div className="p-4 rounded-2xl bg-space-card border border-space-border/80">
           <label htmlFor="select-relic-b" className="text-xs font-mono uppercase tracking-wider text-space-textMuted block mb-2">
             Select Second Relic:
           </label>
@@ -112,7 +112,9 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
       {/* Comparison Headers */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div className={`p-5 rounded-2xl border ${
-          itemA.destination === 'Mars' ? 'bg-[#180804] border-orange-900/60' : 'bg-[#0E172A] border-slate-700/80'
+          itemA.destination === 'Mars' 
+            ? 'bg-orange-950/20 dark:bg-[#180804] border-orange-500/40 dark:border-orange-900/60' 
+            : 'bg-sky-950/15 dark:bg-[#0E172A] border-sky-500/30 dark:border-slate-700/80'
         }`}>
           <div className="flex items-center justify-between mb-2">
             <Badge variant={itemA.destination === 'Mars' ? 'mars' : 'moon'}>{itemA.destination}</Badge>
@@ -129,7 +131,9 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
         </div>
 
         <div className={`p-5 rounded-2xl border ${
-          itemB.destination === 'Mars' ? 'bg-[#180804] border-orange-900/60' : 'bg-[#0E172A] border-slate-700/80'
+          itemB.destination === 'Mars' 
+            ? 'bg-orange-950/20 dark:bg-[#180804] border-orange-500/40 dark:border-orange-900/60' 
+            : 'bg-sky-950/15 dark:bg-[#0E172A] border-sky-500/30 dark:border-slate-700/80'
         }`}>
           <div className="flex items-center justify-between mb-2">
             <Badge variant={itemB.destination === 'Mars' ? 'mars' : 'moon'}>{itemB.destination}</Badge>
@@ -151,7 +155,7 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
         {matrix.map((row, idx) => (
           <div
             key={idx}
-            className="p-4 sm:p-5 rounded-xl bg-[#070B16]/80 border border-space-border/60 hover:border-space-border transition-colors"
+            className="p-4 sm:p-5 rounded-xl bg-space-card/80 border border-space-border/60 hover:border-space-border transition-colors"
           >
             <span className="text-xs font-mono uppercase tracking-wider text-space-accentLight block mb-3 font-semibold">
               {row.category}

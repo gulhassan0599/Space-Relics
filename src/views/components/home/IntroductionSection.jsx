@@ -65,7 +65,7 @@ export const IntroductionSection = () => {
               
               {/* Graphic Representation */}
               <div className="relative z-10 flex flex-col items-center text-center py-6">
-                <div className="w-20 h-20 rounded-2xl bg-[#070B16] border border-space-border flex items-center justify-center text-space-accentLight shadow-subtle-glow mb-6 group-hover:scale-105 transition-transform duration-300">
+                <div className="w-20 h-20 rounded-2xl bg-space-card border border-space-border flex items-center justify-center text-space-accentLight shadow-subtle-glow mb-6 group-hover:scale-105 transition-transform duration-300">
                   <Globe2 className="w-10 h-10 text-space-accent" />
                 </div>
 
@@ -81,11 +81,11 @@ export const IntroductionSection = () => {
 
                 {/* Stat pills */}
                 <div className="grid grid-cols-2 gap-3 w-full mt-6 pt-6 border-t border-space-border/60">
-                  <div className="p-3 rounded-xl bg-[#070B16]/80 border border-space-border text-center">
-                    <span className="block text-lg font-heading font-bold text-moon-white">3</span>
+                  <div className="p-3 rounded-xl bg-space-cardElevated/80 border border-space-border text-center">
+                    <span className="block text-lg font-heading font-bold text-space-text">3</span>
                     <span className="text-[11px] text-space-textMuted uppercase tracking-wider">On The Moon</span>
                   </div>
-                  <div className="p-3 rounded-xl bg-[#070B16]/80 border border-space-border text-center">
+                  <div className="p-3 rounded-xl bg-space-cardElevated/80 border border-space-border text-center">
                     <span className="block text-lg font-heading font-bold text-orange-400">3</span>
                     <span className="text-[11px] text-space-textMuted uppercase tracking-wider">On Mars</span>
                   </div>

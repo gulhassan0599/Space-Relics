@@ -36,10 +36,10 @@ export const ObjectGallery = ({ images = [], destination = 'Moon' }) => {
           {images.map((img, idx) => (
             <div
               key={idx}
-              className="rounded-2xl bg-[#070B16] border border-space-border/80 overflow-hidden flex flex-col justify-between"
+              className="rounded-2xl bg-space-card border border-space-border/80 overflow-hidden flex flex-col justify-between"
             >
               {/* Image Graphic / Placeholder Container */}
-              <div className="relative h-56 bg-gradient-to-b from-[#111B2E] to-[#070B16] flex items-center justify-center p-6 border-b border-space-border/60 overflow-hidden group">
+              <div className="relative h-56 bg-gradient-to-b from-space-cardElevated to-space-card flex items-center justify-center p-6 border-b border-space-border/60 overflow-hidden group">
                 {img.imageUrl ? (
                   <img
                     src={img.imageUrl}

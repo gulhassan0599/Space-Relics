@@ -43,7 +43,7 @@ export const ObjectSources = ({ sources = [], destination = 'Moon' }) => {
               href={src.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-4 rounded-xl bg-[#070B16] border border-space-border/70 hover:border-space-accent/60 flex items-center justify-between gap-4 transition-all group"
+              className="p-4 rounded-xl bg-space-card border border-space-border/70 hover:border-space-accent/60 flex items-center justify-between gap-4 transition-all group"
             >
               <div>
                 <span className="text-xs font-mono uppercase tracking-wider text-space-accentLight block mb-0.5">

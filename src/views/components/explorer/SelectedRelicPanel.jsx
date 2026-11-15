@@ -100,7 +100,7 @@ export const SelectedRelicPanel = ({ relic, destination = 'Moon' }) => {
         </p>
 
         {/* Location Details Box */}
-        <div className="p-4 rounded-xl bg-[#070B16]/80 border border-space-border/80 space-y-2.5 mb-6">
+        <div className="p-4 rounded-xl bg-space-card/80 border border-space-border/80 space-y-2.5 mb-6">
           <div className="flex items-start gap-2 text-xs">
             <MapPin className={`w-3.5 h-3.5 flex-shrink-0 mt-0.5 ${isMars ? 'text-orange-400' : 'text-moon-blue'}`} />
             <div>

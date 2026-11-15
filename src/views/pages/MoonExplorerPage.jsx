@@ -198,7 +198,7 @@ export const MoonExplorerPage = () => {
                 key={object.id}
                 onClick={() => setSelectedRelic(object)}
                 className={`transition-all duration-200 rounded-xl ${
-                  selectedRelic?.id === object.id ? 'ring-2 ring-space-accent ring-offset-2 ring-offset-[#070B16]' : ''
+                  selectedRelic?.id === object.id ? 'ring-2 ring-space-accent ring-offset-2 ring-offset-space-bg' : ''
                 }`}
               >
                 <ObjectCard object={object} />

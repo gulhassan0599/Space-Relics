@@ -13,7 +13,7 @@ export const Button = ({
   disabled = false,
   ...props
 }) => {
-  const baseStyles = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#070B16] disabled:opacity-50 disabled:cursor-not-allowed';
+  const baseStyles = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-space-bg disabled:opacity-50 disabled:cursor-not-allowed';
 
   const variants = {
     primary: 'bg-space-accent hover:bg-blue-600 text-white shadow-sm focus:ring-space-accent',

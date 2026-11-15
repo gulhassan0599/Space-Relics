@@ -16,7 +16,7 @@ export const HeroSection = () => {
   return (
     <section className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden border-b border-space-border/60">
       {/* Cinematic Deep Space Background */}
-      <div className="absolute inset-0 z-0 bg-[#070B16] pointer-events-none overflow-hidden">
+      <div className="absolute inset-0 z-0 bg-space-bg pointer-events-none overflow-hidden">
         {/* Distant Earth/Celestial Orb Simulation with soft atmospheric glow */}
         <div className="absolute -top-32 -right-32 w-[420px] sm:w-[600px] h-[420px] sm:h-[600px] rounded-full bg-gradient-to-br from-blue-600/15 via-sky-500/5 to-transparent blur-3xl pointer-events-none" />
         <div className="absolute bottom-10 -left-20 w-[350px] sm:w-[500px] h-[350px] sm:h-[500px] rounded-full bg-gradient-to-tr from-orange-600/10 via-amber-700/5 to-transparent blur-3xl pointer-events-none" />
@@ -33,7 +33,7 @@ export const HeroSection = () => {
         </svg>
 
         {/* Dark Vignette Overlay for Crisp Readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#070B16]/50 via-transparent to-[#070B16]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-space-bg/50 via-transparent to-space-bg" />
       </div>
 
       <Container className="relative z-10 py-16 sm:py-24">
@@ -57,7 +57,7 @@ export const HeroSection = () => {
             className="text-4xl sm:text-6xl lg:text-7xl font-bold font-heading text-space-text tracking-tight leading-[1.08]"
           >
             The Stories <br className="hidden sm:inline" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-space-text via-slate-200 to-space-accentLight">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-space-text via-space-accent to-space-accentLight">
               We Left Behind.
             </span>
           </motion.h1>
