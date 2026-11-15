@@ -7,94 +7,110 @@
     "year": 1967,
     "missionName": "Surveyor 3",
     "agency": "NASA / JPL",
-    "objectType": "Lunar Lander",
+    "objectType": "Lander",
     "launchDate": "April 17, 1967",
     "landingDate": "April 20, 1967",
-    "shortDescription": "A robotic lunar lander that conducted the first remote lunar surface soil mechanics tests and was later inspected by Apollo 12 astronauts.",
-    "overview": "Surveyor 3 was the third uncrewed lander of NASA's Surveyor program sent to explore the lunar surface. Touching down in Oceanus Procellarum on April 20, 1967, it returned 6,315 television pictures and operated a robotic surface-sampler scoop to test lunar soil bearing strength for future Apollo crews. Two and a half years later, Apollo 12 executed a pinpoint landing alongside Surveyor 3, allowing astronauts Pete Conrad and Alan Bean to inspect the lander and retrieve its television camera for return to Earth.",
-    "historicalStory": "During the mid-1960s, prior to human lunar landings, scientists feared that the Moon's surface might be covered by a deep, fluffy layer of dust that could swallow incoming spacecraft. Surveyor 3 was engineered to answer whether the regolith could physically support the weight of the Apollo Lunar Module. Launched atop an Atlas-Centaur rocket from Cape Kennedy, Surveyor 3 approached the Moon on April 20, 1967. Highly reflective rocks caused its landing radar to briefly lose lock, causing the lander to fire its vernier engines and bounce three times across a shallow crater slope before settling peacefully in the Ocean of Storms. Over subsequent weeks, its robotic claw dug four trenches up to 18 centimeters deep, measuring soil resistance and motor currents. The data verified that the lunar surface had adequate bearing capacity for human footprints and lunar landers. In November 1969, Apollo 12's Lunar Module Intrepid touched down just 160 meters away. Conrad and Bean walked down into the crater, photographed Surveyor 3, and cut away its camera and scoop. Back on Earth, analysis revealed how space radiation and micrometeoroid sandblasting degrade human materials over time.",
-    "purpose": "Surveyor 3 was designed to validate soft-landing technology, conduct robotic soil-mechanics tests, determine surface bearing strength, and capture high-resolution television imagery to prepare for human Apollo landings.",
+    "shortDescription": "NASA's Surveyor 3 was the second Surveyor spacecraft to achieve a soft landing on the Moon. Its surface-sampling experiments demonstrated that lunar soil was strong enough to support an Apollo Lunar Module.",
+    "overview": "Surveyor 3 was the third engineering flight in NASA's Surveyor program and the first to carry a surface-sampling instrument capable of digging into lunar soil. Landing in the southeastern region of Oceanus Procellarum on April 20, 1967, the spacecraft transmitted 6,326 television images and conducted experiments to measure the strength and consistency of the lunar surface. Its findings confirmed that the Moon's surface could support the weight of an Apollo Lunar Module. In November 1969, Apollo 12 astronauts Charles Conrad Jr. and Alan L. Bean visited the inactive lander and recovered parts of its camera system and soil sampler for examination on Earth.",
+    "historicalStory": "During the 1960s, NASA needed to establish whether the lunar surface could safely support astronauts and the Apollo Lunar Module. Surveyor 3 was designed to investigate this question through direct experiments on the Moon. Launched on April 17, 1967, aboard an Atlas-Centaur rocket, it began its journey following a burn from the Centaur upper stage after reaching Earth parking orbit. During lunar descent, highly reflective rocks confused the spacecraft's descent radar, preventing its main engine from shutting down at the correct altitude. The lander bounced twice, reaching heights of approximately 33 feet (10 meters) and 10 feet (3 meters), before finally settling on the lunar surface at 00:04:17 UT on April 20, 1967. It landed in the southeastern region of Oceanus Procellarum, approximately 3 degrees south latitude and 23.41 degrees west longitude. Less than an hour after landing, Surveyor 3 began transmitting television images of its surroundings. Its surface sampler reached up to 5 feet (1.5 meters) from the spacecraft and dug trenches as deep as 7 inches (18 centimeters). Through four trenching operations, four bearing tests, and thirteen impact tests, scientists determined that lunar soil had a consistency similar to wet sand and a bearing strength of approximately 10 pounds per square inch (98 kilopascals). These findings demonstrated that the lunar surface could support an Apollo Lunar Module. Surveyor 3 transmitted its final communication on May 4, 1967, two days after lunar night began. More than two years later, on November 19, 1969, Apollo 12 astronauts Charles Conrad Jr. and Alan L. Bean visited the lander during their second extravehicular activity. They recovered components, including the soil scoop and television camera system, allowing scientists to examine the effects of prolonged exposure to the lunar environment.",
+    "purpose": "To achieve a soft landing on the Moon, investigate the physical properties and bearing strength of lunar soil, conduct surface-sampling experiments, and capture television images of the lunar environment in preparation for future Apollo landings.",
     "missionTimeline": [
       {
         "year": "1967",
         "date": "April 17, 1967",
-        "title": "Launch from Cape Kennedy",
-        "description": "Lifted off aboard an Atlas-Centaur rocket on a direct lunar transfer trajectory."
+        "title": "Launch from Cape Canaveral",
+        "description": "Launched aboard an Atlas-Centaur rocket from Launch Complex 36B at Cape Canaveral, Florida, at 07:05:01 UT."
       },
       {
         "year": "1967",
         "date": "April 20, 1967",
-        "title": "Lunar Soft Landing in Oceanus Procellarum",
-        "description": "Bounced three times on a 12-degree crater slope before coming to rest in the Ocean of Storms."
+        "title": "Lunar Soft Landing",
+        "description": "After bouncing twice because of a descent radar malfunction, the spacecraft successfully landed in the southeastern region of Oceanus Procellarum at 00:04:17 UT."
       },
       {
         "year": "1967",
-        "date": "April 21 – May 3, 1967",
-        "title": "Scientific Surface Operations",
-        "description": "Operated robotic surface sampler for 18 hours, dug 4 trenches, and transmitted 6,315 TV frames."
+        "date": "April 20, 1967",
+        "title": "First Television Transmissions",
+        "description": "Began transmitting images of the surrounding lunar landscape less than an hour after landing."
+      },
+      {
+        "year": "1967",
+        "date": "April–May 1967",
+        "title": "Surface Sampling Experiments",
+        "description": "Conducted four trenching operations, four bearing tests, and thirteen impact tests to investigate lunar soil properties."
       },
       {
         "year": "1967",
         "date": "May 4, 1967",
-        "title": "First Lunar Nightfall / Mission Completion",
-        "description": "Entered its first lunar night; battery voltages dropped and transmissions ceased."
+        "title": "Final Communication",
+        "description": "Transmitted its last signal two days after the beginning of lunar night."
       },
       {
         "year": "1969",
-        "date": "November 19–20, 1969",
-        "title": "Apollo 12 Astronaut Inspection",
-        "description": "Astronauts Pete Conrad and Alan Bean visited the lander and retrieved its camera for analysis on Earth."
+        "date": "November 18, 1969",
+        "title": "Apollo 12 Landing Nearby",
+        "description": "Apollo 12 astronauts Charles Conrad Jr. and Alan L. Bean landed approximately 180 meters from Surveyor 3 aboard the Intrepid Lunar Module."
+      },
+      {
+        "year": "1969",
+        "date": "November 19, 1969",
+        "title": "Astronaut Inspection and Sample Recovery",
+        "description": "During their second lunar EVA, Conrad and Bean visited Surveyor 3 and recovered its soil scoop and television camera components for examination on Earth."
       }
     ],
     "achievements": [
-      "Conducted the first remote robotic surface-sampler mechanics tests on the Moon",
-      "Transmitted 6,315 television pictures of the lunar terrain and surface features",
-      "Proved lunar soil had sufficient bearing strength to safely support Apollo Lunar Modules",
-      "Became the only probe visited and sampled by humans on another celestial body"
+      "Successfully demonstrated that lunar soil could support the weight of an Apollo Lunar Module.",
+      "Transmitted 6,326 television images of the lunar surface.",
+      "Performed four soil-trenching operations, four bearing tests, and thirteen impact tests.",
+      "Became the first Surveyor spacecraft to carry and operate a surface-sampling instrument.",
+      "Was visited by Apollo 12 astronauts, who recovered spacecraft components for scientific examination on Earth."
     ],
     "location": {
-      "locationName": "Oceanus Procellarum (Ocean of Storms)",
-      "latitude": -3.016,
-      "longitude": -23.418,
-      "coordinateAccuracy": "verified",
-      "description": "Located inside Surveyor Crater within Oceanus Procellarum, approximately 160 meters from Apollo 12's Intrepid lunar module touchdown site."
+      "locationName": "Southeastern Oceanus Procellarum (Ocean of Storms)",
+      "latitude": -3.0,
+      "longitude": -23.41,
+      "coordinateAccuracy": "approximate",
+      "description": "Landed in the southeastern region of Oceanus Procellarum at approximately 3 degrees south latitude and 23.41 degrees west longitude."
     },
     "mapPosition": {
       "x": 34,
       "y": 52
     },
-    "developmentNote": "Archival NASA landing coordinates verified via Lunar Reconnaissance Orbiter (LRO) imagery.",
-    "missionStatus": "Mission Completed (Primary science concluded May 1967)",
-    "equipmentStatus": "Inactive / Preserved historic artifact resting on the lunar surface",
-    "whyLeftBehind": "Surveyor 3 was strictly designed as an uncrewed one-way exploratory station with no ascent or return engine; its structural aluminum frame, solar panel mast, and leg pads remain on the lunar slope.",
+    "developmentNote": "Coordinates are based on the approximate landing location reported in NASA's mission account. The supplied NASA source does not establish the previous dummy data's more precise coordinate claim.",
+    "missionStatus": "Mission Completed (Final communication received May 4, 1967)",
+    "equipmentStatus": "Inactive / Historic spacecraft remaining on the lunar surface",
+    "whyLeftBehind": "Surveyor 3 was an uncrewed lunar lander designed to conduct surface experiments. It had no capability to launch itself back to Earth. The spacecraft remained on the Moon after completing its mission and was later visited by Apollo 12 astronauts, who recovered selected components for analysis.",
     "interestingFacts": [
-      "Apollo 12 astronauts retrieved Surveyor 3's television camera, which is now exhibited at the Smithsonian National Air and Space Museum.",
-      "Analysis of retrieved parts helped engineers understand how space radiation, temperature extremes, and micrometeoroids degrade human technology over time."
+      "Surveyor 3 bounced twice during its descent, reaching approximately 33 feet (10 meters) and 10 feet (3 meters) before finally landing.",
+      "Its surface sampler could reach up to 5 feet (1.5 meters) from the lander and dig approximately 7 inches (18 centimeters) into lunar soil.",
+      "The spacecraft performed four bearing tests and thirteen impact tests to investigate the mechanical properties of lunar soil.",
+      "Apollo 12 astronauts landed approximately 180 meters from Surveyor 3 and visited it during their second lunar EVA.",
+      "The recovered camera and soil sampler components allowed scientists to investigate the effects of extended lunar exposure on spacecraft materials."
     ],
     "images": [
       {
-        "imageUrl": null,
-        "caption": "Surveyor 3 inspected by Apollo 12 Commander Pete Conrad inside Surveyor Crater",
-        "credit": "NASA (Apollo 12 / AS12-48-7134)",
-        "sourceUrl": "https://www.nasa.gov/history/alsj/a12/images12.html"
+        "imageUrl": "/images/relics/surveyor-3.jpg",
+        "caption": "Surveyor 3 in the foreground and the Apollo 12 Lunar Module in the background during the astronauts' second extravehicular activity.",
+        "credit": "NASA",
+        "sourceUrl": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/as12-48-7134_1280.jpg"
       },
       {
-        "imageUrl": null,
-        "caption": "Surveyor 3 television camera returned to Earth and displayed at the Smithsonian",
-        "credit": "Smithsonian National Air and Space Museum",
-        "sourceUrl": "https://airandspace.si.edu/collection-objects/surveyor-3-television-camera"
+        "imageUrl": "/images/relics/surveyor-3-crater.jpg",
+        "caption": "View of Surveyor III in Its Crater — unmanned Surveyor 3 spacecraft resting on the lunar slope inside Oceanus Procellarum, photographed during the Apollo 12 second extravehicular activity.",
+        "credit": "NASA / JSC",
+        "sourceUrl": "https://assets.science.nasa.gov/content/dam/science/psd/lunar-science/2023/08/detail_as12-48-7121_orig.jpg"
       }
     ],
     "sources": [
       {
-        "title": "Surveyor 3 - NASA Space Science Data Coordinated Archive",
+        "title": "Surveyor 3",
         "organization": "NASA",
-        "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1967-035A"
+        "url": "https://science.nasa.gov/solar-system/moon/surveyor-3/"
       },
       {
-        "title": "Apollo 12 Exploration of Surveyor III",
-        "organization": "NASA Lunar and Planetary Institute",
-        "url": "https://www.lpi.usra.edu/lunar/missions/apollo/apollo_12/surface_opp/"
+        "title": "Beyond Earth: A Chronicle of Deep Space Exploration, 1958–2016",
+        "organization": "NASA History Program Office",
+        "url": "https://solarsystem.nasa.gov/resources/1060/beyond-earth-a-chronicle-of-deep-space-exploration/"
       }
     ]
   },
