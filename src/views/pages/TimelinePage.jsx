@@ -28,7 +28,7 @@ export const TimelinePage = () => {
 
   return (
     <div className="py-12 sm:py-16">
-      <Container size="narrow">
+      <Container size='max-w-7xl'>
         <Heading
           level={1}
           badge={<Badge variant="primary">Chronology</Badge>}

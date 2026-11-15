@@ -1,21 +1,24 @@
-import React, { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { Container } from '../components/common/Container';
-import { Card } from '../components/common/Card';
-import { Button } from '../components/common/Button';
-import ObjectHero from '../components/object/ObjectHero';
-import ObjectOverview from '../components/object/ObjectOverview';
-import ObjectStory from '../components/object/ObjectStory';
-import ObjectFacts from '../components/object/ObjectFacts';
-import ObjectTimeline from '../components/object/ObjectTimeline';
-import ObjectAchievements from '../components/object/ObjectAchievements';
-import ObjectLocationStatus from '../components/object/ObjectLocationStatus';
-import ObjectGallery from '../components/object/ObjectGallery';
-import ObjectSources from '../components/object/ObjectSources';
-import ObjectCard from '../components/object/ObjectCard';
-import ObjectComparison from '../components/common/ObjectComparison';
-import { useObjectDetail, getRelatedObjects } from '../../controllers/objectController';
-import { CaretRight, WarningCircle, Compass } from '@phosphor-icons/react';
+import React, { useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+import { Container } from "../components/common/Container";
+import { Card } from "../components/common/Card";
+import { Button } from "../components/common/Button";
+import ObjectHero from "../components/object/ObjectHero";
+import ObjectOverview from "../components/object/ObjectOverview";
+import ObjectStory from "../components/object/ObjectStory";
+import ObjectFacts from "../components/object/ObjectFacts";
+import ObjectTimeline from "../components/object/ObjectTimeline";
+import ObjectAchievements from "../components/object/ObjectAchievements";
+import ObjectLocationStatus from "../components/object/ObjectLocationStatus";
+import ObjectGallery from "../components/object/ObjectGallery";
+import ObjectSources from "../components/object/ObjectSources";
+import ObjectCard from "../components/object/ObjectCard";
+import ObjectComparison from "../components/common/ObjectComparison";
+import {
+  useObjectDetail,
+  getRelatedObjects,
+} from "../../controllers/objectController";
+import { CaretRight, WarningCircle, Compass } from "@phosphor-icons/react";
 
 export const ObjectDetailsPage = () => {
   const { slug } = useParams();
@@ -26,7 +29,7 @@ export const ObjectDetailsPage = () => {
       document.title = `${object.name} | Space Relics`;
       window.scrollTo(0, 0);
     } else {
-      document.title = 'Relic Not Found | Space Relics';
+      document.title = "Relic Not Found | Space Relics";
     }
   }, [object, slug]);
 
@@ -34,22 +37,19 @@ export const ObjectDetailsPage = () => {
   if (notFound || !object) {
     return (
       <div className="py-20 flex-grow flex items-center justify-center">
-        <Container size="narrow">
-          <Card elevated className="p-8 sm:p-12 text-center border-red-950/60 shadow-2xl">
-            <div className="w-16 h-16 rounded-2xl bg-red-950/40 border border-red-900/60 flex items-center justify-center mx-auto mb-6 text-red-400">
-              <WarningCircle weight="duotone" className="w-8 h-8" />
-            </div>
-
-            <span className="text-xs font-mono uppercase tracking-widest text-red-400 block mb-2">
-              Archival Record Not Found
-            </span>
-
+        <Container size="max-w-7xl">
+          <Card
+            elevated
+            className="p-8 sm:p-12 text-center border-red-950/60 shadow-2xl"
+          >
             <h1 className="text-2xl sm:text-3xl font-heading font-bold text-space-text mb-3">
               Relic Missing from Registry
             </h1>
 
             <p className="text-sm text-space-textSecondary max-w-md mx-auto leading-relaxed mb-8">
-              The artifact catalog record for "<span className="font-mono text-space-accentLight">{slug}</span>" could not be located in our Moon or Mars museum collections.
+              The artifact catalog record for "
+              <span className="font-mono text-space-accentLight">{slug}</span>"
+              could not be located in our Moon or Mars museum collections.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
@@ -69,13 +69,13 @@ export const ObjectDetailsPage = () => {
     );
   }
 
-  const isMars = object.destination.toLowerCase() === 'mars';
-  const explorerPath = isMars ? '/explore/mars' : '/explore/moon';
+  const isMars = object.destination.toLowerCase() === "mars";
+  const explorerPath = isMars ? "/explore/mars" : "/explore/moon";
   const related = getRelatedObjects(object.slug);
 
   return (
     <div className="flex flex-col w-full py-8 sm:py-12">
-      <Container size="narrow">
+      <Container size="max-w-7xl">
         {/* Breadcrumb Navigation */}
         <nav aria-label="Breadcrumb" className="mb-6">
           <ol className="flex items-center gap-2 text-xs font-mono text-space-textSecondary">
@@ -88,7 +88,10 @@ export const ObjectDetailsPage = () => {
               <CaretRight weight="bold" className="w-3.5 h-3.5" />
             </li>
             <li>
-              <Link to="/explore" className="hover:text-white transition-colors">
+              <Link
+                to="/explore"
+                className="hover:text-white transition-colors"
+              >
                 Explore
               </Link>
             </li>
@@ -96,14 +99,24 @@ export const ObjectDetailsPage = () => {
               <CaretRight weight="bold" className="w-3.5 h-3.5" />
             </li>
             <li>
-              <Link to={explorerPath} className="hover:text-white transition-colors">
+              <Link
+                to={explorerPath}
+                className="hover:text-white transition-colors"
+              >
                 {object.destination}
               </Link>
             </li>
             <li className="text-space-textMuted">
               <CaretRight weight="bold" className="w-3.5 h-3.5" />
             </li>
-            <li className={isMars ? 'text-orange-300 font-semibold truncate' : 'text-moon-white font-semibold truncate'} aria-current="page">
+            <li
+              className={
+                isMars
+                  ? "text-orange-300 font-semibold truncate"
+                  : "text-moon-white font-semibold truncate"
+              }
+              aria-current="page"
+            >
               {object.name}
             </li>
           </ol>
@@ -127,7 +140,10 @@ export const ObjectDetailsPage = () => {
         {/* Section D: Educational Did You Know Highlights */}
         {object.interestingFacts && object.interestingFacts.length > 0 && (
           <div>
-            <ObjectFacts facts={object.interestingFacts} destination={object.destination} />
+            <ObjectFacts
+              facts={object.interestingFacts}
+              destination={object.destination}
+            />
           </div>
         )}
 

@@ -80,7 +80,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-space-border/60 flex flex-col sm:flex-row justify-center text-xs font-mono text-space-textMuted gap-4">
+        <div className="pt-8 border-t border-space-border/60 flex flex-col sm:flex-row text-center justify-center text-xs font-mono text-space-textMuted gap-4">
           <p>
             © {currentYear} {APP_IDENTITY.name}. Built for {APP_IDENTITY.competition}.
           </p>
