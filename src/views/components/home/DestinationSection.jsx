@@ -37,14 +37,13 @@ export const DestinationSection = () => {
           </Heading>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
           {/* Moon Destination Card */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
-            className="flex flex-col h-full"
           >
             <DestinationCard
               destination="The Moon"
@@ -63,7 +62,6 @@ export const DestinationSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
-            className="flex flex-col h-full"
           >
             <DestinationCard
               destination="Mars"

@@ -75,15 +75,15 @@ export const EducationalQuiz = () => {
             {/* Options List */}
             <div className="space-y-3 mb-6">
               {currentQ.options.map((option, idx) => {
-                let btnStyle = 'border-space-border/80 bg-space-card text-space-textSecondary hover:border-space-accent/60 hover:text-space-text';
+                let btnStyle = 'border-space-border/80 bg-[#070B16] text-space-textSecondary hover:border-space-accent/60 hover:text-white';
 
                 if (isAnswered) {
                   if (idx === currentQ.correctIndex) {
-                    btnStyle = 'border-emerald-500 bg-emerald-500/15 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-200 font-semibold ring-1 ring-emerald-500/50';
+                    btnStyle = 'border-emerald-500 bg-emerald-950/40 text-emerald-200 font-medium';
                   } else if (idx === selectedOption) {
-                    btnStyle = 'border-red-500 bg-red-500/15 dark:bg-red-950/40 text-red-700 dark:text-red-200 font-semibold ring-1 ring-red-500/50';
+                    btnStyle = 'border-red-500 bg-red-950/40 text-red-200 font-medium';
                   } else {
-                    btnStyle = 'border-space-border/40 bg-space-card/50 text-space-textMuted opacity-50';
+                    btnStyle = 'border-space-border/40 bg-[#070B16]/50 text-space-textMuted opacity-50';
                   }
                 }
 

@@ -1,13 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Menu, X, Compass, Sun, Moon } from 'lucide-react';
+import { Menu, X, Compass } from 'lucide-react';
 import { APP_IDENTITY, NAVIGATION_LINKS } from '../../../utils/constants';
-import { useTheme } from '../../../controllers/themeContext';
 
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const menuButtonRef = useRef(null);
-  const { theme, toggleTheme, isDark } = useTheme();
 
   const toggleMobileMenu = () => setMobileMenuOpen((prev) => !prev);
   const closeMobileMenu = () => {
@@ -37,7 +35,7 @@ export const Navbar = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <header className="sticky top-0 z-50 bg-space-bg/90 backdrop-blur-md border-b border-space-border transition-colors duration-200">
+    <header className="sticky top-0 z-50 bg-[#070B16]/90 backdrop-blur-md border-b border-space-border transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           
@@ -69,8 +67,8 @@ export const Navbar = () => {
                 className={({ isActive }) =>
                   `px-3.5 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive
-                      ? 'text-space-text bg-space-cardElevated border border-space-border shadow-sm'
-                      : 'text-space-textSecondary hover:text-space-text hover:bg-space-card/60'
+                      ? 'text-white bg-space-cardElevated border border-space-border shadow-sm'
+                      : 'text-space-textSecondary hover:text-white hover:bg-space-card/60'
                   }`
                 }
               >
@@ -78,37 +76,16 @@ export const Navbar = () => {
               </NavLink>
             ))}
 
-            {/* Theme Toggle Button */}
-            <button
-              type="button"
-              onClick={toggleTheme}
-              aria-label={isDark ? 'Switch to light observatory theme' : 'Switch to dark space museum theme'}
-              title={isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-              className="ml-2 p-2 rounded-lg text-space-textSecondary hover:text-space-text bg-space-cardElevated/80 hover:bg-space-card border border-space-border transition-colors focus:outline-none focus:ring-2 focus:ring-space-accent"
+            <Link
+              to="/explore"
+              className="ml-4 px-4 py-2 rounded-lg text-sm font-medium bg-space-accent hover:bg-blue-600 text-white transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-space-accent focus:ring-offset-2 focus:ring-offset-[#070B16]"
             >
-              {isDark ? (
-                <Sun className="w-5 h-5 text-amber-400 hover:rotate-45 transition-transform" />
-              ) : (
-                <Moon className="w-5 h-5 text-space-accent hover:-rotate-12 transition-transform" />
-              )}
-            </button>
+              Start Exploring
+            </Link>
           </nav>
 
-          {/* Mobile Right Controls: Theme Toggle & Hamburger */}
-          <div className="flex items-center gap-2 md:hidden">
-            <button
-              type="button"
-              onClick={toggleTheme}
-              aria-label={isDark ? 'Switch to light observatory theme' : 'Switch to dark space museum theme'}
-              className="p-2 rounded-lg text-space-textSecondary hover:text-space-text bg-space-cardElevated/80 border border-space-border focus:outline-none focus:ring-2 focus:ring-space-accent"
-            >
-              {isDark ? (
-                <Sun className="w-5 h-5 text-amber-400" />
-              ) : (
-                <Moon className="w-5 h-5 text-space-accent" />
-              )}
-            </button>
-
+          {/* Mobile Menu Button */}
+          <div className="flex md:hidden">
             <button
               ref={menuButtonRef}
               type="button"
@@ -116,7 +93,7 @@ export const Navbar = () => {
               aria-label="Toggle navigation menu"
               aria-expanded={mobileMenuOpen}
               aria-controls="mobile-navigation-drawer"
-              className="p-2 rounded-lg text-space-textSecondary hover:text-space-text hover:bg-space-card border border-transparent hover:border-space-border focus:outline-none focus:ring-2 focus:ring-space-accent"
+              className="p-2 rounded-lg text-space-textSecondary hover:text-white hover:bg-space-card border border-transparent hover:border-space-border focus:outline-none focus:ring-2 focus:ring-space-accent"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -129,7 +106,7 @@ export const Navbar = () => {
         <nav
           id="mobile-navigation-drawer"
           aria-label="Mobile Navigation"
-          className="md:hidden border-b border-space-border bg-space-bgSecondary/95 backdrop-blur-lg px-4 pt-3 pb-5 space-y-2"
+          className="md:hidden border-b border-space-border bg-[#0B1220]/95 backdrop-blur-lg px-4 pt-3 pb-5 space-y-2"
         >
           {NAVIGATION_LINKS.map((link) => (
             <NavLink
@@ -139,14 +116,24 @@ export const Navbar = () => {
               className={({ isActive }) =>
                 `block px-3 py-2.5 rounded-lg text-base font-medium transition-colors ${
                   isActive
-                    ? 'text-space-text bg-space-card border border-space-border'
-                    : 'text-space-textSecondary hover:text-space-text hover:bg-space-card/50'
+                    ? 'text-white bg-space-card border border-space-border'
+                    : 'text-space-textSecondary hover:text-white hover:bg-space-card/50'
                 }`
               }
             >
               {link.name}
             </NavLink>
           ))}
+
+          <div className="pt-2">
+            <Link
+              to="/explore"
+              onClick={closeMobileMenu}
+              className="block w-full text-center py-2.5 px-4 rounded-lg text-sm font-medium bg-space-accent hover:bg-blue-600 text-white transition-colors"
+            >
+              Start Exploring
+            </Link>
+          </div>
         </nav>
       )}
     </header>

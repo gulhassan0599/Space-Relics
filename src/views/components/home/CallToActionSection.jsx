@@ -7,7 +7,7 @@ import { Compass, ArrowRight } from 'lucide-react';
 
 export const CallToActionSection = () => {
   return (
-    <section className="py-24 sm:py-32 relative overflow-hidden bg-gradient-to-b from-space-bg via-space-bgSecondary to-space-bg">
+    <section className="py-24 sm:py-32 relative overflow-hidden bg-gradient-to-b from-[#070B16] via-[#0B1220] to-[#070B16]">
       {/* Background Orbital Rings & Stars */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-space-accent/10 rounded-full blur-3xl" />
@@ -29,7 +29,7 @@ export const CallToActionSection = () => {
           transition={{ duration: 0.5, ease: 'easeOut' }}
           className="p-8 sm:p-14 rounded-3xl bg-space-card/70 border border-space-border/80 shadow-2xl backdrop-blur-md"
         >
-          <div className="w-14 h-14 rounded-2xl bg-space-card border border-space-border flex items-center justify-center mx-auto mb-6 text-space-accentLight shadow-subtle-glow">
+          <div className="w-14 h-14 rounded-2xl bg-[#070B16] border border-space-border flex items-center justify-center mx-auto mb-6 text-space-accentLight shadow-subtle-glow">
             <Compass className="w-7 h-7 text-space-accent animate-pulse" />
           </div>
 

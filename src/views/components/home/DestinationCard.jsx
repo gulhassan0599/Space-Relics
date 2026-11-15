@@ -42,35 +42,35 @@ export const DestinationCard = ({
       role="link"
       tabIndex={0}
       aria-label={`Explore ${destination}: ${title}`}
-      className="group relative flex flex-col justify-between overflow-hidden p-8 sm:p-10 border-space-border/80 hover:border-opacity-100 transition-all duration-300 h-full min-h-[460px] focus:outline-none focus:ring-2 focus:ring-space-accent cursor-pointer"
+      className="group relative flex flex-col justify-between overflow-hidden p-8 sm:p-10 border-space-border/80 hover:border-opacity-100 transition-all duration-300 min-h-[460px] focus:outline-none focus:ring-2 focus:ring-space-accent cursor-pointer"
     >
       {/* Background Ambience & Gradient */}
       <div 
         className={`absolute inset-0 opacity-20 group-hover:opacity-35 transition-opacity duration-500 pointer-events-none ${
           isMoon
-            ? 'bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-700 via-slate-900 to-transparent dark:opacity-20 opacity-10'
-            : 'bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-700 via-red-950 to-transparent dark:opacity-20 opacity-10'
+            ? 'bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-700 via-slate-900 to-transparent'
+            : 'bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-700 via-red-950 to-transparent'
         }`} 
       />
 
       {/* Subtle Planetary Sphere Ring Graphic */}
       <div className={`absolute -bottom-16 -right-16 w-64 h-64 rounded-full border border-dashed opacity-20 pointer-events-none transition-transform duration-700 group-hover:scale-110 ${
-        isMoon ? 'border-sky-500' : 'border-orange-500'
+        isMoon ? 'border-moon-blue' : 'border-orange-500'
       }`} />
 
       {/* Card Content Top */}
-      <div className="relative z-10 flex-grow">
+      <div className="relative z-10">
         <div className="flex items-center justify-between mb-4">
           <Badge variant={isMoon ? 'moon' : 'mars'}>
             {badgeText || `${relicsCount} Relics Documented`}
           </Badge>
-          <span className={`text-xs font-mono uppercase tracking-widest font-semibold ${isMoon ? 'text-sky-600 dark:text-moon-blue' : 'text-orange-600 dark:text-orange-400'}`}>
+          <span className={`text-xs font-mono uppercase tracking-widest ${isMoon ? 'text-moon-blue' : 'text-orange-400'}`}>
             {destination}
           </span>
         </div>
 
         <h3 className={`text-3xl sm:text-4xl font-heading font-bold tracking-tight mb-3 transition-colors ${
-          isMoon ? 'text-space-text group-hover:text-sky-600 dark:group-hover:text-blue-100' : 'text-space-text group-hover:text-orange-600 dark:group-hover:text-amber-100'
+          isMoon ? 'text-moon-white group-hover:text-blue-100' : 'text-orange-200 group-hover:text-amber-100'
         }`}>
           {title}
         </h3>
@@ -88,7 +88,7 @@ export const DestinationCard = ({
             <ul className="space-y-1.5">
               {relicsList.map((relic, idx) => (
                 <li key={idx} className="flex items-center gap-2 text-xs text-space-textSecondary">
-                  <span className={`w-1.5 h-1.5 rounded-full ${isMoon ? 'bg-sky-500 dark:bg-moon-blue' : 'bg-orange-500'}`} />
+                  <span className={`w-1.5 h-1.5 rounded-full ${isMoon ? 'bg-moon-blue' : 'bg-orange-500'}`} />
                   <span className="font-medium text-space-text">{relic}</span>
                 </li>
               ))}

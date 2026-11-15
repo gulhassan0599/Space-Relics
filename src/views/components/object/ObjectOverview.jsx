@@ -84,7 +84,7 @@ export const ObjectOverview = ({ object }) => {
                     ? isMars
                       ? 'bg-orange-950/30 border-orange-900/60'
                       : 'bg-slate-800/40 border-slate-700'
-                    : 'bg-space-card/70 border-space-border/70'
+                    : 'bg-[#070B16]/70 border-space-border/70'
                 }`}
               >
                 <div className="flex items-center gap-2 mb-2 text-xs font-mono uppercase tracking-wider text-space-textMuted">

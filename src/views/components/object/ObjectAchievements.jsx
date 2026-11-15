@@ -35,7 +35,7 @@ export const ObjectAchievements = ({ achievements = [], destination = 'Moon' }) 
           {achievements.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-space-card/70 border border-space-border/70 flex items-start gap-3.5 hover:border-space-border transition-colors"
+              className="p-5 rounded-2xl bg-[#070B16]/70 border border-space-border/70 flex items-start gap-3.5 hover:border-space-border transition-colors"
             >
               <div className="mt-0.5 flex-shrink-0">
                 <CheckCircle2 className={`w-5 h-5 ${isMars ? 'text-emerald-400' : 'text-emerald-400'}`} />

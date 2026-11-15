@@ -196,7 +196,7 @@ export const MarsExplorerPage = () => {
                 key={object.id}
                 onClick={() => setSelectedRelic(object)}
                 className={`transition-all duration-200 rounded-xl ${
-                  selectedRelic?.id === object.id ? 'ring-2 ring-orange-500 ring-offset-2 ring-offset-space-bg' : ''
+                  selectedRelic?.id === object.id ? 'ring-2 ring-orange-500 ring-offset-2 ring-offset-[#070B16]' : ''
                 }`}
               >
                 <ObjectCard object={object} />

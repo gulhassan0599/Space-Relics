@@ -5,7 +5,7 @@ import { Footer } from '../components/navigation/Footer';
 
 export const MainLayout = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-space-bg text-space-text space-stars-bg transition-colors duration-200">
+    <div className="flex flex-col min-h-screen bg-[#070B16] text-[#F8FAFC] space-stars-bg">
       <Navbar />
       <main className="flex-grow flex flex-col">
         <Outlet />

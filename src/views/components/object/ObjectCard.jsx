@@ -86,7 +86,7 @@ export const ObjectCard = ({ object, className = '' }) => {
         </div>
 
         <div className="absolute top-3 right-3 z-10">
-          <span className="px-2 py-0.5 rounded-full text-[11px] font-mono font-medium bg-space-bg/80 text-space-textSecondary border border-space-border backdrop-blur-sm">
+          <span className="px-2 py-0.5 rounded-full text-[11px] font-mono font-medium bg-[#070B16]/80 text-space-textSecondary border border-space-border backdrop-blur-sm">
             {object.year}
           </span>
         </div>
@@ -100,9 +100,7 @@ export const ObjectCard = ({ object, className = '' }) => {
           </div>
 
           <h3 className={`font-heading font-bold text-lg leading-snug transition-colors ${
-            isMoon 
-              ? 'text-space-text group-hover:text-sky-600 dark:group-hover:text-moon-white' 
-              : 'text-space-text group-hover:text-orange-600 dark:group-hover:text-orange-200'
+            isMoon ? 'text-space-text group-hover:text-moon-white' : 'text-space-text group-hover:text-orange-200'
           }`}>
             {object.name}
           </h3>
@@ -113,7 +111,7 @@ export const ObjectCard = ({ object, className = '' }) => {
 
           {object.location?.locationName && (
             <div className="mt-4 flex items-center gap-1.5 text-xs text-space-textMuted">
-              <MapPin className={`w-3.5 h-3.5 flex-shrink-0 ${isMoon ? 'text-sky-600 dark:text-moon-blue' : 'text-orange-600 dark:text-orange-400'}`} />
+              <MapPin className={`w-3.5 h-3.5 flex-shrink-0 ${isMoon ? 'text-moon-blue' : 'text-orange-400'}`} />
               <span className="truncate">{object.location.locationName}</span>
             </div>
           )}
@@ -122,7 +120,7 @@ export const ObjectCard = ({ object, className = '' }) => {
         {/* Card CTA Footer */}
         <div className="mt-6 pt-4 border-t border-space-border/60">
           <div
-            className="inline-flex items-center justify-between w-full text-xs font-semibold uppercase tracking-wider text-space-textSecondary group-hover:text-space-text transition-colors"
+            className="inline-flex items-center justify-between w-full text-xs font-semibold uppercase tracking-wider text-space-textSecondary group-hover:text-white transition-colors"
           >
             <span>View Story</span>
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 text-space-accent" />

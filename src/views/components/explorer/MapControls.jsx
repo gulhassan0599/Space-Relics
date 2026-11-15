@@ -13,7 +13,7 @@ export const MapControls = ({
   maxZoom = 2.5
 }) => {
   return (
-    <div className="flex items-center gap-1.5 p-1.5 rounded-xl bg-space-bgSecondary/90 border border-space-border backdrop-blur-md shadow-lg select-none">
+    <div className="flex items-center gap-1.5 p-1.5 rounded-xl bg-[#0B1220]/90 border border-space-border backdrop-blur-md shadow-lg select-none">
       <button
         type="button"
         onClick={onZoomIn}

@@ -37,7 +37,7 @@ export const ObjectTimeline = ({ timeline = [], destination = 'Moon' }) => {
             </div>
           </div>
 
-          <div className="text-xs font-mono text-space-textMuted bg-space-card px-3 py-1.5 rounded-lg border border-space-border/60 self-start sm:self-auto">
+          <div className="text-xs font-mono text-space-textMuted bg-[#070B16] px-3 py-1.5 rounded-lg border border-space-border/60 self-start sm:self-auto">
             Click milestones to inspect phase details
           </div>
         </div>
@@ -93,8 +93,8 @@ export const ObjectTimeline = ({ timeline = [], destination = 'Moon' }) => {
                       ? 'bg-orange-500 border-white scale-125 ring-4 ring-orange-500/30'
                       : 'bg-space-accent border-white scale-125 ring-4 ring-space-accent/30'
                     : isMars
-                      ? 'bg-orange-950/70 border-orange-900/90 group-hover:border-orange-500'
-                      : 'bg-space-card border-space-border group-hover:border-space-accent'
+                      ? 'bg-[#140804] border-orange-900/90 group-hover:border-orange-500'
+                      : 'bg-[#070B16] border-space-border group-hover:border-space-accent'
                 }`} />
 
                 {/* Milestone Card */}
@@ -103,7 +103,7 @@ export const ObjectTimeline = ({ timeline = [], destination = 'Moon' }) => {
                     ? isMars
                       ? 'bg-orange-950/40 border-orange-700/80'
                       : 'bg-space-cardElevated border-space-accent/60'
-                    : 'bg-space-card/70 border-space-border/60 hover:border-space-border hover:bg-space-card/60'
+                    : 'bg-[#070B16]/70 border-space-border/60 hover:border-space-border hover:bg-space-card/60'
                 }`}>
                   <div className="flex items-center justify-between gap-2">
                     <span className={`text-xs font-mono font-bold ${
