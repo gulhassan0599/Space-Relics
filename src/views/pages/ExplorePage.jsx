@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Container } from '../components/common/Container';
 import { Heading } from '../components/common/Heading';
-import { Badge } from '../components/common/Badge';
 import DestinationCard from '../components/home/DestinationCard';
 
 export const ExplorePage = () => {

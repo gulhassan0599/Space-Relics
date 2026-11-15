@@ -6,13 +6,10 @@ export const DestinationCard = ({
   destination,
   title,
   description,
-  relicsCount = 3,
-  relicsList = [],
   route,
   variant = "moon",
   imageSrc,
   imageAlt,
-  sectorCode = "SEC-01",
   className = "",
 }) => {
   const navigate = useNavigate();

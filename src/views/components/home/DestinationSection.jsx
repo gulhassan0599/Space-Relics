@@ -3,18 +3,6 @@ import { Container } from '../common/Container';
 import DestinationCard from './DestinationCard';
 
 export const DestinationSection = () => {
-  const moonRelics = [
-    'Surveyor 3 (1967)',
-    'Apollo 11 Laser Retroreflector (1969)',
-    'Apollo Lunar Roving Vehicle (1971–1972)'
-  ];
-
-  const marsRelics = [
-    'Sojourner Rover (1997)',
-    'Spirit Rover (2004–2011)',
-    'Opportunity Rover (2004–2019)'
-  ];
-
   return (
     <section className="py-12 border-b border-space-border/80 bg-[#090B0E] relative">
       <Container>

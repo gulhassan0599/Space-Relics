@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Container } from "../components/common/Container";
 import { Heading } from "../components/common/Heading";
 import { Card } from "../components/common/Card";
-import { Badge } from "../components/common/Badge";
 import { Button } from "../components/common/Button";
 import MarsMap from "../components/explorer/MarsMap";
 import SelectedRelicPanel from "../components/explorer/SelectedRelicPanel";
@@ -13,7 +12,6 @@ import { getMapMarkers } from "../../controllers/mapController";
 import {
   CaretRight,
   Planet,
-  MoonStars,
   CalendarBlank,
   Stack,
   ArrowRight,

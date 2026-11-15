@@ -8,10 +8,11 @@ import { ClockClockwise } from '@phosphor-icons/react';
  * and inspect detailed descriptions with active highlighted states.
  */
 export const ObjectTimeline = ({ timeline = [], destination = 'Moon' }) => {
+  const [selectedIdx, setSelectedIdx] = useState(0);
+
   if (!timeline || timeline.length === 0) return null;
 
   const isMars = destination.toLowerCase() === 'mars';
-  const [selectedIdx, setSelectedIdx] = useState(0);
 
   const selectedMilestone = timeline[selectedIdx] || timeline[0];
 

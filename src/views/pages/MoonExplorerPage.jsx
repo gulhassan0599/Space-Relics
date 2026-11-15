@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Container } from "../components/common/Container";
 import { Heading } from "../components/common/Heading";
 import { Card } from "../components/common/Card";
-import { Badge } from "../components/common/Badge";
 import { Button } from "../components/common/Button";
 import LunarMap from "../components/explorer/LunarMap";
 import SelectedRelicPanel from "../components/explorer/SelectedRelicPanel";

@@ -9,8 +9,7 @@ import {
   getAllObjects,
   getMoonObjects,
   getMarsObjects,
-  getObjectBySlug,
-  getObjectsByDestination
+  getObjectBySlug
 } from '../models/objectModel.js';
 
 /**

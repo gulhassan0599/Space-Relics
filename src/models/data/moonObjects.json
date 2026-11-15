@@ -110,6 +110,115 @@
     ]
   },
   {
+    "id": "apollo-11-lunar-module",
+    "slug": "apollo-11-lunar-module",
+    "name": "Apollo 11 Lunar Module (Eagle)",
+    "destination": "Moon",
+    "year": 1969,
+    "missionName": "Apollo 11",
+    "agency": "NASA",
+    "objectType": "Lunar Module Descent Stage",
+    "launchDate": "July 16, 1969",
+    "landingDate": "July 20, 1969",
+    "shortDescription": "The descent stage of Apollo 11's Lunar Module Eagle carried the first humans to the lunar surface. After Neil Armstrong and Buzz Aldrin returned to lunar orbit, the descent stage was left behind and its eventual fate remains unknown.",
+    "overview": "Apollo 11's Lunar Module, named Eagle, was the first crewed vehicle to land on the Moon. It carried Commander Neil A. Armstrong and Lunar Module Pilot Edwin E. Aldrin Jr. to the lunar surface on July 20, 1969. The Lunar Module consisted of two stages: the descent stage, which provided the landing platform, and the ascent stage, which returned the astronauts to the Command and Service Module. After the astronauts completed their lunar surface activities, the ascent stage lifted off and the descent stage was left behind.",
+    "historicalStory": "On July 20, 1969, Apollo 11 made history when the Lunar Module Eagle landed in the Sea of Tranquility. Neil Armstrong stepped onto the lunar surface at 02:56:15 UT on July 21, followed by Buzz Aldrin 19 minutes later. During their approximately two-and-a-half-hour surface activity, they collected lunar samples, photographed the landscape, deployed scientific equipment, raised an American flag, and unveiled a commemorative plaque. After completing their work, the astronauts returned to Eagle and prepared for departure. The ascent stage lifted off on July 21, leaving the descent stage behind. The eventual fate of the descent stage is unknown, although NASA's archive assumes it crashed onto the Moon within the following one to four months.",
+    "purpose": "The Lunar Module was designed to transport astronauts from lunar orbit to the Moon's surface and return them to the Command and Service Module. Its descent stage provided the landing propulsion, landing legs, and equipment storage. It also served as the launch platform for the ascent stage, which carried the astronauts back into lunar orbit.",
+    "missionTimeline": [
+      {
+        "year": "1969",
+        "date": "July 16, 1969",
+        "title": "Launch from Earth",
+        "description": "Apollo 11 launched from Cape Canaveral aboard a Saturn V rocket."
+      },
+      {
+        "year": "1969",
+        "date": "July 20, 1969",
+        "title": "Lunar Module Separation",
+        "description": "The Lunar Module undocked from the Command and Service Module before beginning its descent toward the lunar surface."
+      },
+      {
+        "year": "1969",
+        "date": "July 20, 1969",
+        "title": "The Eagle Has Landed",
+        "description": "The Lunar Module landed in Mare Tranquillitatis, the Sea of Tranquility, at 20:17:40 UT."
+      },
+      {
+        "year": "1969",
+        "date": "July 21, 1969",
+        "title": "First Human Moonwalk",
+        "description": "Neil Armstrong stepped onto the lunar surface at 02:56:15 UT, followed by Buzz Aldrin 19 minutes later."
+      },
+      {
+        "year": "1969",
+        "date": "July 21, 1969",
+        "title": "Lunar Surface Exploration",
+        "description": "The astronauts collected 21.55 kg of lunar rock and soil, photographed the surroundings, deployed scientific experiments, and traversed approximately 250 meters."
+      },
+      {
+        "year": "1969",
+        "date": "July 21, 1969",
+        "title": "Return to Lunar Orbit",
+        "description": "The Lunar Module ascent stage lifted off at 17:54:01 UT after 21 hours and 36 minutes on the lunar surface."
+      },
+      {
+        "year": "1969",
+        "date": "July 22, 1969",
+        "title": "Lunar Module Jettison",
+        "description": "After docking with the Command and Service Module, the Lunar Module was jettisoned into lunar orbit. Its eventual fate is unknown."
+      }
+    ],
+    "achievements": [
+      "First crewed vehicle to land on the Moon.",
+      "Carried the first two humans to walk on the lunar surface.",
+      "Enabled the first human lunar exploration and geological sample collection.",
+      "Supported the collection of 21.55 kg of lunar rock and soil.",
+      "Provided the landing platform and launch system that enabled the astronauts to return to lunar orbit.",
+      "Marked the beginning of human exploration of the lunar surface."
+    ],
+    "location": {
+      "locationName": "Apollo 11 Landing Site, Mare Tranquillitatis",
+      "latitude": 0.67416,
+      "longitude": 23.47314,
+      "coordinateAccuracy": "NASA coordinates determined from Lunar Reconnaissance Orbiter images using the DE 421 reference frame",
+      "description": "The Apollo 11 landing site is located in Mare Tranquillitatis, also known as the Sea of Tranquility, on the Moon."
+    },
+    "mapPosition": {
+      "x": 68,
+      "y": 48
+    },
+    "developmentNote": "This entry represents only the Apollo 11 Lunar Module descent stage, not the ascent stage or the Early Apollo Scientific Experiment Package (EASEP). NASA's archive does not establish the exact final resting place of the descent stage. Map layout coordinates have not been provided and must be assigned during UI development.",
+    "missionStatus": "Mission Completed",
+    "equipmentStatus": "Descent stage jettisoned into lunar orbit on July 22, 1969. Its eventual fate is unknown; NASA's archive assumes it crashed onto the lunar surface within one to four months.",
+    "whyLeftBehind": "The Lunar Module consisted of two stages. The descent stage provided the landing platform and supported lunar surface operations. After the astronauts completed their activities, the ascent stage lifted off to return them to the Command and Service Module. The descent stage was no longer needed and remained behind. Its later fate is uncertain.",
+    "interestingFacts": [
+      "The Lunar Module was named Eagle.",
+      "It carried Neil Armstrong and Buzz Aldrin, the first two humans to walk on the Moon.",
+      "Armstrong announced the successful landing with the famous words, 'Houston, Tranquility Base here - the Eagle has landed.'",
+      "The complete Lunar Module had a mass of 15,103 kg, including propellants.",
+      "The descent stage was approximately 4.2 meters across and 1.7 meters thick.",
+      "The descent stage had four landing legs with round footpads.",
+      "The astronauts spent 21 hours and 36 minutes on the lunar surface.",
+      "The astronauts traveled approximately 250 meters during their lunar surface exploration.",
+      "The descent stage's exact final resting place is unknown."
+    ],
+    "images": [
+      {
+        "imageUrl": "/images/relics/apollo-11-lm-eagle.jpg",
+        "caption": "Astronaut Edwin 'Buzz' Aldrin walks on the lunar surface near the leg and descent stage footpad of the Apollo 11 Lunar Module Eagle at Tranquility Base.",
+        "credit": "NASA (AS11-40-5902)",
+        "sourceUrl": "https://images.nasa.gov/details/as11-40-5902"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Apollo 11 Lunar Module / EASEP — NSSDCA Master Catalog",
+        "organization": "NASA Space Science Data Coordinated Archive",
+        "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
+      }
+    ]
+  },
+  {
     "id": "apollo-15-lunar-module",
     "slug": "apollo-15-lunar-module",
     "name": "Apollo 15 Lunar Module (Falcon)",
@@ -219,115 +328,6 @@
         "title": "Apollo 15 Lunar Module /ALSEP — NSSDCA Master Catalog",
         "organization": "NASA Space Science Data Coordinated Archive",
         "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063C"
-      }
-    ]
-  },
-  {
-    "id": "apollo-11-lunar-module",
-    "slug": "apollo-11-lunar-module",
-    "name": "Apollo 11 Lunar Module (Eagle)",
-    "destination": "Moon",
-    "year": 1969,
-    "missionName": "Apollo 11",
-    "agency": "NASA",
-    "objectType": "Lunar Module Descent Stage",
-    "launchDate": "July 16, 1969",
-    "landingDate": "July 20, 1969",
-    "shortDescription": "The descent stage of Apollo 11's Lunar Module Eagle carried the first humans to the lunar surface. After Neil Armstrong and Buzz Aldrin returned to lunar orbit, the descent stage was left behind and its eventual fate remains unknown.",
-    "overview": "Apollo 11's Lunar Module, named Eagle, was the first crewed vehicle to land on the Moon. It carried Commander Neil A. Armstrong and Lunar Module Pilot Edwin E. Aldrin Jr. to the lunar surface on July 20, 1969. The Lunar Module consisted of two stages: the descent stage, which provided the landing platform, and the ascent stage, which returned the astronauts to the Command and Service Module. After the astronauts completed their lunar surface activities, the ascent stage lifted off and the descent stage was left behind.",
-    "historicalStory": "On July 20, 1969, Apollo 11 made history when the Lunar Module Eagle landed in the Sea of Tranquility. Neil Armstrong stepped onto the lunar surface at 02:56:15 UT on July 21, followed by Buzz Aldrin 19 minutes later. During their approximately two-and-a-half-hour surface activity, they collected lunar samples, photographed the landscape, deployed scientific equipment, raised an American flag, and unveiled a commemorative plaque. After completing their work, the astronauts returned to Eagle and prepared for departure. The ascent stage lifted off on July 21, leaving the descent stage behind. The eventual fate of the descent stage is unknown, although NASA's archive assumes it crashed onto the Moon within the following one to four months.",
-    "purpose": "The Lunar Module was designed to transport astronauts from lunar orbit to the Moon's surface and return them to the Command and Service Module. Its descent stage provided the landing propulsion, landing legs, and equipment storage. It also served as the launch platform for the ascent stage, which carried the astronauts back into lunar orbit.",
-    "missionTimeline": [
-      {
-        "year": "1969",
-        "date": "July 16, 1969",
-        "title": "Launch from Earth",
-        "description": "Apollo 11 launched from Cape Canaveral aboard a Saturn V rocket."
-      },
-      {
-        "year": "1969",
-        "date": "July 20, 1969",
-        "title": "Lunar Module Separation",
-        "description": "The Lunar Module undocked from the Command and Service Module before beginning its descent toward the lunar surface."
-      },
-      {
-        "year": "1969",
-        "date": "July 20, 1969",
-        "title": "The Eagle Has Landed",
-        "description": "The Lunar Module landed in Mare Tranquillitatis, the Sea of Tranquility, at 20:17:40 UT."
-      },
-      {
-        "year": "1969",
-        "date": "July 21, 1969",
-        "title": "First Human Moonwalk",
-        "description": "Neil Armstrong stepped onto the lunar surface at 02:56:15 UT, followed by Buzz Aldrin 19 minutes later."
-      },
-      {
-        "year": "1969",
-        "date": "July 21, 1969",
-        "title": "Lunar Surface Exploration",
-        "description": "The astronauts collected 21.55 kg of lunar rock and soil, photographed the surroundings, deployed scientific experiments, and traversed approximately 250 meters."
-      },
-      {
-        "year": "1969",
-        "date": "July 21, 1969",
-        "title": "Return to Lunar Orbit",
-        "description": "The Lunar Module ascent stage lifted off at 17:54:01 UT after 21 hours and 36 minutes on the lunar surface."
-      },
-      {
-        "year": "1969",
-        "date": "July 22, 1969",
-        "title": "Lunar Module Jettison",
-        "description": "After docking with the Command and Service Module, the Lunar Module was jettisoned into lunar orbit. Its eventual fate is unknown."
-      }
-    ],
-    "achievements": [
-      "First crewed vehicle to land on the Moon.",
-      "Carried the first two humans to walk on the lunar surface.",
-      "Enabled the first human lunar exploration and geological sample collection.",
-      "Supported the collection of 21.55 kg of lunar rock and soil.",
-      "Provided the landing platform and launch system that enabled the astronauts to return to lunar orbit.",
-      "Marked the beginning of human exploration of the lunar surface."
-    ],
-    "location": {
-      "locationName": "Apollo 11 Landing Site, Mare Tranquillitatis",
-      "latitude": 0.67416,
-      "longitude": 23.47314,
-      "coordinateAccuracy": "NASA coordinates determined from Lunar Reconnaissance Orbiter images using the DE 421 reference frame",
-      "description": "The Apollo 11 landing site is located in Mare Tranquillitatis, also known as the Sea of Tranquility, on the Moon."
-    },
-    "mapPosition": {
-      "x": 68,
-      "y": 48
-    },
-    "developmentNote": "This entry represents only the Apollo 11 Lunar Module descent stage, not the ascent stage or the Early Apollo Scientific Experiment Package (EASEP). NASA's archive does not establish the exact final resting place of the descent stage. Map layout coordinates have not been provided and must be assigned during UI development.",
-    "missionStatus": "Mission Completed",
-    "equipmentStatus": "Descent stage jettisoned into lunar orbit on July 22, 1969. Its eventual fate is unknown; NASA's archive assumes it crashed onto the lunar surface within one to four months.",
-    "whyLeftBehind": "The Lunar Module consisted of two stages. The descent stage provided the landing platform and supported lunar surface operations. After the astronauts completed their activities, the ascent stage lifted off to return them to the Command and Service Module. The descent stage was no longer needed and remained behind. Its later fate is uncertain.",
-    "interestingFacts": [
-      "The Lunar Module was named Eagle.",
-      "It carried Neil Armstrong and Buzz Aldrin, the first two humans to walk on the Moon.",
-      "Armstrong announced the successful landing with the famous words, 'Houston, Tranquility Base here - the Eagle has landed.'",
-      "The complete Lunar Module had a mass of 15,103 kg, including propellants.",
-      "The descent stage was approximately 4.2 meters across and 1.7 meters thick.",
-      "The descent stage had four landing legs with round footpads.",
-      "The astronauts spent 21 hours and 36 minutes on the lunar surface.",
-      "The astronauts traveled approximately 250 meters during their lunar surface exploration.",
-      "The descent stage's exact final resting place is unknown."
-    ],
-    "images": [
-      {
-        "imageUrl": "/images/relics/apollo-11-lm-eagle.jpg",
-        "caption": "Astronaut Edwin 'Buzz' Aldrin walks on the lunar surface near the leg and descent stage footpad of the Apollo 11 Lunar Module Eagle at Tranquility Base.",
-        "credit": "NASA (AS11-40-5902)",
-        "sourceUrl": "https://images.nasa.gov/details/as11-40-5902"
-      }
-    ],
-    "sources": [
-      {
-        "title": "Apollo 11 Lunar Module / EASEP — NSSDCA Master Catalog",
-        "organization": "NASA Space Science Data Coordinated Archive",
-        "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
       }
     ]
   }

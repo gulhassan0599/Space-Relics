@@ -5,7 +5,6 @@ import DestinationSection from '../components/home/DestinationSection';
 import FeaturedRelicsSection from '../components/home/FeaturedRelicsSection';
 import HistoricalSection from '../components/home/HistoricalSection';
 import CallToActionSection from '../components/home/CallToActionSection';
-import { Container } from '../components/common/Container';
 
 export const HomePage = () => {
   useEffect(() => {

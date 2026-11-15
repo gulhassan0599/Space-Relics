@@ -13,12 +13,11 @@ import ObjectLocationStatus from "../components/object/ObjectLocationStatus";
 import ObjectGallery from "../components/object/ObjectGallery";
 import ObjectSources from "../components/object/ObjectSources";
 import ObjectCard from "../components/object/ObjectCard";
-import ObjectComparison from "../components/common/ObjectComparison";
 import {
   useObjectDetail,
   getRelatedObjects,
 } from "../../controllers/objectController";
-import { CaretRight, WarningCircle, Compass } from "@phosphor-icons/react";
+import { CaretRight, Compass } from "@phosphor-icons/react";
 
 export const ObjectDetailsPage = () => {
   const { slug } = useParams();
