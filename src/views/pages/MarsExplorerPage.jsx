@@ -11,13 +11,13 @@ import ObjectCard from '../components/object/ObjectCard';
 import { getMarsObjects } from '../../models/objectModel';
 import { getMapMarkers } from '../../controllers/mapController';
 import {
-  ChevronRight,
-  Compass,
-  Calendar,
-  Layers,
-  ArrowRight,
-  Globe2
-} from 'lucide-react';
+  CaretRight,
+  Planet,
+  MoonStars,
+  CalendarBlank,
+  Stack,
+  ArrowRight
+} from '@phosphor-icons/react';
 
 export const MarsExplorerPage = () => {
   // Model data for Mars
@@ -56,7 +56,7 @@ export const MarsExplorerPage = () => {
               </Link>
             </li>
             <li className="text-space-textMuted">
-              <ChevronRight className="w-3.5 h-3.5" />
+              <CaretRight weight="bold" className="w-3.5 h-3.5" />
             </li>
             <li>
               <Link to="/explore" className="hover:text-white transition-colors">
@@ -64,7 +64,7 @@ export const MarsExplorerPage = () => {
               </Link>
             </li>
             <li className="text-space-textMuted">
-              <ChevronRight className="w-3.5 h-3.5" />
+              <CaretRight weight="bold" className="w-3.5 h-3.5" />
             </li>
             <li className="text-orange-300 font-semibold" aria-current="page">
               Mars
@@ -100,7 +100,7 @@ export const MarsExplorerPage = () => {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Button variant="mars" size="lg" onClick={scrollToMap} className="gap-2 shadow-mars-glow">
                 <span>Explore Martian Relics</span>
-                <Compass className="w-4 h-4" />
+                <Planet weight="duotone" className="w-4 h-4" />
               </Button>
             </div>
           </div>
@@ -111,7 +111,7 @@ export const MarsExplorerPage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <Card elevated className="p-6 border-orange-950/80 flex items-center gap-4">
               <div className="p-3 rounded-xl bg-orange-950/70 text-orange-400 border border-orange-900/60">
-                <Compass className="w-6 h-6" />
+                <Planet weight="duotone" className="w-6 h-6" />
               </div>
               <div>
                 <span className="text-2xl sm:text-3xl font-heading font-bold text-orange-200">03</span>
@@ -121,7 +121,7 @@ export const MarsExplorerPage = () => {
 
             <Card elevated className="p-6 border-orange-950/80 flex items-center gap-4">
               <div className="p-3 rounded-xl bg-orange-950/70 text-orange-400 border border-orange-900/60">
-                <Calendar className="w-6 h-6" />
+                <CalendarBlank weight="duotone" className="w-6 h-6" />
               </div>
               <div>
                 <span className="text-2xl sm:text-3xl font-heading font-bold text-orange-200">1997</span>
@@ -131,7 +131,7 @@ export const MarsExplorerPage = () => {
 
             <Card elevated className="p-6 border-orange-950/80 flex items-center gap-4">
               <div className="p-3 rounded-xl bg-orange-950/70 text-orange-400 border border-orange-900/60">
-                <Layers className="w-6 h-6" />
+                <Stack weight="duotone" className="w-6 h-6" />
               </div>
               <div>
                 <span className="text-2xl sm:text-3xl font-heading font-bold text-orange-200">03</span>
@@ -224,7 +224,7 @@ export const MarsExplorerPage = () => {
               <div className="flex items-center gap-3 w-full sm:w-auto">
                 <Link to="/explore/moon" className="flex-1 sm:flex-none">
                   <Button variant="moon" size="md" className="w-full gap-2">
-                    <Globe2 className="w-4 h-4 text-moon-blue" />
+                    <MoonStars weight="duotone" className="w-4 h-4 text-moon-blue" />
                     <span>Explore the Moon</span>
                   </Button>
                 </Link>

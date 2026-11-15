@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from '../common/Card';
-import { Sparkles, Lightbulb, Compass, Award } from 'lucide-react';
+import { Lightbulb, Sparkle } from '@phosphor-icons/react';
 
 /**
  * Educational Highlights & "Did You Know?" fact panel
@@ -25,7 +25,7 @@ export const ObjectFacts = ({ facts = [], destination = 'Moon' }) => {
                 ? 'bg-orange-950/70 border-orange-900/80 text-orange-400' 
                 : 'bg-slate-800 border-slate-700 text-moon-blue'
             }`}>
-              <Lightbulb className="w-5 h-5" />
+              <Lightbulb weight="duotone" className="w-5 h-5" />
             </div>
             <div>
               <span className="text-xs font-mono uppercase tracking-widest text-space-accentLight block">
@@ -48,7 +48,7 @@ export const ObjectFacts = ({ facts = [], destination = 'Moon' }) => {
                 }`}
               >
                 <div className="flex items-center gap-2 mb-3">
-                  <Sparkles className={`w-4 h-4 ${isMars ? 'text-orange-400' : 'text-space-accentLight'}`} />
+                  <Sparkle weight="duotone" className={`w-4 h-4 ${isMars ? 'text-orange-400' : 'text-space-accentLight'}`} />
                   <span className="text-xs font-mono uppercase tracking-wider text-space-textMuted">
                     Fact #{idx + 1}
                   </span>

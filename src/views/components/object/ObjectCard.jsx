@@ -2,7 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card } from '../common/Card';
 import { Badge } from '../common/Badge';
-import { ArrowRight, MapPin, Radio, Compass, Disc } from 'lucide-react';
+import { RelicIllustration } from '../icons/relics';
+import { ArrowRight, MapPin } from '@phosphor-icons/react';
 
 /**
  * Reusable ObjectCard component representing a Moon or Mars technological relic.
@@ -15,16 +16,15 @@ export const ObjectCard = ({ object, className = '' }) => {
   const isMoon = object.destination.toLowerCase() === 'moon';
   const objectUrl = `/objects/${object.slug}`;
 
-  // Contextual icon based on object category/type
+  // Contextual icon based on scientifically accurate custom SVG illustration
   const renderRelicIcon = () => {
-    const typeLower = (object.objectType || '').toLowerCase();
-    if (typeLower.includes('rover') || typeLower.includes('vehicle')) {
-      return <Compass className={`w-8 h-8 ${isMoon ? 'text-moon-blue' : 'text-orange-400'}`} />;
-    }
-    if (typeLower.includes('retroreflector') || typeLower.includes('instrument')) {
-      return <Disc className={`w-8 h-8 ${isMoon ? 'text-moon-blue' : 'text-orange-400'}`} />;
-    }
-    return <Radio className={`w-8 h-8 ${isMoon ? 'text-moon-blue' : 'text-orange-400'}`} />;
+    return (
+      <RelicIllustration
+        slug={object.slug}
+        className={`w-9 h-9 ${isMoon ? 'text-moon-blue' : 'text-orange-400'}`}
+        aria-hidden="true"
+      />
+    );
   };
 
   const handleCardClick = () => {

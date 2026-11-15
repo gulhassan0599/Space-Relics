@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from '../common/Card';
 import { Badge } from '../common/Badge';
-import { MapPin, Navigation, ShieldCheck, AlertCircle } from 'lucide-react';
+import { NavigationArrow, ShieldCheck } from '@phosphor-icons/react';
 
 /**
  * Location, Geographical Context, and Current Physical Equipment Status
@@ -20,7 +20,7 @@ export const ObjectLocationStatus = ({ object }) => {
               ? 'bg-orange-950/70 border-orange-900/80 text-orange-400' 
               : 'bg-slate-800 border-slate-700 text-moon-blue'
           }`}>
-            <MapPin className="w-5 h-5" />
+            <NavigationArrow weight="duotone" className="w-5 h-5" />
           </div>
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-space-accentLight block">
@@ -92,7 +92,7 @@ export const ObjectLocationStatus = ({ object }) => {
 
             {/* Development / Archival Note */}
             <div className="pt-4 border-t border-space-border/60 flex items-start gap-2.5 text-xs text-space-textMuted">
-              <ShieldCheck className="w-4 h-4 text-space-accentLight flex-shrink-0 mt-0.5" />
+              <ShieldCheck weight="duotone" className="w-4 h-4 text-space-accentLight flex-shrink-0 mt-0.5" />
               <span>
                 {object.developmentNote || 'Coordinate telemetry verified against official mission archive records.'}
               </span>

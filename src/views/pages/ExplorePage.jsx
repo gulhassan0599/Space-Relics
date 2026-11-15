@@ -5,7 +5,7 @@ import { Heading } from '../components/common/Heading';
 import { Card } from '../components/common/Card';
 import { Badge } from '../components/common/Badge';
 import { Button } from '../components/common/Button';
-import { ArrowRight, Compass, Globe2 } from 'lucide-react';
+import { ArrowRight, MoonStars, Planet } from '@phosphor-icons/react';
 
 export const ExplorePage = () => {
   const navigate = useNavigate();

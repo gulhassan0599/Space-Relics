@@ -1,5 +1,5 @@
 import React from 'react';
-import { ZoomIn, ZoomOut, RotateCcw } from 'lucide-react';
+import { MagnifyingGlassPlus, MagnifyingGlassMinus, ArrowCounterClockwise } from '@phosphor-icons/react';
 
 /**
  * Lightweight SVG map controls for zooming and resetting.
@@ -21,7 +21,7 @@ export const MapControls = ({
         aria-label="Zoom in map"
         className="p-2 rounded-lg text-space-textSecondary hover:text-white hover:bg-space-cardElevated disabled:opacity-40 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-1 focus:ring-space-accent"
       >
-        <ZoomIn className="w-4 h-4" />
+        <MagnifyingGlassPlus className="w-4 h-4" />
       </button>
 
       <span className="text-[11px] font-mono text-space-textMuted px-1 min-w-[36px] text-center">
@@ -35,7 +35,7 @@ export const MapControls = ({
         aria-label="Zoom out map"
         className="p-2 rounded-lg text-space-textSecondary hover:text-white hover:bg-space-cardElevated disabled:opacity-40 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-1 focus:ring-space-accent"
       >
-        <ZoomOut className="w-4 h-4" />
+        <MagnifyingGlassMinus className="w-4 h-4" />
       </button>
 
       <div className="w-[1px] h-4 bg-space-border/80 mx-0.5" />
@@ -46,7 +46,7 @@ export const MapControls = ({
         aria-label="Reset map view"
         className="p-2 rounded-lg text-space-textSecondary hover:text-white hover:bg-space-cardElevated transition-colors focus:outline-none focus:ring-1 focus:ring-space-accent"
       >
-        <RotateCcw className="w-3.5 h-3.5" />
+        <ArrowCounterClockwise className="w-3.5 h-3.5" />
       </button>
     </div>
   );

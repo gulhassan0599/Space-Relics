@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from '../common/Card';
-import { Bookmark, ExternalLink } from 'lucide-react';
+import { BookmarkSimple, ArrowSquareOut } from '@phosphor-icons/react';
 
 /**
  * Sources and Further Reading references section.
@@ -20,7 +20,7 @@ export const ObjectSources = ({ sources = [], destination = 'Moon' }) => {
               ? 'bg-orange-950/70 border-orange-900/80 text-orange-400' 
               : 'bg-slate-800 border-slate-700 text-moon-blue'
           }`}>
-            <Bookmark className="w-5 h-5" />
+            <BookmarkSimple weight="duotone" className="w-5 h-5" />
           </div>
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-space-accentLight block">
@@ -53,7 +53,7 @@ export const ObjectSources = ({ sources = [], destination = 'Moon' }) => {
                   {src.title}
                 </h3>
               </div>
-              <ExternalLink className="w-4 h-4 text-space-textMuted group-hover:text-space-accent transition-colors flex-shrink-0" />
+              <ArrowSquareOut className="w-4 h-4 text-space-textMuted group-hover:text-space-accent transition-colors flex-shrink-0" />
             </a>
           ))}
         </div>

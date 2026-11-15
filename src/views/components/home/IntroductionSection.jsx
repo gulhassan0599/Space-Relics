@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Container } from '../common/Container';
 import { Badge } from '../common/Badge';
 import { Button } from '../common/Button';
-import { ArrowRight, Compass, Globe2 } from 'lucide-react';
+import { ArrowRight, Planet } from '@phosphor-icons/react';
 
 export const IntroductionSection = () => {
   return (
@@ -66,7 +66,7 @@ export const IntroductionSection = () => {
               {/* Graphic Representation */}
               <div className="relative z-10 flex flex-col items-center text-center py-6">
                 <div className="w-20 h-20 rounded-2xl bg-[#070B16] border border-space-border flex items-center justify-center text-space-accentLight shadow-subtle-glow mb-6 group-hover:scale-105 transition-transform duration-300">
-                  <Globe2 className="w-10 h-10 text-space-accent" />
+                  <Planet weight="duotone" className="w-10 h-10 text-space-accent" />
                 </div>
 
                 <span className="text-xs font-mono uppercase tracking-widest text-space-accentLight mb-2">

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Container } from '../common/Container';
 import { Button } from '../common/Button';
-import { ArrowRight, ChevronDown, Sparkles } from 'lucide-react';
+import { ArrowRight, CaretDown, Planet } from '@phosphor-icons/react';
 
 export const HeroSection = () => {
   const scrollToNextSection = () => {
@@ -45,7 +45,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, ease: 'easeOut' }}
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-space-cardElevated/80 border border-space-border text-xs font-mono tracking-wider uppercase text-space-accentLight mb-6 shadow-sm backdrop-blur-sm"
           >
-            <Sparkles className="w-3.5 h-3.5 text-space-accent" />
+            <Planet weight="duotone" className="w-3.5 h-3.5 text-space-accent" />
             <span>An Interactive Space Museum</span>
           </motion.div>
 
@@ -113,7 +113,7 @@ export const HeroSection = () => {
             animate={{ y: [0, 5, 0] }}
             transition={{ repeat: Infinity, duration: 1.8, ease: 'easeInOut' }}
           >
-            <ChevronDown className="w-4 h-4 text-space-accent group-hover:text-space-accentLight transition-colors" />
+            <CaretDown weight="bold" className="w-4 h-4 text-space-accent group-hover:text-space-accentLight transition-colors" />
           </motion.div>
         </button>
       </motion.div>

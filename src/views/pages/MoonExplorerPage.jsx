@@ -12,14 +12,12 @@ import ObjectCard from '../components/object/ObjectCard';
 import { getMoonObjects } from '../../models/objectModel';
 import { getMapMarkers } from '../../controllers/mapController';
 import {
-  ChevronRight,
-  Compass,
-  Calendar,
-  Layers,
-  ArrowRight,
-  Sparkles,
-  MapPin
-} from 'lucide-react';
+  CaretRight,
+  MoonStars,
+  CalendarBlank,
+  Stack,
+  ArrowRight
+} from '@phosphor-icons/react';
 
 export const MoonExplorerPage = () => {
   // Model data
@@ -58,7 +56,7 @@ export const MoonExplorerPage = () => {
               </Link>
             </li>
             <li className="text-space-textMuted">
-              <ChevronRight className="w-3.5 h-3.5" />
+              <CaretRight weight="bold" className="w-3.5 h-3.5" />
             </li>
             <li>
               <Link to="/explore" className="hover:text-white transition-colors">
@@ -66,7 +64,7 @@ export const MoonExplorerPage = () => {
               </Link>
             </li>
             <li className="text-space-textMuted">
-              <ChevronRight className="w-3.5 h-3.5" />
+              <CaretRight weight="bold" className="w-3.5 h-3.5" />
             </li>
             <li className="text-moon-white font-semibold" aria-current="page">
               The Moon
@@ -102,7 +100,7 @@ export const MoonExplorerPage = () => {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Button variant="moon" size="lg" onClick={scrollToMap} className="gap-2 shadow-moon-glow">
                 <span>Explore Lunar Relics</span>
-                <Compass className="w-4 h-4" />
+                <MoonStars weight="duotone" className="w-4 h-4" />
               </Button>
             </div>
           </div>
@@ -113,7 +111,7 @@ export const MoonExplorerPage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <Card elevated className="p-6 border-space-border/80 flex items-center gap-4">
               <div className="p-3 rounded-xl bg-slate-800 text-moon-blue border border-slate-700">
-                <Compass className="w-6 h-6" />
+                <MoonStars weight="duotone" className="w-6 h-6" />
               </div>
               <div>
                 <span className="text-2xl sm:text-3xl font-heading font-bold text-moon-white">03</span>
@@ -123,7 +121,7 @@ export const MoonExplorerPage = () => {
 
             <Card elevated className="p-6 border-space-border/80 flex items-center gap-4">
               <div className="p-3 rounded-xl bg-slate-800 text-moon-blue border border-slate-700">
-                <Calendar className="w-6 h-6" />
+                <CalendarBlank weight="duotone" className="w-6 h-6" />
               </div>
               <div>
                 <span className="text-2xl sm:text-3xl font-heading font-bold text-moon-white">1967</span>
@@ -133,7 +131,7 @@ export const MoonExplorerPage = () => {
 
             <Card elevated className="p-6 border-space-border/80 flex items-center gap-4">
               <div className="p-3 rounded-xl bg-slate-800 text-moon-blue border border-slate-700">
-                <Layers className="w-6 h-6" />
+                <Stack weight="duotone" className="w-6 h-6" />
               </div>
               <div>
                 <span className="text-2xl sm:text-3xl font-heading font-bold text-moon-white">03</span>

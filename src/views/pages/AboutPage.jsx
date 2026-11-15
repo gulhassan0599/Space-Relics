@@ -4,7 +4,7 @@ import { Heading } from '../components/common/Heading';
 import { Card } from '../components/common/Card';
 import { Badge } from '../components/common/Badge';
 import { APP_IDENTITY } from '../../utils/constants';
-import { Award, Info, ShieldCheck, Compass } from 'lucide-react';
+import { Trophy, Info, ShieldCheck } from '@phosphor-icons/react';
 
 export const AboutPage = () => {
   useEffect(() => {
@@ -26,7 +26,7 @@ export const AboutPage = () => {
           <Card elevated className="p-6 sm:p-8">
             <div className="flex items-start gap-4">
               <div className="p-2.5 rounded-lg bg-space-accent/10 text-space-accentLight border border-space-accent/20 flex-shrink-0">
-                <Info className="w-5 h-5" />
+                <Info weight="duotone" className="w-5 h-5" />
               </div>
               <div className="space-y-3">
                 <h2 className="font-heading font-semibold text-lg text-space-text">
@@ -45,7 +45,7 @@ export const AboutPage = () => {
           <Card elevated className="p-6 sm:p-8">
             <div className="flex items-start gap-4">
               <div className="p-2.5 rounded-lg bg-space-accent/10 text-space-accentLight border border-space-accent/20 flex-shrink-0">
-                <Award className="w-5 h-5" />
+                <Trophy weight="duotone" className="w-5 h-5" />
               </div>
               <div className="space-y-3">
                 <h2 className="font-heading font-semibold text-lg text-space-text">
@@ -61,7 +61,7 @@ export const AboutPage = () => {
           <Card elevated className="p-6 sm:p-8 border-space-border/60">
             <div className="flex items-start gap-4">
               <div className="p-2.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700 flex-shrink-0">
-                <ShieldCheck className="w-5 h-5" />
+                <ShieldCheck weight="duotone" className="w-5 h-5" />
               </div>
               <div className="space-y-2">
                 <h2 className="font-heading font-semibold text-base text-space-text">

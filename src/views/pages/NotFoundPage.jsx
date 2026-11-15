@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container } from '../components/common/Container';
 import { Card } from '../components/common/Card';
 import { Button } from '../components/common/Button';
-import { Compass, Home } from 'lucide-react';
+import { Planet, House, Binoculars } from '@phosphor-icons/react';
 
 export const NotFoundPage = () => {
   return (
@@ -11,7 +11,7 @@ export const NotFoundPage = () => {
       <Container size="narrow">
         <Card elevated className="p-8 sm:p-12 text-center border-space-border/80">
           <div className="w-16 h-16 rounded-full bg-space-card border border-space-border flex items-center justify-center mx-auto mb-6 text-space-accentLight">
-            <Compass className="w-8 h-8 text-space-accent animate-pulse" />
+            <Planet weight="duotone" className="w-8 h-8 text-space-accent animate-pulse" />
           </div>
 
           <span className="text-xs font-mono uppercase tracking-widest text-space-accentLight block mb-2">
@@ -29,13 +29,13 @@ export const NotFoundPage = () => {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link to="/">
               <Button className="gap-2">
-                <Home className="w-4 h-4" />
+                <House className="w-4 h-4" />
                 Return to Base
               </Button>
             </Link>
             <Link to="/explore">
               <Button variant="secondary" className="gap-2">
-                <Compass className="w-4 h-4" />
+                <Binoculars className="w-4 h-4" />
                 Explore Relics
               </Button>
             </Link>

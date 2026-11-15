@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Container } from '../common/Container';
 import { Button } from '../common/Button';
-import { Compass, ArrowRight } from 'lucide-react';
+import { RocketLaunch, ArrowRight } from '@phosphor-icons/react';
 
 export const CallToActionSection = () => {
   return (
@@ -30,7 +30,7 @@ export const CallToActionSection = () => {
           className="p-8 sm:p-14 rounded-3xl bg-space-card/70 border border-space-border/80 shadow-2xl backdrop-blur-md"
         >
           <div className="w-14 h-14 rounded-2xl bg-[#070B16] border border-space-border flex items-center justify-center mx-auto mb-6 text-space-accentLight shadow-subtle-glow">
-            <Compass className="w-7 h-7 text-space-accent animate-pulse" />
+            <RocketLaunch weight="duotone" className="w-7 h-7 text-space-accent" />
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-heading font-bold text-space-text tracking-tight mb-4">

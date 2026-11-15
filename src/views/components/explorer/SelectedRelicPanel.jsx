@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { Card } from '../common/Card';
 import { Badge } from '../common/Badge';
 import { Button } from '../common/Button';
-import { ArrowRight, MapPin, Compass, Radio, Disc } from 'lucide-react';
+import { RelicIllustration } from '../icons/relics';
+import { ArrowRight, MapPin, Planet, MoonStars } from '@phosphor-icons/react';
 
 /**
  * Reusable Information Panel displayed alongside the Lunar or Mars Map.
@@ -16,7 +17,11 @@ export const SelectedRelicPanel = ({ relic, destination = 'Moon' }) => {
     return (
       <Card elevated className="p-8 h-full flex flex-col items-center justify-center text-center border-space-border/80">
         <div className="w-14 h-14 rounded-2xl bg-space-card border border-space-border flex items-center justify-center text-space-textMuted mb-4">
-          <Compass className={`w-7 h-7 ${isMars ? 'text-orange-500' : 'text-space-accent'}`} />
+          {isMars ? (
+            <Planet weight="duotone" className="w-7 h-7 text-orange-500" />
+          ) : (
+            <MoonStars weight="duotone" className="w-7 h-7 text-moon-blue" />
+          )}
         </div>
         <h3 className="font-heading font-semibold text-lg text-space-text">
           {isMars ? 'Explore Martian Explorers' : 'Explore Lunar Artifacts'}
@@ -29,14 +34,13 @@ export const SelectedRelicPanel = ({ relic, destination = 'Moon' }) => {
   }
 
   const renderIcon = () => {
-    const typeLower = (relic.objectType || '').toLowerCase();
-    if (typeLower.includes('rover') || typeLower.includes('vehicle')) {
-      return <Compass className={`w-6 h-6 ${isMars ? 'text-orange-400' : 'text-moon-blue'}`} />;
-    }
-    if (typeLower.includes('retroreflector') || typeLower.includes('instrument')) {
-      return <Disc className={`w-6 h-6 ${isMars ? 'text-orange-400' : 'text-moon-blue'}`} />;
-    }
-    return <Radio className={`w-6 h-6 ${isMars ? 'text-orange-400' : 'text-moon-blue'}`} />;
+    return (
+      <RelicIllustration
+        slug={relic.slug}
+        className={`w-7 h-7 ${isMars ? 'text-orange-400' : 'text-moon-blue'}`}
+        aria-hidden="true"
+      />
+    );
   };
 
   return (

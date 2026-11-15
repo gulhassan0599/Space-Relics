@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Menu, X, Compass } from 'lucide-react';
+import { Planet, List, X } from '@phosphor-icons/react';
 import { APP_IDENTITY, NAVIGATION_LINKS } from '../../../utils/constants';
 
 export const Navbar = () => {
@@ -46,7 +46,7 @@ export const Navbar = () => {
             className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-space-accent rounded-lg p-1"
           >
             <div className="w-9 h-9 rounded-lg bg-space-cardElevated border border-space-border flex items-center justify-center text-space-accentLight group-hover:border-space-accent transition-colors">
-              <Compass className="w-5 h-5 text-space-accent" />
+              <Planet weight="duotone" className="w-5 h-5 text-space-accent" />
             </div>
             <div className="flex flex-col">
               <span className="font-heading font-bold text-lg text-space-text tracking-wide group-hover:text-space-accentLight transition-colors">
@@ -95,7 +95,7 @@ export const Navbar = () => {
               aria-controls="mobile-navigation-drawer"
               className="p-2 rounded-lg text-space-textSecondary hover:text-white hover:bg-space-card border border-transparent hover:border-space-border focus:outline-none focus:ring-2 focus:ring-space-accent"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X size={24} weight="bold" /> : <List size={24} weight="bold" />}
             </button>
           </div>
         </div>

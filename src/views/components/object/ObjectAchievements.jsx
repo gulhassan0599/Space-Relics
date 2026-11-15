@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from '../common/Card';
-import { Trophy, CheckCircle2 } from 'lucide-react';
+import { Trophy, CheckCircle } from '@phosphor-icons/react';
 
 /**
  * Key Achievements & Scientific Contributions section
@@ -19,7 +19,7 @@ export const ObjectAchievements = ({ achievements = [], destination = 'Moon' }) 
               ? 'bg-orange-950/70 border-orange-900/80 text-orange-400' 
               : 'bg-slate-800 border-slate-700 text-moon-blue'
           }`}>
-            <Trophy className="w-5 h-5" />
+            <Trophy weight="duotone" className="w-5 h-5" />
           </div>
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-space-accentLight block">
@@ -38,7 +38,7 @@ export const ObjectAchievements = ({ achievements = [], destination = 'Moon' }) 
               className="p-5 rounded-2xl bg-[#070B16]/70 border border-space-border/70 flex items-start gap-3.5 hover:border-space-border transition-colors"
             >
               <div className="mt-0.5 flex-shrink-0">
-                <CheckCircle2 className={`w-5 h-5 ${isMars ? 'text-emerald-400' : 'text-emerald-400'}`} />
+                <CheckCircle weight="duotone" className="w-5 h-5 text-emerald-400" />
               </div>
               <p className="text-xs sm:text-sm text-space-textSecondary leading-relaxed">
                 {item}

@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Badge } from '../common/Badge';
-import { ArrowLeft, Compass, Radio, Disc } from 'lucide-react';
+import { RelicIllustration } from '../icons/relics';
+import { ArrowLeft } from '@phosphor-icons/react';
 
 /**
  * Reusable Hero Section for Object Details Page
@@ -12,14 +13,13 @@ export const ObjectHero = ({ object }) => {
   const explorerPath = isMars ? '/explore/mars' : '/explore/moon';
 
   const renderIcon = () => {
-    const typeLower = (object.objectType || '').toLowerCase();
-    if (typeLower.includes('rover') || typeLower.includes('vehicle')) {
-      return <Compass className={`w-12 h-12 ${isMars ? 'text-orange-400' : 'text-moon-blue'}`} />;
-    }
-    if (typeLower.includes('retroreflector') || typeLower.includes('instrument')) {
-      return <Disc className={`w-12 h-12 ${isMars ? 'text-orange-400' : 'text-moon-blue'}`} />;
-    }
-    return <Radio className={`w-12 h-12 ${isMars ? 'text-orange-400' : 'text-moon-blue'}`} />;
+    return (
+      <RelicIllustration
+        slug={object.slug}
+        className={`w-16 h-16 sm:w-20 sm:h-20 ${isMars ? 'text-orange-400' : 'text-moon-blue'}`}
+        aria-hidden="true"
+      />
+    );
   };
 
   return (

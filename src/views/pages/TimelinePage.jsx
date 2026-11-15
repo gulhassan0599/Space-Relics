@@ -5,7 +5,7 @@ import { Heading } from '../components/common/Heading';
 import { Card } from '../components/common/Card';
 import { Badge } from '../components/common/Badge';
 import { getTimelineByEras } from '../../controllers/timelineController';
-import { Calendar, ArrowRight } from 'lucide-react';
+import { CalendarBlank, ArrowRight } from '@phosphor-icons/react';
 
 export const TimelinePage = () => {
   const navigate = useNavigate();

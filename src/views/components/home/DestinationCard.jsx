@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Card } from '../common/Card';
 import { Badge } from '../common/Badge';
 import { Button } from '../common/Button';
-import { ArrowRight, MapPin } from 'lucide-react';
+import { ArrowRight } from '@phosphor-icons/react';
 
 /**
  * Large interactive destination portal card for Moon or Mars.

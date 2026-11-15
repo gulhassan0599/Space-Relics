@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Card } from '../common/Card';
 import { Badge } from '../common/Badge';
 import { Button } from '../common/Button';
-import { CheckCircle2, XCircle, RotateCcw, Award, HelpCircle } from 'lucide-react';
+import { CheckCircle, XCircle, ArrowCounterClockwise, Trophy, Question } from '@phosphor-icons/react';
 import { QUIZ_QUESTIONS } from '../../../models/data/quizQuestions.js';
 
 /**
@@ -97,10 +97,10 @@ export const EducationalQuiz = () => {
                   >
                     <span>{option}</span>
                     {isAnswered && idx === currentQ.correctIndex && (
-                      <CheckCircle2 className="w-5 h-5 text-emerald-400 flex-shrink-0" />
+                      <CheckCircle weight="fill" className="w-5 h-5 text-emerald-400 flex-shrink-0" />
                     )}
                     {isAnswered && idx === selectedOption && idx !== currentQ.correctIndex && (
-                      <XCircle className="w-5 h-5 text-red-400 flex-shrink-0" />
+                      <XCircle weight="fill" className="w-5 h-5 text-red-400 flex-shrink-0" />
                     )}
                   </button>
                 );
@@ -110,7 +110,7 @@ export const EducationalQuiz = () => {
             {/* Immediate Explanation Box */}
             {isAnswered && (
               <div className="mb-6 p-4 rounded-xl bg-space-cardElevated/80 border border-space-border/80 text-xs sm:text-sm text-space-textSecondary leading-relaxed flex items-start gap-2.5">
-                <HelpCircle className="w-4 h-4 text-space-accentLight flex-shrink-0 mt-0.5" />
+                <Question weight="duotone" className="w-4 h-4 text-space-accentLight flex-shrink-0 mt-0.5" />
                 <div>
                   <span className="font-semibold text-space-text block mb-1">
                     {selectedOption === currentQ.correctIndex ? 'Correct!' : 'Historical Context:'}
@@ -133,7 +133,7 @@ export const EducationalQuiz = () => {
           /* Results View */
           <div className="text-center py-6">
             <div className="w-16 h-16 rounded-2xl bg-space-accent/15 border border-space-accent/30 flex items-center justify-center mx-auto mb-4 text-space-accentLight shadow-subtle-glow">
-              <Award className="w-8 h-8" />
+              <Trophy weight="duotone" className="w-8 h-8" />
             </div>
 
             <h3 className="text-2xl sm:text-3xl font-heading font-bold text-space-text mb-2">
@@ -153,7 +153,7 @@ export const EducationalQuiz = () => {
             </p>
 
             <Button onClick={handleRestart} className="gap-2">
-              <RotateCcw className="w-4 h-4" />
+              <ArrowCounterClockwise className="w-4 h-4" />
               <span>Retake Quiz</span>
             </Button>
           </div>

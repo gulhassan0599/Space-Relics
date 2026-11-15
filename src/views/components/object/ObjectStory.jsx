@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from '../common/Card';
-import { BookOpen, HelpCircle } from 'lucide-react';
+import { Article, Lightbulb } from '@phosphor-icons/react';
 
 /**
  * Main Storytelling Narrative Section explaining why the object was created,
@@ -26,7 +26,7 @@ export const ObjectStory = ({ object }) => {
                 ? 'bg-orange-950/70 border-orange-900/80 text-orange-400' 
                 : 'bg-slate-800 border-slate-700 text-moon-blue'
             }`}>
-              <BookOpen className="w-5 h-5" />
+              <Article weight="duotone" className="w-5 h-5" />
             </div>
             <div>
               <span className="text-xs font-mono uppercase tracking-widest text-space-accentLight block">
@@ -53,7 +53,7 @@ export const ObjectStory = ({ object }) => {
                 : 'bg-[#0E172A]/90 border-l-space-accent border border-space-border/80'
             }`}>
               <div className="flex items-center gap-2 mb-2">
-                <HelpCircle className={`w-4 h-4 ${isMars ? 'text-orange-400' : 'text-space-accentLight'}`} />
+                <Lightbulb weight="duotone" className={`w-4 h-4 ${isMars ? 'text-orange-400' : 'text-space-accentLight'}`} />
                 <h3 className="font-heading font-semibold text-base text-space-text">
                   Why It Remains on {object.destination}
                 </h3>

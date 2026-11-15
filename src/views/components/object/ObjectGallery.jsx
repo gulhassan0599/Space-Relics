@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from '../common/Card';
-import { Image, ExternalLink, Camera } from 'lucide-react';
+import { Camera, Image, ArrowSquareOut } from '@phosphor-icons/react';
 
 /**
  * Visual Gallery for verified NASA / official mission photography.
@@ -20,7 +20,7 @@ export const ObjectGallery = ({ images = [], destination = 'Moon' }) => {
               ? 'bg-orange-950/70 border-orange-900/80 text-orange-400' 
               : 'bg-slate-800 border-slate-700 text-moon-blue'
           }`}>
-            <Camera className="w-5 h-5" />
+            <Camera weight="duotone" className="w-5 h-5" />
           </div>
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-space-accentLight block">
@@ -49,7 +49,7 @@ export const ObjectGallery = ({ images = [], destination = 'Moon' }) => {
                 ) : (
                   <div className="flex flex-col items-center justify-center text-center p-4">
                     <div className="w-12 h-12 rounded-xl bg-space-cardElevated border border-space-border flex items-center justify-center text-space-accentLight mb-2 shadow-sm">
-                      <Image className="w-6 h-6 text-space-accent" />
+                      <Image weight="duotone" className="w-6 h-6 text-space-accent" />
                     </div>
                     <span className="text-xs font-mono uppercase tracking-wider text-space-textMuted">
                       Official Mission Photo
@@ -73,7 +73,7 @@ export const ObjectGallery = ({ images = [], destination = 'Moon' }) => {
                       className="inline-flex items-center gap-1 text-space-accent hover:text-space-accentLight transition-colors"
                     >
                       <span>Archive</span>
-                      <ExternalLink className="w-3 h-3" />
+                      <ArrowSquareOut className="w-3 h-3" />
                     </a>
                   )}
                 </div>

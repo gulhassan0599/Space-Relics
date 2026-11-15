@@ -7,7 +7,7 @@ import { Badge } from '../common/Badge';
 import { Button } from '../common/Button';
 import ObjectCard from '../object/ObjectCard';
 import { getFeaturedRelics } from '../../../controllers/objectController';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from '@phosphor-icons/react';
 
 export const FeaturedRelicsSection = () => {
   // Retrieved via controller layer (strict MVC adherence)

@@ -4,7 +4,7 @@ import { Container } from '../common/Container';
 import { Heading } from '../common/Heading';
 import { Card } from '../common/Card';
 import { Badge } from '../common/Badge';
-import { Cpu, Compass, History } from 'lucide-react';
+import { Cpu, Binoculars, Flag } from '@phosphor-icons/react';
 
 export const HistoricalSection = () => {
   const storytellingBlocks = [
@@ -18,14 +18,14 @@ export const HistoricalSection = () => {
     {
       number: '02',
       tag: 'Discovery',
-      icon: Compass,
+      icon: Binoculars,
       heading: 'Pioneering Planetary Science',
       description: 'Scientific instruments and robotic explorers helped humanity understand the Moon and Mars in ways previously impossible, finding ancient signs of water.'
     },
     {
       number: '03',
       tag: 'Legacy',
-      icon: History,
+      icon: Flag,
       heading: 'Enduring Human Monuments',
       description: 'Even after missions end, their physical remains continue to tell stories about exploration, innovation, and humanity\'s unyielding curiosity.'
     }
@@ -69,7 +69,7 @@ export const HistoricalSection = () => {
                         {block.number}
                       </span>
                       <div className="p-2.5 rounded-lg bg-space-card border border-space-border text-space-accent">
-                        <Icon className="w-5 h-5" />
+                        <Icon weight="duotone" className="w-5 h-5" />
                       </div>
                     </div>
 

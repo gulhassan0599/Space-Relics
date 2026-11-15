@@ -2,14 +2,13 @@ import React from 'react';
 import { Card } from '../common/Card';
 import { Badge } from '../common/Badge';
 import {
-  Calendar,
+  CalendarBlank,
   MapPin,
-  Building,
-  Flag,
-  Activity,
-  Archive,
-  Compass
-} from 'lucide-react';
+  Buildings,
+  RocketLaunch,
+  Pulse,
+  Package
+} from '@phosphor-icons/react';
 
 /**
  * Reusable Overview Matrix for Object Details Page
@@ -20,22 +19,22 @@ export const ObjectOverview = ({ object }) => {
 
   const overviewItems = [
     {
-      icon: Building,
+      icon: Buildings,
       label: 'Responsible Agency',
       value: object.agency || 'NASA'
     },
     {
-      icon: Compass,
+      icon: RocketLaunch,
       label: 'Associated Mission',
       value: object.missionName
     },
     {
-      icon: Calendar,
+      icon: CalendarBlank,
       label: 'Launch Date',
       value: object.launchDate || `${object.year} Launch`
     },
     {
-      icon: Calendar,
+      icon: CalendarBlank,
       label: 'Landing Date',
       value: object.landingDate || 'Surface Deployment'
     },
@@ -45,13 +44,13 @@ export const ObjectOverview = ({ object }) => {
       value: object.location?.locationName || 'Extraterrestrial Surface'
     },
     {
-      icon: Activity,
+      icon: Pulse,
       label: 'Mission Status',
       value: object.missionStatus || 'Mission Concluded',
       isStatus: true
     },
     {
-      icon: Archive,
+      icon: Package,
       label: 'Physical Equipment Status',
       value: object.equipmentStatus || 'Preserved Surface Artifact',
       highlight: true

@@ -5,7 +5,7 @@ import { Button } from '../common/Button';
 import { Link } from 'react-router-dom';
 import { getAllObjects } from '../../../models/objectModel.js';
 import { buildComparisonMatrix } from '../../../controllers/comparisonController.js';
-import { ArrowRight, ArrowLeftRight, Compass } from 'lucide-react';
+import { ArrowRight, ArrowsLeftRight } from '@phosphor-icons/react';
 
 /**
  * Interactive Side-by-Side Comparison between Moon and Mars objects.
@@ -43,7 +43,7 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
         <div className="flex items-center gap-3">
           <div className="p-2.5 rounded-xl bg-space-card border border-space-border text-space-accentLight">
-            <ArrowLeftRight className="w-5 h-5 text-space-accent" />
+            <ArrowsLeftRight weight="duotone" className="w-5 h-5 text-space-accent" />
           </div>
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-space-accentLight block">

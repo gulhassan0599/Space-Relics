@@ -16,7 +16,7 @@ import ObjectSources from '../components/object/ObjectSources';
 import ObjectCard from '../components/object/ObjectCard';
 import ObjectComparison from '../components/common/ObjectComparison';
 import { useObjectDetail, getRelatedObjects } from '../../controllers/objectController';
-import { ChevronRight, AlertCircle, Compass } from 'lucide-react';
+import { CaretRight, WarningCircle, Compass } from '@phosphor-icons/react';
 
 export const ObjectDetailsPage = () => {
   const { slug } = useParams();
@@ -38,7 +38,7 @@ export const ObjectDetailsPage = () => {
         <Container size="narrow">
           <Card elevated className="p-8 sm:p-12 text-center border-red-950/60 shadow-2xl">
             <div className="w-16 h-16 rounded-2xl bg-red-950/40 border border-red-900/60 flex items-center justify-center mx-auto mb-6 text-red-400">
-              <AlertCircle className="w-8 h-8" />
+              <WarningCircle weight="duotone" className="w-8 h-8" />
             </div>
 
             <span className="text-xs font-mono uppercase tracking-widest text-red-400 block mb-2">
@@ -86,7 +86,7 @@ export const ObjectDetailsPage = () => {
               </Link>
             </li>
             <li className="text-space-textMuted">
-              <ChevronRight className="w-3.5 h-3.5" />
+              <CaretRight weight="bold" className="w-3.5 h-3.5" />
             </li>
             <li>
               <Link to="/explore" className="hover:text-white transition-colors">
@@ -94,7 +94,7 @@ export const ObjectDetailsPage = () => {
               </Link>
             </li>
             <li className="text-space-textMuted">
-              <ChevronRight className="w-3.5 h-3.5" />
+              <CaretRight weight="bold" className="w-3.5 h-3.5" />
             </li>
             <li>
               <Link to={explorerPath} className="hover:text-white transition-colors">
@@ -102,7 +102,7 @@ export const ObjectDetailsPage = () => {
               </Link>
             </li>
             <li className="text-space-textMuted">
-              <ChevronRight className="w-3.5 h-3.5" />
+              <CaretRight weight="bold" className="w-3.5 h-3.5" />
             </li>
             <li className={isMars ? 'text-orange-300 font-semibold truncate' : 'text-moon-white font-semibold truncate'} aria-current="page">
               {object.name}
@@ -239,7 +239,7 @@ export const ObjectDetailsPage = () => {
                 className="text-xs font-mono uppercase tracking-wider text-space-accent hover:text-space-accentLight transition-colors inline-flex items-center gap-1"
               >
                 <span>View Full {object.destination} Chart</span>
-                <ChevronRight className="w-3.5 h-3.5" />
+                <CaretRight weight="bold" className="w-3.5 h-3.5" />
               </Link>
             </div>
 

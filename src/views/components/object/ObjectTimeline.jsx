@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card } from '../common/Card';
 import { Badge } from '../common/Badge';
-import { Clock, Calendar, CheckCircle2, ChevronRight, Info } from 'lucide-react';
+import { ClockClockwise } from '@phosphor-icons/react';
 
 /**
  * Interactive Timeline component allowing users to click individual milestones
@@ -25,7 +25,7 @@ export const ObjectTimeline = ({ timeline = [], destination = 'Moon' }) => {
                 ? 'bg-orange-950/70 border-orange-900/80 text-orange-400' 
                 : 'bg-slate-800 border-slate-700 text-moon-blue'
             }`}>
-              <Clock className="w-5 h-5" />
+              <ClockClockwise weight="duotone" className="w-5 h-5" />
             </div>
             <div>
               <span className="text-xs font-mono uppercase tracking-widest text-space-accentLight block">
