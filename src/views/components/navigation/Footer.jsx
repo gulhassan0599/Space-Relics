@@ -21,9 +21,6 @@ export const Footer = () => {
             <p className="text-xs sm:text-sm text-space-textSecondary max-w-sm leading-relaxed font-sans">
               An educational museum dedicated to documenting the human-made technological artifacts left on the surfaces of the Moon and Mars.
             </p>
-            <p className="text-xs text-space-textMuted pt-2 leading-relaxed font-sans">
-              Space Relics is an independent educational prototype developed for the NASA Space Apps Challenge 2026. It is not an official NASA website and does not imply NASA endorsement.
-            </p>
           </div>
 
           {/* Navigation */}
@@ -57,7 +54,7 @@ export const Footer = () => {
                   className="text-space-textSecondary hover:text-moon-silver transition-colors flex items-center gap-2"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-moon-silver"></span>
-                  The Moon (Sector 01)
+                  The Moon
                 </Link>
               </li>
               <li>
@@ -66,7 +63,7 @@ export const Footer = () => {
                   className="text-space-textSecondary hover:text-mars-rust transition-colors flex items-center gap-2"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-mars-rust"></span>
-                  Mars (Sector 02)
+                  The Mars 
                 </Link>
               </li>
               <li>
@@ -83,12 +80,9 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-space-border/60 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-space-textMuted gap-4">
+        <div className="pt-8 border-t border-space-border/60 flex flex-col sm:flex-row justify-center text-xs font-mono text-space-textMuted gap-4">
           <p>
             © {currentYear} {APP_IDENTITY.name}. Built for {APP_IDENTITY.competition}.
-          </p>
-          <p>
-            Public domain imagery courtesy of NASA / JPL-Caltech / LPI Archives.
           </p>
         </div>
       </div>

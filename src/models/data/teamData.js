@@ -5,7 +5,7 @@
 export const TEAM_MEMBERS = [
   {
     id: 'member-1',
-    name: 'Member Name',
+    name: 'Gul Hassan',
     role: 'Lead Project Architect & Frontend Developer',
     bio: 'Oversees application architecture, interactive component development, and user experience engineering for Space Relics.',
     image: null, // Will display fallback avatar or user-provided photo URL
@@ -15,7 +15,7 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 'member-2',
-    name: 'Member Name',
+    name: 'Reyyan Aleem',
     role: 'UI/UX Specialist & Creative Director',
     bio: 'Designs digital museum layouts, typography systems, and visual identity tailored to archival space documentary experiences.',
     image: null,
@@ -25,7 +25,7 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 'member-3',
-    name: 'Member Name',
+    name: 'Maham Taqi',
     role: 'Space History & Data Researcher',
     bio: 'Curates archival NASA and JPL mission technical specifications, coordinates, and historical expedition narratives.',
     image: null,
@@ -35,9 +35,9 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 'member-4',
-    name: 'Member Name',
-    role: 'Frontend & Interactive Systems Developer',
-    bio: 'Implements interactive planetary maps, coordinates navigation states, and ensures cross-device responsive performance.',
+    name: 'Rimsha Talib',
+    role: 'Space History & Data Researcher',
+    bio: 'Curates archival NASA and JPL mission technical specifications, coordinates, and historical expedition narratives.',
     image: null,
     email: 'member4@example.com',
     github: 'https://github.com/username',
@@ -46,7 +46,7 @@ export const TEAM_MEMBERS = [
   {
     id: 'member-5',
     name: 'Member Name',
-    role: 'Educational Storyteller & Content Strategist',
+    role: 'Presentation & Demo Video',
     bio: 'Structures accessible educational narratives connecting extraterrestrial engineering achievements with broader human history.',
     image: null,
     email: 'member5@example.com',
