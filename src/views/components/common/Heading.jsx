@@ -40,7 +40,7 @@ export const Heading = ({
       )}
 
       {subtitle && (
-        <p className="mt-3 text-base sm:text-lg text-space-textSecondary max-w-2xl leading-relaxed">
+        <p className={`mt-3 text-base sm:text-lg text-space-textSecondary max-w-2xl leading-relaxed ${align === 'center' ? 'mx-auto' : ''}`}>
           {subtitle}
         </p>
       )}
