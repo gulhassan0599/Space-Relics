@@ -316,7 +316,7 @@ export const AboutPage = () => {
                       <img
                         src={member.image}
                         alt={`Portrait of ${member.name}`}
-                        className="w-full h-full object-cover filter contrast-[1.05]"
+                        className="w-full h-full object-cover object-top filter contrast-[1.05]"
                       />
                     ) : (
                       <div className="flex flex-col items-center justify-center text-space-textMuted p-6">
@@ -385,7 +385,7 @@ export const AboutPage = () => {
                       <img
                         src={member.image}
                         alt={`Portrait of ${member.name}`}
-                        className="w-full h-full object-cover filter contrast-[1.05]"
+                        className="w-full h-full object-cover object-top filter contrast-[1.05]"
                       />
                     ) : (
                       <div className="flex flex-col items-center justify-center text-space-textMuted p-6">

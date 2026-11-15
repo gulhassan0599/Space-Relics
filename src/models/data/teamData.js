@@ -6,8 +6,8 @@ export const TEAM_MEMBERS = [
   {
     id: 'member-1',
     name: 'Gul Hassan',
-    role: 'Lead Project Architect & Frontend Developer',
-    bio: 'Oversees application architecture, interactive component development, and user experience engineering for Space Relics.',
+    role: 'Lead Architect & Principal Developer',
+    bio: 'Directed end-to-end application engineering, system architecture, and ensured rigorous historical data accuracy across all documented missions.',
     image: '/images/team/gul_hassan.jpg',
     email: 'gulhassan0599@gmail.com',
     linkedin: 'https://linkedin.com/'
@@ -15,39 +15,39 @@ export const TEAM_MEMBERS = [
   {
     id: 'member-2',
     name: 'Reyyan Aleem',
-    role: 'UI/UX Specialist & Creative Director',
-    bio: 'Designs digital museum layouts, typography systems, and visual identity tailored to archival space documentary experiences.',
+    role: 'UI/UX & Digital Experience Designer',
+    bio: 'Shaped the digital museum experience, crafting clean editorial layouts, visual identity, and responsive interface design.',
     image: '/images/team/reyyan_aleem.jpg',
     email: 'reyyanaleem1@gmail.com',
     linkedin: 'https://linkedin.com/in/reyyan-aleem-320821394/'
   },
   {
     id: 'member-3',
-    name: 'Maham Taqi',
-    role: 'Space History & Data Researcher',
-    bio: 'Curates archival NASA and JPL mission technical specifications, coordinates, and historical expedition narratives.',
-    image: null,
+    name: 'Bashair Talib',
+    role: 'Presentation & Project Storyteller',
+    bio: 'Led project communication, demo presentation, and the educational narrative explaining the significance of humanity\'s artifacts.',
+    image: '/images/team/avatar.jpg',
     email: 'member3@example.com',
     linkedin: 'https://linkedin.com/in/username'
   },
   {
     id: 'member-4',
-    name: 'Rimsha Talib',
-    role: 'Space History & Data Researcher',
-    bio: 'Curates archival NASA and JPL mission technical specifications, coordinates, and historical expedition narratives.',
-    image: null,
+    name: 'Maham Taqi',
+    role: 'Space History & Archival Researcher',
+    bio: 'Curated authentic mission records, planetary coordinates, and verified archival details from NASA and JPL repositories.',
+    image: '/images/team/avatar.jpg',
     email: 'member4@example.com',
     linkedin: 'https://linkedin.com/in/username'
   },
   {
     id: 'member-5',
-    name: 'Member Name',
-    role: 'Presentation & Demo Video',
-    bio: 'Structures accessible educational narratives connecting extraterrestrial engineering achievements with broader human history.',
-    image: null,
+    name: 'Rimsha Talib',
+    role: 'Space History & Data Researcher',
+    bio: 'Researched technical spacecraft specifications, milestone timelines, and scientific achievements for Moon and Mars relics.',
+    image: '/images/team/avatar.jpg',
     email: 'member5@example.com',
     linkedin: 'https://linkedin.com/in/username'
-  }
+  },
 ];
 
 export const PROJECT_CREDITS = [
