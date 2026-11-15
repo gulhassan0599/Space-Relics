@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Card } from '../common/Card';
 import { Badge } from '../common/Badge';
 import { Button } from '../common/Button';
@@ -18,14 +18,31 @@ export const DestinationCard = ({
   route,
   variant = 'moon'
 }) => {
+  const navigate = useNavigate();
   const isMoon = variant === 'moon';
+
+  const handleCardClick = () => {
+    if (route) navigate(route);
+  };
+
+  const handleKeyDown = (e) => {
+    if ((e.key === 'Enter' || e.key === ' ') && route) {
+      e.preventDefault();
+      navigate(route);
+    }
+  };
 
   return (
     <Card
       elevated
       interactive
       destination={isMoon ? 'Moon' : 'Mars'}
-      className="group relative flex flex-col justify-between overflow-hidden p-8 sm:p-10 border-space-border/80 hover:border-opacity-100 transition-all duration-300 min-h-[460px]"
+      onClick={handleCardClick}
+      onKeyDown={handleKeyDown}
+      role="link"
+      tabIndex={0}
+      aria-label={`Explore ${destination}: ${title}`}
+      className="group relative flex flex-col justify-between overflow-hidden p-8 sm:p-10 border-space-border/80 hover:border-opacity-100 transition-all duration-300 min-h-[460px] focus:outline-none focus:ring-2 focus:ring-space-accent cursor-pointer"
     >
       {/* Background Ambience & Gradient */}
       <div 
@@ -82,16 +99,15 @@ export const DestinationCard = ({
 
       {/* Card CTA Bottom */}
       <div className="relative z-10 mt-8 pt-6 border-t border-space-border/60">
-        <Link to={route} className="block w-full">
-          <Button
-            variant={isMoon ? 'moon' : 'mars'}
-            size="lg"
-            className="w-full justify-between group-hover:shadow-md"
-          >
-            <span>Explore {destination}</span>
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </Button>
-        </Link>
+        <Button
+          variant={isMoon ? 'moon' : 'mars'}
+          size="lg"
+          tabIndex={-1}
+          className="w-full justify-between group-hover:shadow-md pointer-events-none"
+        >
+          <span>Explore {destination}</span>
+          <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+        </Button>
       </div>
     </Card>
   );

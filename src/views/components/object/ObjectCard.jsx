@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Card } from '../common/Card';
 import { Badge } from '../common/Badge';
 import { ArrowRight, MapPin, Radio, Compass, Disc } from 'lucide-react';
@@ -9,9 +9,11 @@ import { ArrowRight, MapPin, Radio, Compass, Disc } from 'lucide-react';
  * Adheres to Dark Space Museum styling and the MVC architecture.
  */
 export const ObjectCard = ({ object, className = '' }) => {
+  const navigate = useNavigate();
   if (!object) return null;
 
   const isMoon = object.destination.toLowerCase() === 'moon';
+  const objectUrl = `/objects/${object.slug}`;
 
   // Contextual icon based on object category/type
   const renderRelicIcon = () => {
@@ -25,12 +27,28 @@ export const ObjectCard = ({ object, className = '' }) => {
     return <Radio className={`w-8 h-8 ${isMoon ? 'text-moon-blue' : 'text-orange-400'}`} />;
   };
 
+  const handleCardClick = () => {
+    navigate(objectUrl);
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      navigate(objectUrl);
+    }
+  };
+
   return (
     <Card
       elevated
       interactive
       destination={object.destination}
-      className={`group flex flex-col justify-between overflow-hidden relative border-space-border/80 hover:border-opacity-100 transition-all duration-300 ${className}`}
+      onClick={handleCardClick}
+      onKeyDown={handleKeyDown}
+      role="link"
+      tabIndex={0}
+      aria-label={`View story for ${object.name}`}
+      className={`group flex flex-col justify-between overflow-hidden relative border-space-border/80 hover:border-opacity-100 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-space-accent cursor-pointer ${className}`}
     >
       {/* Top Graphic / Visual Area */}
       <div className="relative h-44 w-full bg-[#0B1220] overflow-hidden flex items-center justify-center border-b border-space-border/60">
@@ -101,13 +119,12 @@ export const ObjectCard = ({ object, className = '' }) => {
 
         {/* Card CTA Footer */}
         <div className="mt-6 pt-4 border-t border-space-border/60">
-          <Link
-            to={`/objects/${object.slug}`}
+          <div
             className="inline-flex items-center justify-between w-full text-xs font-semibold uppercase tracking-wider text-space-textSecondary group-hover:text-white transition-colors"
           >
             <span>View Story</span>
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 text-space-accent" />
-          </Link>
+          </div>
         </div>
       </div>
     </Card>

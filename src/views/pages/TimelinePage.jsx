@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Container } from '../components/common/Container';
 import { Heading } from '../components/common/Heading';
 import { Card } from '../components/common/Card';
@@ -8,11 +8,23 @@ import { getTimelineByEras } from '../../controllers/timelineController';
 import { Calendar, ArrowRight } from 'lucide-react';
 
 export const TimelinePage = () => {
+  const navigate = useNavigate();
   const eras = getTimelineByEras();
 
   useEffect(() => {
     document.title = 'Mission Timeline | Space Relics';
   }, []);
+
+  const handleCardClick = (slug) => {
+    navigate(`/objects/${slug}`);
+  };
+
+  const handleKeyDown = (e, slug) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      navigate(`/objects/${slug}`);
+    }
+  };
 
   return (
     <div className="py-12 sm:py-16">
@@ -41,7 +53,17 @@ export const TimelinePage = () => {
               {/* Items in Era */}
               <div className="space-y-4 border-l-2 border-space-border/80 pl-6 ml-2">
                 {eraGroup.items.map((item) => (
-                  <Card key={item.id} elevated interactive className="p-5 group">
+                  <Card
+                    key={item.id}
+                    elevated
+                    interactive
+                    onClick={() => handleCardClick(item.slug)}
+                    onKeyDown={(e) => handleKeyDown(e, item.slug)}
+                    role="link"
+                    tabIndex={0}
+                    aria-label={`View full story of ${item.name}`}
+                    className="p-5 group cursor-pointer focus:outline-none focus:ring-2 focus:ring-space-accent"
+                  >
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                       <div>
                         <div className="flex items-center gap-2 mb-1.5">
@@ -60,16 +82,12 @@ export const TimelinePage = () => {
                         </p>
                       </div>
 
-                      <Link
-                        to={`/objects/${item.slug}`}
-                        aria-label={`View full story of ${item.name}`}
-                        className="sm:self-center flex-shrink-0"
-                      >
+                      <div className="sm:self-center flex-shrink-0">
                         <span className="text-xs text-space-accent group-hover:text-space-accentLight font-medium inline-flex items-center gap-1.5 transition-colors">
                           <span>View Story</span>
                           <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                         </span>
-                      </Link>
+                      </div>
                     </div>
                   </Card>
                 ))}
