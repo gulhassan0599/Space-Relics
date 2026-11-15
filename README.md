@@ -54,7 +54,7 @@ The permanent collection curates **six landmark artifacts** across two planetary
 
 | Service | Link |
 | :--- | :--- |
-| **Live Application** | [space-relics.vercel.app](https://project-space-relics.vercel.app/)  |
+| **Live Application** | [project-space-relics.vercel.app](https://project-space-relics.vercel.app/)  |
 | **GitHub Repository** | [github.com/gulhassan0599/Space-Relics](https://github.com/gulhassan0599/Space-Relics) |
 | **NASA Space Apps Challenge** | [spaceappschallenge.org](https://www.spaceappschallenge.org/) |
 
