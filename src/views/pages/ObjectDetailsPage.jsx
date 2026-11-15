@@ -168,14 +168,6 @@ export const ObjectDetailsPage = () => {
           />
         </div>
 
-        {/* Section J: Interactive Comparison Module */}
-        <div className="mb-14">
-          <ObjectComparison
-            initialSlugA={object.slug}
-            initialSlugB={isMars ? 'apollo-11-laser-retroreflector' : 'opportunity-rover'}
-          />
-        </div>
-
         {/* Section K: Related Artifacts Navigation Footer */}
         {related.length > 0 && (
           <section className="pt-6 border-t border-space-border/80">
