@@ -16,7 +16,8 @@ export const DestinationCard = ({
   badgeText,
   relicsList = [],
   route,
-  variant = 'moon'
+  variant = 'moon',
+  className = ''
 }) => {
   const navigate = useNavigate();
   const isMoon = variant === 'moon';
@@ -42,7 +43,7 @@ export const DestinationCard = ({
       role="link"
       tabIndex={0}
       aria-label={`Explore ${destination}: ${title}`}
-      className="group relative flex flex-col justify-between overflow-hidden p-8 sm:p-10 border-space-border/80 hover:border-opacity-100 transition-all duration-300 min-h-[460px] focus:outline-none focus:ring-2 focus:ring-space-accent cursor-pointer"
+      className={`group relative flex flex-col justify-between overflow-hidden p-8 sm:p-10 border-space-border/80 hover:border-opacity-100 transition-all duration-300 min-h-[460px] h-full focus:outline-none focus:ring-2 focus:ring-space-accent cursor-pointer ${className}`}
     >
       {/* Background Ambience & Gradient */}
       <div 
