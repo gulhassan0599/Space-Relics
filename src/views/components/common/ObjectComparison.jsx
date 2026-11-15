@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
-import { Card } from '../common/Card';
-import { Badge } from '../common/Badge';
-import { Button } from '../common/Button';
-import { Link } from 'react-router-dom';
 import { getAllObjects } from '../../../models/objectModel.js';
 import { buildComparisonMatrix } from '../../../controllers/comparisonController.js';
-import { ArrowRight, ArrowsLeftRight } from '@phosphor-icons/react';
+import { ArrowsLeftRight } from '@phosphor-icons/react';
 
 /**
  * Interactive Side-by-Side Comparison between Moon and Mars objects.
+ * Designed with curatorial archival aesthetics and clean technical matrix rows.
  */
 export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = 'sojourner-rover' }) => {
   const allObjects = getAllObjects();
@@ -21,7 +18,6 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
   const handleSlugAChange = (newSlug) => {
     setSlugA(newSlug);
     if (newSlug === slugB) {
-      // Find an alternate valid relic for B
       const alternate = allObjects.find((o) => o.slug !== newSlug);
       if (alternate) setSlugB(alternate.slug);
     }
@@ -30,7 +26,6 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
   const handleSlugBChange = (newSlug) => {
     setSlugB(newSlug);
     if (newSlug === slugA) {
-      // Find an alternate valid relic for A
       const alternate = allObjects.find((o) => o.slug !== newSlug);
       if (alternate) setSlugA(alternate.slug);
     }
@@ -39,39 +34,40 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
   const matrix = buildComparisonMatrix(itemA, itemB);
 
   return (
-    <Card elevated className="p-6 sm:p-10 border-space-border/90 shadow-2xl relative overflow-hidden">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+    <div className="rounded border border-space-border bg-space-card p-6 sm:p-10 shadow-lg relative overflow-hidden">
+      {/* Header */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 pb-6 border-b border-space-border/80">
         <div className="flex items-center gap-3">
-          <div className="p-2.5 rounded-xl bg-space-card border border-space-border text-space-accentLight">
-            <ArrowsLeftRight weight="duotone" className="w-5 h-5 text-space-accent" />
+          <div className="w-9 h-9 rounded border border-space-border bg-space-bgSecondary flex items-center justify-center text-space-accent">
+            <ArrowsLeftRight weight="bold" className="w-4 h-4" />
           </div>
           <div>
-            <span className="text-xs font-mono uppercase tracking-widest text-space-accentLight block">
+            <span className="text-[10px] font-mono uppercase tracking-widest text-space-accentLight block">
               Comparative Analysis
             </span>
-            <h2 className="text-2xl sm:text-3xl font-heading font-bold text-space-text">
-              Compare Moon & Mars Artifacts
-            </h2>
+            <h3 className="font-editorial text-2xl sm:text-3xl text-space-text font-normal tracking-tight">
+              Evaluate Technical Specifications
+            </h3>
           </div>
         </div>
 
-        <span className="text-xs font-mono text-space-textMuted bg-[#070B16] px-3 py-1.5 rounded-lg border border-space-border/60 self-start sm:self-auto">
-          Side-by-side technical evaluation
+        <span className="text-[11px] font-mono text-space-textMuted bg-space-bgSecondary px-3 py-1.5 rounded border border-space-border/60 self-start sm:self-auto">
+          Side-by-side artifact evaluation
         </span>
       </div>
 
       {/* Selectors for Artifact A and Artifact B */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         {/* Selector A */}
-        <div className="p-4 rounded-2xl bg-[#070B16] border border-space-border/80">
-          <label htmlFor="select-relic-a" className="text-xs font-mono uppercase tracking-wider text-space-textMuted block mb-2">
-            Select First Relic:
+        <div className="p-4 rounded bg-space-bgSecondary border border-space-border">
+          <label htmlFor="select-relic-a" className="text-[10px] font-mono uppercase tracking-wider text-space-textMuted block mb-2">
+            First Artifact (Artifact A):
           </label>
           <select
             id="select-relic-a"
             value={slugA}
             onChange={(e) => handleSlugAChange(e.target.value)}
-            className="w-full bg-space-card text-space-text rounded-xl p-3 border border-space-border focus:outline-none focus:ring-1 focus:ring-space-accent text-sm"
+            className="w-full bg-space-card text-space-text rounded p-2.5 border border-space-border focus:outline-none focus:ring-1 focus:ring-space-accent text-xs font-mono"
           >
             {allObjects.map((obj) => (
               <option
@@ -79,22 +75,22 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
                 value={obj.slug}
                 disabled={obj.slug === slugB}
               >
-                {obj.destination}: {obj.name} ({obj.year}) {obj.slug === slugB ? '(Selected in B)' : ''}
+                [{obj.destination.toUpperCase()}] {obj.name} ({obj.year})
               </option>
             ))}
           </select>
         </div>
 
         {/* Selector B */}
-        <div className="p-4 rounded-2xl bg-[#070B16] border border-space-border/80">
-          <label htmlFor="select-relic-b" className="text-xs font-mono uppercase tracking-wider text-space-textMuted block mb-2">
-            Select Second Relic:
+        <div className="p-4 rounded bg-space-bgSecondary border border-space-border">
+          <label htmlFor="select-relic-b" className="text-[10px] font-mono uppercase tracking-wider text-space-textMuted block mb-2">
+            Second Artifact (Artifact B):
           </label>
           <select
             id="select-relic-b"
             value={slugB}
             onChange={(e) => handleSlugBChange(e.target.value)}
-            className="w-full bg-space-card text-space-text rounded-xl p-3 border border-space-border focus:outline-none focus:ring-1 focus:ring-space-accent text-sm"
+            className="w-full bg-space-card text-space-text rounded p-2.5 border border-space-border focus:outline-none focus:ring-1 focus:ring-space-accent text-xs font-mono"
           >
             {allObjects.map((obj) => (
               <option
@@ -102,74 +98,54 @@ export const ObjectComparison = ({ initialSlugA = 'surveyor-3', initialSlugB = '
                 value={obj.slug}
                 disabled={obj.slug === slugA}
               >
-                {obj.destination}: {obj.name} ({obj.year}) {obj.slug === slugA ? '(Selected in A)' : ''}
+                [{obj.destination.toUpperCase()}] {obj.name} ({obj.year})
               </option>
             ))}
           </select>
         </div>
       </div>
 
-      {/* Comparison Headers */}
+      {/* Artifact Summary Badges */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <div className={`p-5 rounded-2xl border ${
-          itemA.destination === 'Mars' ? 'bg-[#180804] border-orange-900/60' : 'bg-[#0E172A] border-slate-700/80'
-        }`}>
-          <div className="flex items-center justify-between mb-2">
-            <Badge variant={itemA.destination === 'Mars' ? 'mars' : 'moon'}>{itemA.destination}</Badge>
-            <span className="text-xs font-mono text-space-textMuted">{itemA.year}</span>
-          </div>
-          <h3 className="font-heading font-bold text-xl text-space-text">{itemA.name}</h3>
-          <p className="text-xs text-space-textSecondary mt-1 line-clamp-2">{itemA.shortDescription}</p>
-          <div className="mt-4 pt-3 border-t border-space-border/50">
-            <Link to={`/objects/${itemA.slug}`} className="text-xs text-space-accent hover:text-space-accentLight inline-flex items-center gap-1 font-medium">
-              <span>View Exhibit</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
-          </div>
+        <div className="p-4 rounded bg-space-bgSecondary/60 border border-space-border/60">
+          <span className={`text-[10px] font-mono uppercase tracking-wider ${itemA.destination.toLowerCase() === 'moon' ? 'text-moon-silver' : 'text-mars-rust'}`}>
+            {itemA.destination} • {itemA.year}
+          </span>
+          <h4 className="font-editorial text-xl text-space-text mt-1">{itemA.name}</h4>
+          <p className="text-xs text-space-textSecondary mt-1 font-sans">{itemA.objectType}</p>
         </div>
 
-        <div className={`p-5 rounded-2xl border ${
-          itemB.destination === 'Mars' ? 'bg-[#180804] border-orange-900/60' : 'bg-[#0E172A] border-slate-700/80'
-        }`}>
-          <div className="flex items-center justify-between mb-2">
-            <Badge variant={itemB.destination === 'Mars' ? 'mars' : 'moon'}>{itemB.destination}</Badge>
-            <span className="text-xs font-mono text-space-textMuted">{itemB.year}</span>
-          </div>
-          <h3 className="font-heading font-bold text-xl text-space-text">{itemB.name}</h3>
-          <p className="text-xs text-space-textSecondary mt-1 line-clamp-2">{itemB.shortDescription}</p>
-          <div className="mt-4 pt-3 border-t border-space-border/50">
-            <Link to={`/objects/${itemB.slug}`} className="text-xs text-space-accent hover:text-space-accentLight inline-flex items-center gap-1 font-medium">
-              <span>View Exhibit</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
-          </div>
+        <div className="p-4 rounded bg-space-bgSecondary/60 border border-space-border/60">
+          <span className={`text-[10px] font-mono uppercase tracking-wider ${itemB.destination.toLowerCase() === 'moon' ? 'text-moon-silver' : 'text-mars-rust'}`}>
+            {itemB.destination} • {itemB.year}
+          </span>
+          <h4 className="font-editorial text-xl text-space-text mt-1">{itemB.name}</h4>
+          <p className="text-xs text-space-textSecondary mt-1 font-sans">{itemB.objectType}</p>
         </div>
       </div>
 
-      {/* Comparison Rows */}
-      <div className="space-y-4">
-        {matrix.map((row, idx) => (
-          <div
-            key={idx}
-            className="p-4 sm:p-5 rounded-xl bg-[#070B16]/80 border border-space-border/60 hover:border-space-border transition-colors"
-          >
-            <span className="text-xs font-mono uppercase tracking-wider text-space-accentLight block mb-3 font-semibold">
-              {row.category}
-            </span>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-space-textSecondary leading-relaxed">
-              <div className="border-l-2 border-space-accent/40 pl-3">
-                <span className="text-[10px] font-mono uppercase text-space-textMuted block mb-0.5">{itemA.name}</span>
-                <p className="text-space-text">{row.valueA || 'Not specified'}</p>
-              </div>
-              <div className="border-l-2 border-orange-500/40 pl-3">
-                <span className="text-[10px] font-mono uppercase text-space-textMuted block mb-0.5">{itemB.name}</span>
-                <p className="text-space-text">{row.valueB || 'Not specified'}</p>
-              </div>
-            </div>
-          </div>
-        ))}
+      {/* Comparison Technical Matrix Table */}
+      <div className="overflow-x-auto rounded border border-space-border">
+        <table className="w-full text-left text-xs font-mono">
+          <thead className="bg-space-bgSecondary border-b border-space-border text-space-textMuted uppercase text-[10px]">
+            <tr>
+              <th scope="col" className="p-3.5 pl-4 w-1/3">Technical Metric</th>
+              <th scope="col" className="p-3.5 w-1/3">{itemA.name}</th>
+              <th scope="col" className="p-3.5 pr-4 w-1/3">{itemB.name}</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-space-border/60 font-sans">
+            {matrix.map((row, idx) => (
+              <tr key={idx} className={idx % 2 === 0 ? 'bg-space-card' : 'bg-space-bgSecondary/40'}>
+                <td className="p-3.5 pl-4 font-mono text-[11px] text-space-accentLight">{row.label}</td>
+                <td className="p-3.5 text-space-textSecondary">{row.valA}</td>
+                <td className="p-3.5 pr-4 text-space-textSecondary">{row.valB}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
-    </Card>
+    </div>
   );
 };
 

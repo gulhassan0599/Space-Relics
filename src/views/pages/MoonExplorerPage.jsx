@@ -1,46 +1,46 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Container } from '../components/common/Container';
-import { Heading } from '../components/common/Heading';
-import { Card } from '../components/common/Card';
-import { Badge } from '../components/common/Badge';
-import { Button } from '../components/common/Button';
-import LunarMap from '../components/explorer/LunarMap';
-import SelectedRelicPanel from '../components/explorer/SelectedRelicPanel';
-import ObjectCard from '../components/object/ObjectCard';
-import { getMoonObjects } from '../../models/objectModel';
-import { getMapMarkers } from '../../controllers/mapController';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Container } from "../components/common/Container";
+import { Heading } from "../components/common/Heading";
+import { Card } from "../components/common/Card";
+import { Badge } from "../components/common/Badge";
+import { Button } from "../components/common/Button";
+import LunarMap from "../components/explorer/LunarMap";
+import SelectedRelicPanel from "../components/explorer/SelectedRelicPanel";
+import ObjectCard from "../components/object/ObjectCard";
+import { getMoonObjects } from "../../models/objectModel";
+import { getMapMarkers } from "../../controllers/mapController";
 import {
   CaretRight,
   MoonStars,
   CalendarBlank,
   Stack,
-  ArrowRight
-} from '@phosphor-icons/react';
+  ArrowRight,
+} from "@phosphor-icons/react";
 
 export const MoonExplorerPage = () => {
   // Model data
   const moonRelics = getMoonObjects();
   // Controller markers data with normalized map coordinates
-  const moonMarkers = getMapMarkers('Moon');
+  const moonMarkers = getMapMarkers("Moon");
 
   // Selected relic state (default to the first relic on load)
   const [selectedRelic, setSelectedRelic] = useState(moonRelics[0] || null);
 
   useEffect(() => {
-    document.title = 'Moon Explorer | Space Relics';
+    document.title = "Moon Explorer | Space Relics";
   }, []);
 
   const handleSelectMarker = (marker) => {
-    const fullRelic = moonRelics.find((item) => item.id === marker.id) || marker;
+    const fullRelic =
+      moonRelics.find((item) => item.id === marker.id) || marker;
     setSelectedRelic(fullRelic);
   };
 
   const scrollToMap = () => {
-    const mapElement = document.getElementById('interactive-lunar-map-section');
+    const mapElement = document.getElementById("interactive-lunar-map-section");
     if (mapElement) {
-      mapElement.scrollIntoView({ behavior: 'smooth' });
+      mapElement.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -59,7 +59,10 @@ export const MoonExplorerPage = () => {
               <CaretRight weight="bold" className="w-3.5 h-3.5" />
             </li>
             <li>
-              <Link to="/explore" className="hover:text-white transition-colors">
+              <Link
+                to="/explore"
+                className="hover:text-white transition-colors"
+              >
                 Explore
               </Link>
             </li>
@@ -73,32 +76,39 @@ export const MoonExplorerPage = () => {
         </nav>
 
         {/* 2. Moon Hero Section */}
-        <section className="relative rounded-3xl bg-gradient-to-b from-[#0B1220] via-space-card to-[#070B16] border border-space-border/90 p-8 sm:p-14 mb-16 overflow-hidden shadow-2xl">
-          {/* Subtle Lunar Glow Backdrops */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-1/3 w-64 h-64 bg-slate-400/5 rounded-full blur-2xl pointer-events-none" />
-          
-          {/* Orbital wireframe rings in hero */}
-          <svg className="absolute -right-20 -bottom-20 w-[420px] h-[420px] opacity-15 stroke-slate-400 pointer-events-none">
-            <circle cx="210" cy="210" r="160" fill="none" strokeWidth="0.75" strokeDasharray="3 6" />
-            <circle cx="210" cy="210" r="200" fill="none" strokeWidth="0.5" />
-          </svg>
+        <section className="relative rounded-3xl border border-space-border/90 p-8 sm:p-14 mb-16 overflow-hidden shadow-2xl bg-[#090B0E]">
+          {/* Authentic Lunar Surface Landscape Background */}
+          <div className="absolute inset-0 z-0">
+            <img
+              src="/images/destinations/moon.jpg"
+              alt="Apollo 17 high-resolution archival photograph of the Taurus-Littrow lunar valley"
+              className="w-full h-full object-cover object-center filter contrast-[1.08] grayscale-[0.2] brightness-[0.7]"
+            />
+            {/* Dark editorial readability overlays */}
+            <div className="absolute inset-0 bg-[#090B0E]/60 mix-blend-multiply pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#090B0E] via-[#090B0E]/85 to-[#090B0E]/40 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#090B0E] via-transparent to-transparent pointer-events-none" />
+          </div>
 
           <div className="relative z-10 max-w-2xl">
-            <Badge variant="moon" className="mb-4">
-              Destination: Luna
-            </Badge>
-
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-bold text-moon-white tracking-tight leading-tight">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-bold text-moon-white tracking-tight leading-tight drop-shadow-md">
               Our Nearest Celestial Neighbor
             </h1>
 
-            <p className="mt-5 text-sm sm:text-lg text-space-textSecondary leading-relaxed">
-              A world that has witnessed some of humanity's earliest steps beyond Earth. Explore the equipment, experiments, and vehicles that remain on its surface, each carrying a story from a different chapter of lunar exploration.
+            <p className="mt-5 text-sm sm:text-lg text-space-textSecondary leading-relaxed drop-shadow">
+              A world that has witnessed some of humanity's earliest steps
+              beyond Earth. Explore the equipment, experiments, and vehicles
+              that remain on its surface, each carrying a story from a different
+              chapter of lunar exploration.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Button variant="moon" size="lg" onClick={scrollToMap} className="gap-2 shadow-moon-glow">
+              <Button
+                variant="moon"
+                size="lg"
+                onClick={scrollToMap}
+                className="gap-2 shadow-moon-glow"
+              >
                 <span>Explore Lunar Relics</span>
                 <MoonStars weight="duotone" className="w-4 h-4" />
               </Button>
@@ -109,33 +119,54 @@ export const MoonExplorerPage = () => {
         {/* 3. Lunar Information Overview (Compact Sample Statistics) */}
         <section className="mb-16">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <Card elevated className="p-6 border-space-border/80 flex items-center gap-4">
+            <Card
+              elevated
+              className="p-6 border-space-border/80 flex items-center gap-4"
+            >
               <div className="p-3 rounded-xl bg-slate-800 text-moon-blue border border-slate-700">
                 <MoonStars weight="duotone" className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-2xl sm:text-3xl font-heading font-bold text-moon-white">03</span>
-                <p className="text-xs text-space-textSecondary mt-0.5">Featured Lunar Relics</p>
+                <span className="text-2xl sm:text-3xl font-heading font-bold text-moon-white">
+                  03
+                </span>
+                <p className="text-xs text-space-textSecondary mt-0.5">
+                  Featured Lunar Relics
+                </p>
               </div>
             </Card>
 
-            <Card elevated className="p-6 border-space-border/80 flex items-center gap-4">
+            <Card
+              elevated
+              className="p-6 border-space-border/80 flex items-center gap-4"
+            >
               <div className="p-3 rounded-xl bg-slate-800 text-moon-blue border border-slate-700">
                 <CalendarBlank weight="duotone" className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-2xl sm:text-3xl font-heading font-bold text-moon-white">1967</span>
-                <p className="text-xs text-space-textSecondary mt-0.5">Earliest Featured Object</p>
+                <span className="text-2xl sm:text-3xl font-heading font-bold text-moon-white">
+                  1967
+                </span>
+                <p className="text-xs text-space-textSecondary mt-0.5">
+                  Earliest Featured Object
+                </p>
               </div>
             </Card>
 
-            <Card elevated className="p-6 border-space-border/80 flex items-center gap-4">
+            <Card
+              elevated
+              className="p-6 border-space-border/80 flex items-center gap-4"
+            >
               <div className="p-3 rounded-xl bg-slate-800 text-moon-blue border border-slate-700">
                 <Stack weight="duotone" className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-2xl sm:text-3xl font-heading font-bold text-moon-white">03</span>
-                <p className="text-xs text-space-textSecondary mt-0.5">Featured Mission Programs</p>
+                <span className="text-2xl sm:text-3xl font-heading font-bold text-moon-white">
+                  03
+                </span>
+                <p className="text-xs text-space-textSecondary mt-0.5">
+                  Featured Mission Programs
+                </p>
               </div>
             </Card>
           </div>
@@ -145,20 +176,13 @@ export const MoonExplorerPage = () => {
         <section id="interactive-lunar-map-section" className="mb-20">
           <div className="mb-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
-              <Badge variant="primary" className="mb-2">
-                Cartographic Visualization
-              </Badge>
               <h2 className="text-2xl sm:text-3xl font-heading font-bold text-space-text">
-                Interactive Lunar Map
+                Lunar Map
               </h2>
               <p className="text-xs sm:text-sm text-space-textSecondary mt-1">
                 Select a marker to inspect the landing site and relic telemetry.
               </p>
             </div>
-
-            <span className="text-xs font-mono text-space-textMuted">
-              Normalized Equirectangular Vector Chart
-            </span>
           </div>
 
           {/* Desktop side-by-side (8 cols / 4 cols), Mobile stacked */}
@@ -183,7 +207,6 @@ export const MoonExplorerPage = () => {
         <section className="mb-20">
           <Heading
             level={2}
-            badge={<Badge variant="moon">Lunar Artifact Catalog</Badge>}
             subtitle="Explore the objects that preserve the history of humanity's lunar exploration."
           >
             The Relics of the Moon
@@ -195,9 +218,7 @@ export const MoonExplorerPage = () => {
               <div
                 key={object.id}
                 onClick={() => setSelectedRelic(object)}
-                className={`transition-all duration-200 rounded-xl ${
-                  selectedRelic?.id === object.id ? 'ring-2 ring-space-accent ring-offset-2 ring-offset-[#070B16]' : ''
-                }`}
+                className="transition-all duration-200 rounded-xl"
               >
                 <ObjectCard object={object} />
               </div>
@@ -212,7 +233,8 @@ export const MoonExplorerPage = () => {
               Continue to the Red Planet
             </h3>
             <p className="text-xs sm:text-sm text-space-textSecondary leading-relaxed">
-              Having surveyed the Moon, travel further outward to explore the robotic scouts left behind across Martian craters.
+              Having surveyed the Moon, travel further outward to explore the
+              robotic scouts left behind across Martian craters.
             </p>
             <div className="pt-2">
               <Link to="/explore/mars">

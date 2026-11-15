@@ -1,31 +1,48 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Card } from '../common/Card';
-import { Badge } from '../common/Badge';
-import { RelicIllustration } from '../icons/relics';
 import { ArrowRight, MapPin } from '@phosphor-icons/react';
 
-/**
- * Reusable ObjectCard component representing a Moon or Mars technological relic.
- * Adheres to Dark Space Museum styling and the MVC architecture.
- */
+// Map verified NASA archival photograph paths by object slug
+const RELIC_IMAGES = {
+  'surveyor-3': {
+    src: '/images/relics/surveyor-3.jpg',
+    alt: 'NASA AS12-48-7133: Surveyor 3 robotic lander resting in Surveyor Crater on the Moon',
+    caption: 'NASA / AS12-48-7133'
+  },
+  'apollo-lunar-roving-vehicle': {
+    src: '/images/relics/apollo-lrv.jpg',
+    alt: 'NASA AS15-88-11901: Apollo 15 Lunar Roving Vehicle at its final resting place near Hadley Rille',
+    caption: 'NASA / AS15-88-11901'
+  },
+  'apollo-11-laser-retroreflector': {
+    src: '/images/relics/apollo-11-lrrr.jpg',
+    alt: 'NASA AS11-40-5952: Apollo 11 Laser Ranging Retroreflector deployed on lunar surface at Tranquility Base',
+    caption: 'NASA / AS11-40-5952'
+  },
+  'sojourner-rover': {
+    src: '/images/relics/sojourner.jpg',
+    alt: 'NASA/JPL PIA01122: Sojourner Rover near The Dice rocks and Yogi at Ares Vallis on Mars',
+    caption: 'NASA/JPL / PIA01122'
+  },
+  'spirit-rover': {
+    src: '/images/relics/spirit.jpg',
+    alt: 'NASA/JPL PIA07371: Spirit Mars Exploration Rover solar deck self-portrait mosaic',
+    caption: 'NASA/JPL / PIA07371'
+  },
+  'opportunity-rover': {
+    src: '/images/relics/opportunity.jpg',
+    alt: 'NASA/JPL PIA18079: Opportunity Rover true-color solar deck self-portrait after wind cleaning',
+    caption: 'NASA/JPL / PIA18079'
+  }
+};
+
 export const ObjectCard = ({ object, className = '' }) => {
   const navigate = useNavigate();
   if (!object) return null;
 
   const isMoon = object.destination.toLowerCase() === 'moon';
   const objectUrl = `/objects/${object.slug}`;
-
-  // Contextual icon based on scientifically accurate custom SVG illustration
-  const renderRelicIcon = () => {
-    return (
-      <RelicIllustration
-        slug={object.slug}
-        className={`w-9 h-9 ${isMoon ? 'text-moon-blue' : 'text-orange-400'}`}
-        aria-hidden="true"
-      />
-    );
-  };
+  const imageData = RELIC_IMAGES[object.slug];
 
   const handleCardClick = () => {
     navigate(objectUrl);
@@ -39,95 +56,87 @@ export const ObjectCard = ({ object, className = '' }) => {
   };
 
   return (
-    <Card
-      elevated
-      interactive
-      destination={object.destination}
+    <div
       onClick={handleCardClick}
       onKeyDown={handleKeyDown}
       role="link"
       tabIndex={0}
-      aria-label={`View story for ${object.name}`}
-      className={`group flex flex-col justify-between overflow-hidden relative border-space-border/80 hover:border-opacity-100 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-space-accent cursor-pointer ${className}`}
+      aria-label={`View archival record for ${object.name}`}
+      className={`group flex flex-col justify-between overflow-hidden rounded border border-space-border hover:border-space-border/100 bg-space-card transition-all duration-300 cursor-pointer h-[460px] w-full ${className}`}
     >
-      {/* Top Graphic / Visual Area */}
-      <div className="relative h-44 w-full bg-[#0B1220] overflow-hidden flex items-center justify-center border-b border-space-border/60">
-        {/* Abstract space backdrop */}
-        <div 
-          className={`absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500 ${
-            isMoon 
-              ? 'bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-700 via-slate-900 to-transparent' 
-              : 'bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-700 via-stone-900 to-transparent'
-          }`}
-        />
-        
-        {/* Orbital grid lines */}
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]" />
+      {/* Top Authentic Image Window */}
+      <div className="relative aspect-[16/10] w-full bg-black overflow-hidden border-b border-space-border">
+        {imageData ? (
+          <img
+            src={imageData.src}
+            alt={imageData.alt}
+            className="w-full h-full object-cover filter contrast-[1.05] grayscale-[0.1] group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
+        ) : (
+          <div className="w-full h-full bg-[#11151B]" />
+        )}
 
-        {/* Dynamic Object Placeholder Graphic */}
-        <div className="relative z-10 flex flex-col items-center justify-center p-4 text-center">
-          <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-2 border backdrop-blur-sm transition-transform duration-300 group-hover:scale-105 ${
+        {/* Ambient Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#141A23] via-transparent to-black/30 pointer-events-none" />
+
+        {/* Destination & Year Badge Overlay */}
+        <div className="absolute top-2.5 left-2.5 z-10">
+          <span className={`px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider backdrop-blur-sm border ${
             isMoon 
-              ? 'bg-slate-800/80 border-slate-700 text-moon-silver shadow-moon-glow' 
-              : 'bg-orange-950/70 border-orange-900/80 text-orange-200 shadow-mars-glow'
+              ? 'bg-[#090B0E]/85 text-moon-silver border-moon-silver/20' 
+              : 'bg-[#090B0E]/85 text-mars-rust border-mars-rust/20'
           }`}>
-            {renderRelicIcon()}
-          </div>
-          <span className="text-[11px] font-mono tracking-wider uppercase text-space-textMuted">
-            {object.missionName || 'Historic Mission'}
+            {object.destination}
           </span>
         </div>
 
-        {/* Destination & Year Badge Overlay */}
-        <div className="absolute top-3 left-3 z-10">
-          <Badge variant={isMoon ? 'moon' : 'mars'} size="xs">
-            {object.destination}
-          </Badge>
-        </div>
-
-        <div className="absolute top-3 right-3 z-10">
-          <span className="px-2 py-0.5 rounded-full text-[11px] font-mono font-medium bg-[#070B16]/80 text-space-textSecondary border border-space-border backdrop-blur-sm">
+        <div className="absolute top-2.5 right-2.5 z-10">
+          <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-[#090B0E]/85 text-space-textSecondary border border-space-border backdrop-blur-sm">
             {object.year}
           </span>
         </div>
+
+        {/* Photo Credit Overlay */}
+        {imageData && (
+          <div className="absolute bottom-2 right-2 z-10 pointer-events-none">
+            <span className="text-[9px] font-mono text-white/70 bg-black/70 px-1.5 py-0.5 rounded">
+              {imageData.caption}
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Content Area */}
-      <div className="p-6 flex flex-col flex-grow justify-between">
+      <div className="p-5 sm:p-6 flex flex-col flex-grow justify-between">
         <div>
-          <div className="flex items-center gap-2 mb-2 text-xs font-mono text-space-accentLight">
+          <div className="flex items-center gap-2 mb-1.5 text-[11px] font-mono text-space-accentLight">
             <span>{object.objectType}</span>
           </div>
 
-          <h3 className={`font-heading font-bold text-lg leading-snug transition-colors ${
-            isMoon ? 'text-space-text group-hover:text-moon-white' : 'text-space-text group-hover:text-orange-200'
-          }`}>
+          <h3 className="font-editorial text-xl sm:text-2xl text-space-text font-normal tracking-tight mb-2 group-hover:text-white transition-colors">
             {object.name}
           </h3>
 
-          <p className="text-xs sm:text-sm text-space-textSecondary mt-2.5 line-clamp-3 leading-relaxed">
-            {object.shortDescription || 'Technological artifact resting as a monument of extraterrestrial science and exploration.'}
+          <p className="text-xs text-space-textSecondary leading-relaxed line-clamp-3 mb-4 font-sans">
+            {object.shortDescription}
           </p>
-
-          {object.location?.locationName && (
-            <div className="mt-4 flex items-center gap-1.5 text-xs text-space-textMuted">
-              <MapPin className={`w-3.5 h-3.5 flex-shrink-0 ${isMoon ? 'text-moon-blue' : 'text-orange-400'}`} />
-              <span className="truncate">{object.location.locationName}</span>
-            </div>
-          )}
         </div>
 
-        {/* Card CTA Footer */}
-        <div className="mt-6 pt-4 border-t border-space-border/60">
-          <div
-            className="inline-flex items-center justify-between w-full text-xs font-semibold uppercase tracking-wider text-space-textSecondary group-hover:text-white transition-colors"
-          >
-            <span>View Story</span>
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 text-space-accent" />
+        {/* Card Footer: Coordinates & Action link */}
+        <div className="pt-4 border-t border-space-border/60 flex items-center justify-between text-xs">
+          <div className="flex items-center gap-1.5 text-space-textMuted font-mono text-[11px]">
+            <MapPin className="w-3.5 h-3.5 text-space-accentLight flex-shrink-0" />
+            <span className="truncate max-w-[170px]">{object.location?.locationName || 'Extraterrestrial Surface'}</span>
           </div>
+
+          <span className="inline-flex items-center gap-1 text-[11px] font-mono uppercase tracking-wider text-space-text group-hover:text-white transition-colors">
+            <span>Examine</span>
+            <ArrowRight className="w-3.5 h-3.5 text-space-accentLight group-hover:translate-x-1 transition-transform" />
+          </span>
         </div>
       </div>
-    </Card>
+    </div>
   );
 };
 

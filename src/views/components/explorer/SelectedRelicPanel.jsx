@@ -1,21 +1,24 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Card } from '../common/Card';
-import { Badge } from '../common/Badge';
-import { Button } from '../common/Button';
-import { RelicIllustration } from '../icons/relics';
-import { ArrowRight, MapPin, Planet, MoonStars } from '@phosphor-icons/react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Card } from "../common/Card";
+import { Badge } from "../common/Badge";
+import { Button } from "../common/Button";
+import { RelicIllustration } from "../icons/relics";
+import { ArrowRight, MapPin, Planet, MoonStars } from "@phosphor-icons/react";
 
 /**
  * Reusable Information Panel displayed alongside the Lunar or Mars Map.
  * Adapts themes and accents according to the selected relic's destination.
  */
-export const SelectedRelicPanel = ({ relic, destination = 'Moon' }) => {
-  const isMars = (relic?.destination || destination).toLowerCase() === 'mars';
+export const SelectedRelicPanel = ({ relic, destination = "Moon" }) => {
+  const isMars = (relic?.destination || destination).toLowerCase() === "mars";
 
   if (!relic) {
     return (
-      <Card elevated className="p-8 h-full flex flex-col items-center justify-center text-center border-space-border/80">
+      <Card
+        elevated
+        className="p-8 h-full flex flex-col items-center justify-center text-center border-space-border/80"
+      >
         <div className="w-14 h-14 rounded-2xl bg-space-card border border-space-border flex items-center justify-center text-space-textMuted mb-4">
           {isMars ? (
             <Planet weight="duotone" className="w-7 h-7 text-orange-500" />
@@ -24,10 +27,11 @@ export const SelectedRelicPanel = ({ relic, destination = 'Moon' }) => {
           )}
         </div>
         <h3 className="font-heading font-semibold text-lg text-space-text">
-          {isMars ? 'Explore Martian Explorers' : 'Explore Lunar Artifacts'}
+          {isMars ? "Explore Martian Explorers" : "Explore Lunar Artifacts"}
         </h3>
         <p className="text-xs sm:text-sm text-space-textSecondary mt-2 max-w-xs leading-relaxed">
-          Select a relic on the map or from the list below to discover its historical story and mission impact.
+          Select a relic on the map or from the list below to discover its
+          historical story and mission impact.
         </p>
       </Card>
     );
@@ -37,7 +41,7 @@ export const SelectedRelicPanel = ({ relic, destination = 'Moon' }) => {
     return (
       <RelicIllustration
         slug={relic.slug}
-        className={`w-7 h-7 ${isMars ? 'text-orange-400' : 'text-moon-blue'}`}
+        className={`w-7 h-7 ${isMars ? "text-orange-400" : "text-moon-blue"}`}
         aria-hidden="true"
       />
     );
@@ -46,27 +50,28 @@ export const SelectedRelicPanel = ({ relic, destination = 'Moon' }) => {
   return (
     <Card
       elevated
-      className="p-6 sm:p-7 flex flex-col justify-between border-space-border/90 shadow-2xl relative overflow-hidden h-full"
+      className="p-6 sm:p-7 flex flex-col justify-between border-space-border/90 shadow-2xl relative overflow-hidden"
     >
       {/* Decorative ambient gradient */}
-      <div 
+      <div
         className={`absolute top-0 right-0 w-44 h-44 rounded-full blur-3xl pointer-events-none ${
-          isMars ? 'bg-orange-600/15' : 'bg-moon-blue/10'
-        }`} 
+          isMars ? "bg-orange-600/15" : "bg-moon-blue/10"
+        }`}
       />
 
       <div>
         {/* Top Badges & Destination */}
         <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
           <div className="flex items-center gap-2">
-            <Badge variant={isMars ? 'mars' : 'moon'}>{relic.destination || destination}</Badge>
-            <Badge variant="default" size="xs">{relic.objectType}</Badge>
+            <Badge variant={isMars ? "mars" : "moon"}>
+              {relic.destination || destination}
+            </Badge>
           </div>
-          <span 
+          <span
             className={`text-xs font-mono font-medium px-2 py-0.5 rounded border ${
-              isMars 
-                ? 'text-orange-300 bg-orange-950/70 border-orange-900/80' 
-                : 'text-moon-blue bg-slate-800/80 border-slate-700'
+              isMars
+                ? "text-orange-300 bg-orange-950/70 border-orange-900/80"
+                : "text-moon-blue bg-slate-800/80 border-slate-700"
             }`}
           >
             {relic.year}
@@ -75,19 +80,19 @@ export const SelectedRelicPanel = ({ relic, destination = 'Moon' }) => {
 
         {/* Relic Title & Mission */}
         <div className="flex items-start gap-3.5 mb-4">
-          <div 
+          <div
             className={`p-2.5 rounded-xl border flex-shrink-0 ${
-              isMars 
-                ? 'bg-[#200A06] border-orange-900/80 text-orange-200' 
-                : 'bg-space-card border-space-border text-moon-silver'
+              isMars
+                ? "bg-[#200A06] border-orange-900/80 text-orange-200"
+                : "bg-space-card border-space-border text-moon-silver"
             }`}
           >
             {renderIcon()}
           </div>
           <div>
-            <h3 
+            <h3
               className={`font-heading font-bold text-xl sm:text-2xl leading-tight ${
-                isMars ? 'text-orange-100' : 'text-moon-white'
+                isMars ? "text-orange-100" : "text-moon-white"
               }`}
             >
               {relic.name}
@@ -104,32 +109,44 @@ export const SelectedRelicPanel = ({ relic, destination = 'Moon' }) => {
         </p>
 
         {/* Location Details Box */}
-        <div className="p-4 rounded-xl bg-[#070B16]/80 border border-space-border/80 space-y-2.5 mb-6">
+        <div className="">
           <div className="flex items-start gap-2 text-xs">
-            <MapPin className={`w-3.5 h-3.5 flex-shrink-0 mt-0.5 ${isMars ? 'text-orange-400' : 'text-moon-blue'}`} />
+            <MapPin
+              className={`w-3.5 h-3.5 flex-shrink-0 mt-0.5 ${isMars ? "text-orange-400" : "text-moon-blue"}`}
+            />
             <div>
               <span className="font-semibold text-space-text block">
-                {relic.location?.locationName || relic.locationName || 'Martian Surface'}
+                {relic.location?.locationName ||
+                  relic.locationName ||
+                  "Martian Surface"}
               </span>
               <p className="text-[11px] text-space-textMuted mt-0.5 leading-normal">
-                {relic.location?.description || 'Preserved robotic explorer resting at historic planetary coordinates.'}
+                {relic.location?.description ||
+                  "Preserved robotic explorer resting at historic planetary coordinates."}
               </p>
             </div>
           </div>
-
-          <div className="pt-2 border-t border-space-border/60 flex items-center justify-between text-[11px] font-mono text-space-textMuted">
+          <div className="pt-4 flex items-center justify-between text-[11px] font-mono text-space-textMuted">
             <span>Coordinate Status:</span>
-            <span className={isMars ? 'text-orange-300' : 'text-space-accentLight'}>
-              {relic.coordinateAccuracy === 'sample-coordinates' ? 'Sample Simulation' : 'Archival'}
+            <span
+              className={isMars ? "text-orange-300" : "text-space-accentLight"}
+            >
+              {relic.coordinateAccuracy === "sample-coordinates"
+                ? "Sample Simulation"
+                : "Archival"}
             </span>
           </div>
         </div>
       </div>
 
       {/* Action CTA */}
-      <div className="pt-4 border-t border-space-border/60">
+      <div className="pt-4 border-space-border/60">
         <Link to={`/objects/${relic.slug}`} className="block w-full">
-          <Button variant={isMars ? 'mars' : 'moon'} size="md" className="w-full justify-between">
+          <Button
+            variant={isMars ? "mars" : "moon"}
+            size="md"
+            className="w-full justify-between"
+          >
             <span>View Full Story</span>
             <ArrowRight className="w-4 h-4" />
           </Button>

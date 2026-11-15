@@ -40,7 +40,7 @@ export const MarsMap = ({
       <div className="absolute top-4 left-4 right-4 z-20 flex items-center justify-between pointer-events-none">
         <div className="pointer-events-auto px-3 py-1.5 rounded-lg bg-[#140804]/90 border border-orange-900/60 backdrop-blur-md">
           <span className="text-[11px] font-mono tracking-wider text-orange-400 uppercase font-medium">
-            Martian Surface Chart — Topographic
+            Martian Surface Map
           </span>
         </div>
 
@@ -86,10 +86,6 @@ export const MarsMap = ({
       <div className="absolute bottom-4 left-4 right-4 z-20 flex flex-wrap items-center justify-between gap-3 pointer-events-none">
         <div className="pointer-events-auto">
           <MapLegend />
-        </div>
-
-        <div className="pointer-events-auto text-[10px] font-mono text-orange-300/70 bg-[#0E0503]/90 px-2.5 py-1 rounded border border-orange-900/50 backdrop-blur-sm">
-          Development Notice: Normalized SVG simulation coordinates
         </div>
       </div>
     </div>

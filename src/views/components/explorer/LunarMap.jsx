@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import LunarTerrain from './LunarTerrain';
-import RelicMarker from './RelicMarker';
-import MapControls from './MapControls';
-import MapLegend from './MapLegend';
+import React, { useState } from "react";
+import LunarTerrain from "./LunarTerrain";
+import RelicMarker from "./RelicMarker";
+import MapControls from "./MapControls";
+import MapLegend from "./MapLegend";
 
 /**
  * Main Interactive 2D SVG Lunar Map.
@@ -11,7 +11,7 @@ import MapLegend from './MapLegend';
 export const LunarMap = ({
   markers = [],
   selectedRelic = null,
-  onSelectRelic
+  onSelectRelic,
 }) => {
   const [zoomLevel, setZoomLevel] = useState(1);
 
@@ -20,8 +20,10 @@ export const LunarMap = ({
   const baseHeight = 700;
 
   // Zoom handling by transforming the SVG viewBox
-  const handleZoomIn = () => setZoomLevel((prev) => Math.min(2.0, +(prev + 0.25).toFixed(2)));
-  const handleZoomOut = () => setZoomLevel((prev) => Math.max(0.8, +(prev - 0.25).toFixed(2)));
+  const handleZoomIn = () =>
+    setZoomLevel((prev) => Math.min(2.0, +(prev + 0.25).toFixed(2)));
+  const handleZoomOut = () =>
+    setZoomLevel((prev) => Math.max(0.8, +(prev - 0.25).toFixed(2)));
   const handleReset = () => setZoomLevel(1);
 
   // Calculate viewBox based on zoom centered at (500, 350)
@@ -34,12 +36,11 @@ export const LunarMap = ({
 
   return (
     <div className="relative w-full h-[440px] sm:h-[540px] lg:h-[600px] rounded-2xl bg-[#070B16] border border-space-border/90 overflow-hidden shadow-2xl flex flex-col justify-between select-none">
-      
       {/* Top Map Bar: Destination Label & Controls */}
       <div className="absolute top-4 left-4 right-4 z-20 flex items-center justify-between pointer-events-none">
         <div className="pointer-events-auto px-3 py-1.5 rounded-lg bg-[#0B1220]/80 border border-space-border backdrop-blur-md">
           <span className="text-[11px] font-mono tracking-wider text-moon-blue uppercase font-medium">
-            Lunar Surface Chart — Nearside
+            Lunar Surface Map
           </span>
         </div>
 
@@ -85,10 +86,6 @@ export const LunarMap = ({
       <div className="absolute bottom-4 left-4 right-4 z-20 flex flex-wrap items-center justify-between gap-3 pointer-events-none">
         <div className="pointer-events-auto">
           <MapLegend />
-        </div>
-
-        <div className="pointer-events-auto text-[10px] font-mono text-space-textMuted bg-[#070B16]/80 px-2.5 py-1 rounded border border-space-border/60 backdrop-blur-sm">
-          Development Notice: Normalized SVG simulation coordinates
         </div>
       </div>
     </div>

@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import { Card } from '../common/Card';
-import { Badge } from '../common/Badge';
-import { Button } from '../common/Button';
-import { CheckCircle, XCircle, ArrowCounterClockwise, Trophy, Question } from '@phosphor-icons/react';
+import { ArrowCounterClockwise, CheckCircle, XCircle } from '@phosphor-icons/react';
 import { QUIZ_QUESTIONS } from '../../../models/data/quizQuestions.js';
 
 /**
  * Interactive Educational Quiz component testing visitor knowledge
  * on the Moon and Mars relics with instant feedback and score tracking.
+ * Redesigned with museum curatorial aesthetics and clear accessibility.
  */
 export const EducationalQuiz = () => {
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -47,43 +45,42 @@ export const EducationalQuiz = () => {
   };
 
   return (
-    <Card elevated className="p-8 sm:p-12 border-space-border/90 shadow-2xl relative overflow-hidden">
-      {/* Background glow */}
-      <div className="absolute top-0 right-1/4 w-72 h-72 bg-space-accent/10 rounded-full blur-3xl pointer-events-none" />
-
+    <div className="rounded border border-space-border bg-space-card p-6 sm:p-10 shadow-lg relative overflow-hidden">
       <div className="relative z-10 max-w-2xl mx-auto">
         {!showResults ? (
           <div>
             {/* Header info */}
-            <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
+            <div className="flex flex-wrap items-center justify-between gap-3 mb-6 pb-4 border-b border-space-border/80">
               <div className="flex items-center gap-2">
-                <Badge variant="primary">Museum Knowledge Check</Badge>
+                <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider bg-space-bgSecondary text-space-accentLight border border-space-border">
+                  Exhibition Assessment
+                </span>
                 <span className="text-xs font-mono text-space-textMuted">
                   Question {currentIdx + 1} of {QUIZ_QUESTIONS.length}
                 </span>
               </div>
-              <span className="text-xs font-mono text-space-accentLight">
+              <span className="text-xs font-mono text-space-textSecondary">
                 Score: {score}/{QUIZ_QUESTIONS.length}
               </span>
             </div>
 
             {/* Question Prompt */}
-            <h3 className="text-xl sm:text-2xl font-heading font-bold text-space-text mb-6 leading-snug">
+            <h3 className="font-editorial text-xl sm:text-2xl text-space-text font-normal mb-6 leading-snug">
               {currentQ.question}
             </h3>
 
             {/* Options List */}
             <div className="space-y-3 mb-6">
               {currentQ.options.map((option, idx) => {
-                let btnStyle = 'border-space-border/80 bg-[#070B16] text-space-textSecondary hover:border-space-accent/60 hover:text-white';
+                let btnStyle = 'border-space-border bg-space-bgSecondary text-space-textSecondary hover:border-space-textSecondary hover:text-white';
 
                 if (isAnswered) {
                   if (idx === currentQ.correctIndex) {
-                    btnStyle = 'border-emerald-500 bg-emerald-950/40 text-emerald-200 font-medium';
+                    btnStyle = 'border-emerald-600/80 bg-emerald-950/30 text-emerald-200';
                   } else if (idx === selectedOption) {
-                    btnStyle = 'border-red-500 bg-red-950/40 text-red-200 font-medium';
+                    btnStyle = 'border-red-600/80 bg-red-950/30 text-red-200';
                   } else {
-                    btnStyle = 'border-space-border/40 bg-[#070B16]/50 text-space-textMuted opacity-50';
+                    btnStyle = 'border-space-border/40 bg-space-bgSecondary/40 text-space-textMuted opacity-60';
                   }
                 }
 
@@ -91,11 +88,17 @@ export const EducationalQuiz = () => {
                   <button
                     key={idx}
                     type="button"
-                    disabled={isAnswered}
                     onClick={() => handleSelectOption(idx)}
-                    className={`w-full text-left p-4 rounded-xl border text-sm sm:text-base transition-all flex items-center justify-between gap-3 ${btnStyle}`}
+                    disabled={isAnswered}
+                    className={`w-full text-left p-4 rounded border text-xs sm:text-sm transition-all flex items-center justify-between gap-3 font-sans min-h-[48px] ${btnStyle}`}
                   >
-                    <span>{option}</span>
+                    <div className="flex items-center gap-3">
+                      <span className="w-5 h-5 rounded-full border border-current flex items-center justify-center font-mono text-[10px] flex-shrink-0">
+                        {String.fromCharCode(65 + idx)}
+                      </span>
+                      <span>{option}</span>
+                    </div>
+
                     {isAnswered && idx === currentQ.correctIndex && (
                       <CheckCircle weight="fill" className="w-5 h-5 text-emerald-400 flex-shrink-0" />
                     )}
@@ -107,59 +110,60 @@ export const EducationalQuiz = () => {
               })}
             </div>
 
-            {/* Immediate Explanation Box */}
+            {/* Explanation box after answer */}
             {isAnswered && (
-              <div className="mb-6 p-4 rounded-xl bg-space-cardElevated/80 border border-space-border/80 text-xs sm:text-sm text-space-textSecondary leading-relaxed flex items-start gap-2.5">
-                <Question weight="duotone" className="w-4 h-4 text-space-accentLight flex-shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-semibold text-space-text block mb-1">
-                    {selectedOption === currentQ.correctIndex ? 'Correct!' : 'Historical Context:'}
-                  </span>
-                  <span>{currentQ.explanation}</span>
-                </div>
+              <div className="p-4 rounded bg-space-bgSecondary border border-space-border/80 text-xs text-space-textSecondary mb-6 font-sans leading-relaxed">
+                <span className="font-mono text-[10px] uppercase tracking-wider text-space-accentLight block mb-1">
+                  Archival Fact:
+                </span>
+                {currentQ.explanation}
               </div>
             )}
 
-            {/* Next Question Action */}
+            {/* Next button */}
             {isAnswered && (
               <div className="flex justify-end">
-                <Button onClick={handleNext} className="gap-2">
-                  <span>{currentIdx + 1 === QUIZ_QUESTIONS.length ? 'View Results' : 'Next Question'}</span>
-                </Button>
+                <button
+                  type="button"
+                  onClick={handleNext}
+                  className="px-5 py-2.5 rounded text-xs font-mono uppercase tracking-wider bg-space-text text-[#090B0E] font-semibold hover:bg-white transition-colors"
+                >
+                  {currentIdx + 1 < QUIZ_QUESTIONS.length ? 'Next Question →' : 'View Assessment Score'}
+                </button>
               </div>
             )}
           </div>
         ) : (
           /* Results View */
           <div className="text-center py-6">
-            <div className="w-16 h-16 rounded-2xl bg-space-accent/15 border border-space-accent/30 flex items-center justify-center mx-auto mb-4 text-space-accentLight shadow-subtle-glow">
-              <Trophy weight="duotone" className="w-8 h-8" />
-            </div>
+            <span className="font-mono text-xs uppercase tracking-widest text-space-accentLight block mb-2">
+              Assessment Complete
+            </span>
 
-            <h3 className="text-2xl sm:text-3xl font-heading font-bold text-space-text mb-2">
-              Quiz Completed!
+            <h3 className="font-editorial text-3xl sm:text-4xl text-space-text font-normal mb-3">
+              {score === QUIZ_QUESTIONS.length
+                ? 'Mastery of Extraterrestrial Heritage'
+                : score >= 3
+                ? 'Commendable Historical Knowledge'
+                : 'Exploration in Progress'}
             </h3>
 
-            <p className="text-sm text-space-textSecondary mb-6">
-              You scored <span className="font-bold text-space-accentLight text-lg">{score}</span> out of <span className="font-bold text-space-text text-lg">{QUIZ_QUESTIONS.length}</span>.
+            <p className="text-sm text-space-textSecondary max-w-md mx-auto mb-6 font-sans">
+              You correctly identified {score} out of {QUIZ_QUESTIONS.length} historical details regarding the technological artifacts left on the Moon and Mars.
             </p>
 
-            <p className="text-xs text-space-textMuted max-w-md mx-auto mb-8 leading-relaxed">
-              {score >= 5
-                ? 'Outstanding! You have a commanding grasp of human equipment resting across the Moon and Mars.'
-                : score >= 3
-                ? 'Great exploration! You know the essentials of our off-world robotic and Apollo heritage.'
-                : 'Good effort! Revisit the Moon and Mars exhibits to uncover more details about these six artifacts.'}
-            </p>
-
-            <Button onClick={handleRestart} className="gap-2">
+            <button
+              type="button"
+              onClick={handleRestart}
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded text-xs font-mono uppercase tracking-wider text-space-text border border-space-border hover:border-space-textSecondary hover:bg-space-bgSecondary transition-all"
+            >
               <ArrowCounterClockwise className="w-4 h-4" />
-              <span>Retake Quiz</span>
-            </Button>
+              <span>Retake Museum Assessment</span>
+            </button>
           </div>
         )}
       </div>
-    </Card>
+    </div>
   );
 };
 

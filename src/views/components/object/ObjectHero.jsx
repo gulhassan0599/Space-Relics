@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { Badge } from '../common/Badge';
 import { RelicIllustration } from '../icons/relics';
 import { ArrowLeft } from '@phosphor-icons/react';
