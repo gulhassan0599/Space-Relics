@@ -1,6 +1,5 @@
 <div align="center">
-
-# Space Relics — The Stories We Left Behind
+# Space Relics - The Stories We Left Behind
 
 ### **An Interactive Educational Digital Museum for the NASA Space Apps Challenge 2026**
 
